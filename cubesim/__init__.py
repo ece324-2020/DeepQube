@@ -1,1 +1,1 @@
-from cube2 import Cube2
+from cubesim.cube2 import Cube2

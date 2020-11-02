@@ -12,12 +12,12 @@ class Cube2:
     State tensor components:
         `state[0]` - front, top, left
         `state[1]` - front, top, right
-        `state[2]` - front, bottom, left
-        `state[3]` - front, bottom, right
+        `state[2]` - front, down, left
+        `state[3]` - front, down, right
         `state[4]` - back, top, left
         `state[5]` - back, top, right
-        `state[6]` - back, bottom, left
-        `state[7]` - back, bottom, right
+        `state[6]` - back, down, left
+        `state[7]` - back, down, right
 
     The piece encodings are motivated by the pieces in each corner in the  "default orientation"
     of the cube. This is the orientation where green is in front and white is on top.

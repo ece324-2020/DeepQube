@@ -28,6 +28,16 @@ class Cube2:
         'D': [('F', 1, slice(None), False), ('R', 1, slice(None), False), ('B', 1, slice(None), False), ('L', 1, slice(None), False)],
     }
 
+    """ This dictionary maps a move to an index into the `moves` list"""
+    move_mappping = {
+        'F': 0, 'F\'': 1,
+        'R': 2, 'R\'': 3,
+        'U': 4, 'U\'': 5,
+        'L': 6, 'L\'': 7,
+        'B': 8, 'B\'': 9,
+        'D': 10, 'D\'': 11,
+    }
+
     def __init__(self):
         self.reset()
         self.moves = [
@@ -48,6 +58,11 @@ class Cube2:
         for i, colour in enumerate(self.state.flat):
             embedding[i][colour] = 1
         return embedding
+
+    """Loads the scramble contained in the string `s`"""
+    def load_scramble(self, s):
+        for move in s.split(' '):
+            self.moves[self.move_mappping[move]]()
 
     def reset(self):
         self.state = np.array([np.tile(i, (2, 2)) for i in range(6)])

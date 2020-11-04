@@ -40,6 +40,7 @@ class Cube2:
 
     def __init__(self):
         self.reset()
+        self.history = []
         self.moves = [
             self.front, self.front_p,
             self.right, self.right_p,
@@ -53,6 +54,7 @@ class Cube2:
     The cube embedding is a 24x6 tensor, where the 24 consists of a flattening
     of a 6x2x2 tensor, and the 6 is a one-hot encoding of the colours.
     """
+
     def get_embedding(self, device='cpu'):
         embedding = torch.zeros(24, 6, device=device)
         for i, colour in enumerate(self.state.flat):
@@ -60,6 +62,7 @@ class Cube2:
         return embedding
 
     """Loads the scramble contained in the string `s`"""
+
     def load_scramble(self, s):
         for move in s.split(' '):
             self.moves[self.move_mappping[move]]()
@@ -112,7 +115,10 @@ class Cube2:
         #   F => T[1,:] -> R[:,0] -> D[0,:] -> L[1,:] -> T[1,:]
         #   This is stored in adj_lookup
 
-        self.state[self.face_mapping[face]] = np.rot90(self.state[self.face_mapping[face]], -1 if not prime else 1)
+        self.history.append(face + ('' if prime is False else '\''))
+
+        self.state[self.face_mapping[face]] = np.rot90(
+            self.state[self.face_mapping[face]], -1 if not prime else 1)
 
         adj_elements = self.adj_lookup[face]
         it = range(0, len(adj_elements))
@@ -126,7 +132,7 @@ class Cube2:
             flip = a[3] if prime else b[3]
 
             temp = np.copy(self.state[self.face_mapping[b[0]]][b[1:3]])
-            self.state[self.face_mapping[b[0]]][b[1:3]] = old if not flip else np.flip(old)
+            self.state[self.face_mapping[b[0]]][b[1:3]
+                                                ] = old if not flip else np.flip(old)
             old = temp
             a = b
-

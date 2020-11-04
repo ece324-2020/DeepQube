@@ -132,7 +132,6 @@ class Cube2:
             flip = a[3] if prime else b[3]
 
             temp = np.copy(self.state[self.face_mapping[b[0]]][b[1:3]])
-            self.state[self.face_mapping[b[0]]][b[1:3]
-                                                ] = old if not flip else np.flip(old)
+            self.state[self.face_mapping[b[0]]][b[1:3]] = old if not flip else np.flip(old)
             old = temp
             a = b

@@ -1,5 +1,7 @@
+#!/usr/bin/env python
+
 import cubesim
-from visualizer import print_cube
+from cubesim.visualizer import print_cube
 
 
 c = cubesim.Cube2()

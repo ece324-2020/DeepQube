@@ -2,7 +2,7 @@ import numpy as np
 import time
 import argparse
 import cubesim
-from visualizer import print_cube
+from cubesim.visualizer import print_cube
 
 # implements a hard-coded naive baseline model
 

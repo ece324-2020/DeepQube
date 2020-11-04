@@ -8,7 +8,9 @@ class Cube2:
     Interally we only keep track of sticker positions.
     """
 
-    """ The `face_mapping` dictionary maps a LFRBTD to it's index in the internal state array."""
+    """ The `face_mapping` dictionary maps a LFRBTD to it's index in the internal state array.
+    The nature of the internal state allows us to use this index as the colour associated with that face on the cube.
+    """
     face_mapping = {'L': 0, 'F': 1, 'R': 2, 'B': 3, 'U': 4, 'D': 5}
 
     """ The `adj_lookup` dictionary maps a LFRBTD to its adjacent faces for rotation.
@@ -18,51 +20,34 @@ class Cube2:
     See `__rotate` for how this is used.
     """
     adj_lookup = {
-            'L': [('U', slice(None), 0, True), ('F', slice(None), 0, False), ('D', slice(None), 0, False), ('B', slice(None), 1, True)],
-            'F': [('U', 1, slice(None), True), ('R', slice(None), 0, False), ('D', 0, slice(None), True), ('L', slice(None), 1, False)],
-            'R': [('U', slice(None), 1, False), ('B', slice(None), 0, True), ('D', slice(None), 1, True), ('F', slice(None), 1, False)],
-            'B': [('U', 0, slice(None), False), ('L', slice(None), 0, True), ('D', 1, slice(None), False), ('R', slice(None), 1, True)],
-            'U': [('F', 0, slice(None), False), ('L', 0, slice(None), False), ('B', 0, slice(None), False), ('R', 0, slice(None), False)],
-            'D': [('F', 1, slice(None), False), ('R', 1, slice(None), False), ('B', 1, slice(None), False), ('L', 1, slice(None), False)],
+        'L': [('U', slice(None), 0, True), ('F', slice(None), 0, False), ('D', slice(None), 0, False), ('B', slice(None), 1, True)],
+        'F': [('U', 1, slice(None), True), ('R', slice(None), 0, False), ('D', 0, slice(None), True), ('L', slice(None), 1, False)],
+        'R': [('U', slice(None), 1, False), ('B', slice(None), 0, True), ('D', slice(None), 1, True), ('F', slice(None), 1, False)],
+        'B': [('U', 0, slice(None), False), ('L', slice(None), 0, True), ('D', 1, slice(None), False), ('R', slice(None), 1, True)],
+        'U': [('F', 0, slice(None), False), ('L', 0, slice(None), False), ('B', 0, slice(None), False), ('R', 0, slice(None), False)],
+        'D': [('F', 1, slice(None), False), ('R', 1, slice(None), False), ('B', 1, slice(None), False), ('L', 1, slice(None), False)],
     }
 
     def __init__(self):
         self.reset()
         self.moves = [
-                self.front, self.front_p,
-                self.right, self.right_p,
-                self.up, self.up_p,
-                self.left, self.left_p,
-                self.back, self.back_p,
-                self.down, self.down_p,
+            self.front, self.front_p,
+            self.right, self.right_p,
+            self.up, self.up_p,
+            self.left, self.left_p,
+            self.back, self.back_p,
+            self.down, self.down_p,
         ]
 
-    """This function converts the internal state to an embedding to be passed into the Neural Network.
-    The embedding uses a one-hot encoding per piece, along with an orientation.
-    There are eight pieces which may reside in eight locations, with three possible orientations each.
-
-    Each of these one-hot encodings are concatenated to form an 11 wide vector.
-
-    State tensor components:
-        `embedding[0]` - front, top, left
-        `embedding[1]` - front, top, right
-        `embedding[2]` - front, down, left
-        `embedding[3]` - front, down, right
-        `embedding[4]` - back, top, left
-        `embedding[5]` - back, top, right
-        `embedding[6]` - back, down, left
-        `embedding[7]` - back, down, right
-
-    The piece encodings are motivated by the pieces in each corner in the "default orientation"
-    of the cube. This is the orientation where green is in front and white is on top.
-
-    The orientations of these pieces are as follows:
-        0 - default orientation
-        1 - clockwise rotation
-        2 - counterclockwise rotation
+    """The embedding is based on the sticker representation.
+    The cube embedding is a 24x6 tensor, where the 24 consists of a flattening
+    of a 6x2x2 tensor, and the 6 is a one-hot encoding of the colours.
     """
-    def get_embedding(self):
-        pass
+    def get_embedding(self, device='cpu'):
+        embedding = torch.zeros(24, 6, device=device)
+        for i, colour in enumerate(self.state.flat):
+            embedding[i][colour] = 1
+        return embedding
 
     def reset(self):
         self.state = np.array([np.tile(i, (2, 2)) for i in range(6)])

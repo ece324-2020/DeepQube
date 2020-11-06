@@ -41,6 +41,7 @@ class Cube2:
     def __init__(self):
         self.reset()
         self.history = []
+        self.embedding_dim = (24, 6)
         self.moves = [
             self.front, self.front_p,
             self.right, self.right_p,
@@ -56,7 +57,7 @@ class Cube2:
     """
 
     def get_embedding(self, device='cpu'):
-        embedding = torch.zeros(24, 6, device=device)
+        embedding = torch.zeros(self.embedding_dim, device=device)
         for i, colour in enumerate(self.state.flat):
             embedding[i][colour] = 1
         return embedding

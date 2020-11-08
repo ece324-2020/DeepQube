@@ -44,27 +44,21 @@ class Cube2:
         self.embedding_dim = (24, 6)
         self.moves = [
             self.front, self.front_p,
-            self.right, self.right_p,
-            self.up, self.up_p,
-            self.left, self.left_p,
-            self.back, self.back_p,
-            self.down, self.down_p,
         ]
 
-    """The embedding is based on the sticker representation.
-    The cube embedding is a 24x6 tensor, where the 24 consists of a flattening
-    of a 6x2x2 tensor, and the 6 is a one-hot encoding of the colours.
-    """
 
     def get_embedding(self, device='cpu'):
+        """The embedding is based on the sticker representation.
+        The cube embedding is a 24x6 tensor, where the 24 consists of a flattening
+        of a 6x2x2 tensor, and the 6 is a one-hot encoding of the colours.
+        """
         embedding = torch.zeros(self.embedding_dim, device=device)
         for i, colour in enumerate(self.state.flat):
             embedding[i][colour] = 1
-        return embedding
-
-    """Loads the scramble contained in the string `s`"""
+        return embedding.view(-1)
 
     def load_scramble(self, s):
+        """Loads the scramble contained in the string `s`"""
         for move in s.split(' '):
             self.moves[self.move_mappping[move]]()
 

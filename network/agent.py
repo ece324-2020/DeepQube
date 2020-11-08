@@ -1,4 +1,7 @@
+import torch
+
 import cubesim
+import cubesim.visualizer
 import network.models
 import network.replay
 
@@ -8,12 +11,13 @@ class Agent:
         self.reward_fn = reward_fn
 
         cube = cubesim.Cube2()
-        self.model = network.models.DQN(cube.embedding_dim,
+        self.model = network.models.DQN(cube.embedding_dim[0] * cube.embedding_dim[1],
                 len(cube.moves), **nn_params).to(device)
 
     def select_action(self, state):
-        qvals = self.model(state)
-        return int(qvals.argmax())
+        with torch.no_grad():
+            qvals = self.model(state)
+        return qvals.argmax()
 
     def optimize_model(self, optimizer, criterion, batch_size, gamma):
         if len(self.memory) < batch_size:
@@ -39,9 +43,10 @@ class Agent:
         # Run the recorded states through the model. This returns the qvalues for
         # each action. We use `gather` to select the qvalues of the previously chosen
         # action. This corresponds to Q(s_j, a_j).
-        generated_actions_qvals = self.model(state_batch).gather(1, action_batch)
+        output = self.model(state_batch)
+        generated_actions_qvals = output.gather(1, action_batch.unsqueeze(1)).squeeze()
 
-        loss = criterion(next_state_qvals, target_actions_qvals)
+        loss = criterion(generated_actions_qvals, target_actions_qvals)
 
         optimizer.zero_grad()
         loss.backward()
@@ -50,7 +55,7 @@ class Agent:
         return float(loss)
 
         
-    def play_episode(self, optimizer, criterion, scramble, batch_size, gamma, num_steps):
+    def play_episode(self, optimizer, criterion, scramble, batch_size, gamma, epsilon, num_steps, device):
         """The agent attempts to solve the scramble provided in `num_steps` moves.
         Returns:
             list: A list countaining the losses through `num_steps` moves.
@@ -58,16 +63,23 @@ class Agent:
 
         cube = cubesim.Cube2()
         cube.load_scramble(scramble)
-        state = cube.get_embedding(self.model.device)
+        state = cube.get_embedding(device).unsqueeze(0)
 
         history = []
 
+        randoms = torch.rand(num_steps)
         for i in range(num_steps):
-            action = self.select_action(state)
-            cube.moves[action]()
+            if randoms[i] < epsilon:
+                action = torch.randint(12, (1,), device=device)
+                cube.moves[action]()
+            else:
+                action = self.select_action(state).view(1)
+                cube.moves[action]()
 
-            next_state = cube.get_embedding(self.model.device)
-            reward = self.reward_fn(next_state)
+            next_state = cube.get_embedding(device).unsqueeze(0)
+            reward = torch.tensor([self.reward_fn(next_state)], device=device)
+            #if reward > 0:
+            #    cubesim.visualizer.print_cube(cube.state)
 
             self.memory.push(state, action, next_state, reward)
             state = next_state

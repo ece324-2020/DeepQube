@@ -8,6 +8,7 @@ class DQN(nn.Module):
     def __init__(self, in_dim, out_dim, layers_dim, activation=F.relu):
         super(DQN, self).__init__()
 
+        print(in_dim)
         self.activation = activation
         self.head = nn.Linear(in_dim, layers_dim[0])
         self.body = nn.ModuleList([
@@ -18,7 +19,7 @@ class DQN(nn.Module):
     def forward(self, x):
         # TODO: Should we use dropout?
         x = self.activation(self.head(x))
-        for layer in self.layers:
+        for layer in self.body:
             x = self.activation(layer(x))
         return self.tail(x)
 

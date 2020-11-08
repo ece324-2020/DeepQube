@@ -3,7 +3,12 @@ import torch
 import copy
 from numpy import linalg as LA
 
-def get_reward(cube,rewtype):
+import cubesim
+
+final_rew = 1000.0
+neg_rew = -1.0
+
+def get_reward(cube, rewtype):
 	'''
 	Input: cube2 class object, type of reward function
 	Output: Reward as float
@@ -34,3 +39,18 @@ def get_reward(cube,rewtype):
 			return final_rew
 	return False
 
+def cosine(embedding):
+    cube = cubesim.Cube2()
+    current = embedding.squeeze()
+    target = cube.get_embedding(current.device)
+    cos_sim = np.dot(current,target) / (np.linalg.norm(current) * np.linalg.norm(target))
+    return (cos_sim*final_rew - neg_rew).item()
+
+def naive(embedding):
+    cube = cubesim.Cube2()
+    current = embedding.squeeze()
+    target = cube.get_embedding(current.device)
+    if torch.equal(current, target):
+        return final_rew
+    else:
+        return neg_rew

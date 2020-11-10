@@ -51,6 +51,7 @@ def naive(embedding):
     current = embedding.squeeze()
     target = cube.get_embedding(current.device)
     if torch.equal(current, target):
+        print('Solved')
         return final_rew
     else:
         return neg_rew

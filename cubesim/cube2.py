@@ -43,7 +43,9 @@ class Cube2:
         self.history = []
         self.embedding_dim = (24, 6)
         self.moves = [
-            self.front, self.front_p,
+            self.front, self.front_p,self.back,self.back_p,
+            self.left,self.left_p, self.right, self.right_p,
+            self.up, self.up_p, self.down, self.down_p
         ]
 
 

@@ -78,8 +78,10 @@ class Agent:
 
             next_state = cube.get_embedding(device).unsqueeze(0)
             reward = torch.tensor([self.reward_fn(next_state)], device=device)
-            #if reward > 0:
+            if reward > 0:
             #    cubesim.visualizer.print_cube(cube.state)
+                history.append(0.0)
+                break
 
             self.memory.push(state, action, next_state, reward)
             state = next_state

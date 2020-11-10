@@ -13,9 +13,9 @@ if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # TODO: use argparse
     gamma = 0.99
-    epsilon = 0.10
+    epsilon = 0.05
     num_steps = 100
-    batch_size = 32
+    batch_size = 128
     replay_size = 10000
     reward_fn = lambda x: 0 # TODO: Fix the reward_fn
     nn_params = { 'layers_dim': [4096, 2048, 1024], 'activation': F.relu }
@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     agent = Agent(replay_size, network.rewards.naive, device, nn_params)
     model = agent.model
-    optimizer = torch.optim.RMSprop(model.parameters())
+    optimizer = torch.optim.RMSprop(model.parameters(),lr=0.001)
     criterion = torch.nn.SmoothL1Loss()
 
     scrambles = ['F']

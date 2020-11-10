@@ -26,8 +26,9 @@ if __name__ == '__main__':
         scrambles = list(map(lambda s: s.strip(), f.readlines()))
 
     print(f'loaded {len(scrambles)} scrambles')
+    reward = network.rewards.Naive(device=device)
 
-    agent = Agent(replay_size, network.rewards.naive, device, nn_params)
+    agent = Agent(replay_size, reward, device, nn_params)
     model = agent.model
     optimizer = torch.optim.RMSprop(model.parameters(),lr=0.001)
     criterion = torch.nn.SmoothL1Loss()

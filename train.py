@@ -17,6 +17,7 @@ if __name__ == '__main__':
     num_steps = 100
     batch_size = 128
     replay_size = 10000
+    target_update_int = 10
     reward_fn = lambda x: 0 # TODO: Fix the reward_fn
     nn_params = { 'layers_dim': [4096, 2048, 1024], 'activation': F.relu }
 
@@ -29,14 +30,19 @@ if __name__ == '__main__':
     reward = network.rewards.Naive(device=device)
 
     agent = Agent(replay_size, reward, device, nn_params)
-    model = agent.model
-    optimizer = torch.optim.RMSprop(model.parameters(),lr=0.001)
+    target_net = agent.target_net
+    policy_net = agent.policy_net
+    optimizer = torch.optim.RMSprop(policy_net.parameters(),lr=0.001)
     criterion = torch.nn.SmoothL1Loss()
 
-    scrambles = ['F']
+    scrambles = ['F L']
     for i, scramble in enumerate(itertools.cycle(scrambles)):
         losses = agent.play_episode(optimizer, criterion,
                 scramble, batch_size, gamma, epsilon, num_steps, device)
         print(i, np.mean(losses))
-        torch.save(model, f'checkpoints/{i}.pt')
+        torch.save(target_net, f'checkpoints/{i}.pt')
+
+        if i % target_update_int == 0:
+            target_net.load_state_dict(policy_net.state_dict())
+
 

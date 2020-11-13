@@ -11,12 +11,17 @@ class Agent:
         self.reward_fn = reward_fn
 
         cube = cubesim.Cube2()
-        self.model = network.models.DQN(cube.embedding_dim[0] * cube.embedding_dim[1],
+        self.target_net = network.models.DQN(cube.embedding_dim[0] * cube.embedding_dim[1],
                 len(cube.moves), **nn_params).to(device)
+        self.policy_net = network.models.DQN(cube.embedding_dim[0] * cube.embedding_dim[1],
+                len(cube.moves), **nn_params).to(device)
+
+        self.target_net.load_state_dict(self.policy_net.state_dict())
+        self.target_net.eval()
 
     def select_action(self, state):
         with torch.no_grad():
-            qvals = self.model(state)
+            qvals = self.policy_net(state)
         return qvals.argmax()
 
     def optimize_model(self, optimizer, criterion, batch_size, gamma):
@@ -31,19 +36,18 @@ class Agent:
         reward_batch = torch.cat(batch.reward)
         next_batch = torch.cat(batch.next_state)
 
-        self.model.eval()
         # Run the recorded next states through the model. This return the qvalues for
         # each action. We take the maximum qval from each state. We stop tracking
         # gradients since this ends up being manipulated into the target.
         with torch.no_grad():
-            next_state_qvals = self.model(next_batch).max(1)[0]
+            next_state_qvals = self.target_net(next_batch).max(1)[0]
             target_actions_qvals = (next_state_qvals * gamma) + reward_batch
 
-        self.model.train()
+        self.policy_net.train()
         # Run the recorded states through the model. This returns the qvalues for
         # each action. We use `gather` to select the qvalues of the previously chosen
         # action. This corresponds to Q(s_j, a_j).
-        output = self.model(state_batch)
+        output = self.policy_net(state_batch)
         generated_actions_qvals = output.gather(1, action_batch.unsqueeze(1)).squeeze()
 
         loss = criterion(generated_actions_qvals, target_actions_qvals)

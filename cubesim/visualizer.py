@@ -41,3 +41,4 @@ def print_cube(state):
     print_faces(state)
 
     print_face(state, 5)
+    print('\33[37m')

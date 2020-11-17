@@ -14,7 +14,7 @@ if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # TODO: use argparse
     gamma = 0.99
-    epsilon_scheduler = ExplorationRate(1, 0.1, 1000000)
+    epsilon_scheduler = ExplorationRate(1, 0.1, 100)
     num_steps = 100
     batch_size = 128
     replay_size = 10000
@@ -22,7 +22,7 @@ if __name__ == '__main__':
     reward_fn = lambda x: 0 # TODO: Fix the reward_fn
     nn_params = { 'layers_dim': [4096, 2048, 1024], 'activation': F.relu }
 
-    save_int = 1000
+    save_int = 100
     torch.manual_seed(0)
 
     with open('./data/4moves.txt', 'r') as f:

@@ -8,7 +8,6 @@ class DQN(nn.Module):
     def __init__(self, in_dim, out_dim, layers_dim, activation=F.relu):
         super(DQN, self).__init__()
 
-        print(in_dim)
         self.activation = activation
         self.head = nn.Linear(in_dim, layers_dim[0])
         self.body = nn.ModuleList([

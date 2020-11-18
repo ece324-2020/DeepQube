@@ -15,8 +15,8 @@ if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # TODO: use argparse
     gamma = 0.99
-    epsilon_scheduler = ExplorationRate(1, 0.1, 1000)
-    num_episodes = 1000000
+    epsilon_scheduler = ExplorationRate(1, 0.1, 10000)
+    num_episodes = 5000000
     num_steps = 20
     batch_size = 128
     replay_size = 10000
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     reward_fn = lambda x: 0 # TODO: Fix the reward_fn
     nn_params = { 'layers_dim': [4096, 2048, 1024], 'activation': F.relu }
 
-    save_int = 100
+    save_int = 10000
     torch.manual_seed(0)
 
     with open('./data/4moves.txt', 'r') as f:
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.RMSprop(policy_net.parameters(),lr=0.001)
     criterion = torch.nn.SmoothL1Loss()
 
-    scrambles = ['F', 'R', 'U']
+    scrambles = ['F', 'R', 'U', 'L', 'D', 'B']
     for i, scramble in enumerate(tqdm(itertools.islice(
             itertools.cycle(scrambles), num_episodes))):
         epsilon = epsilon_scheduler.get_rate(i)

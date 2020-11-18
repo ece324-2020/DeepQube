@@ -27,7 +27,6 @@ class Naive(object):
     def __call__(self, embedding):
         current = embedding.squeeze()
         if torch.equal(current, self.target):
-            print('Solved')
             return final_rew
         else:
             return neg_rew

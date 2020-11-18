@@ -2,6 +2,7 @@
 
 import itertools
 
+from tqdm import tqdm
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -15,6 +16,7 @@ if __name__ == '__main__':
     # TODO: use argparse
     gamma = 0.99
     epsilon_scheduler = ExplorationRate(1, 0.1, 1000)
+    num_episodes = 1000000
     num_steps = 20
     batch_size = 128
     replay_size = 10000
@@ -38,11 +40,12 @@ if __name__ == '__main__':
     criterion = torch.nn.SmoothL1Loss()
 
     scrambles = ['F', 'R', 'U']
-    for i, scramble in enumerate(itertools.cycle(scrambles)):
+    for i, scramble in enumerate(tqdm(itertools.islice(
+            itertools.cycle(scrambles), num_episodes))):
         epsilon = epsilon_scheduler.get_rate(i)
         losses = agent.play_episode(optimizer, criterion,
                 scramble, batch_size, gamma, epsilon, num_steps, device)
-        print(i, np.mean(losses))
+        print(np.mean(losses))
 
         if i % target_update_int == 0:
             target_net.load_state_dict(policy_net.state_dict())

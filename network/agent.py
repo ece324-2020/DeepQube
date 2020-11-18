@@ -71,7 +71,6 @@ class Agent:
 
         history = []
 
-        reward = 0
         randoms = torch.rand(num_steps)
         for i in range(num_steps):
             if randoms[i] < epsilon:
@@ -82,7 +81,7 @@ class Agent:
                 cube.moves[action]()
 
             next_state = cube.get_embedding(device).unsqueeze(0)
-            reward += self.reward_fn(next_state)
+            reward = self.reward_fn(next_state)
 
             self.memory.push(state, action, next_state, torch.tensor([reward], device=device))
             state = next_state

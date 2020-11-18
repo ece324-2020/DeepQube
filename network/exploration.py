@@ -5,7 +5,7 @@ class ExplorationRate:
         self.eps_steps = eps_steps
 
     def get_rate(self, episode_num):
-        if episode_num > self.eps_end:
+        if episode_num > self.eps_steps:
             return self.eps_end
 
         return (self.eps_end - self.eps_start) / self.eps_steps * episode_num + self.eps_start

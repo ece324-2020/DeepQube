@@ -14,8 +14,8 @@ if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # TODO: use argparse
     gamma = 0.99
-    epsilon_scheduler = ExplorationRate(1, 0.1, 100)
-    num_steps = 100
+    epsilon_scheduler = ExplorationRate(1, 0.1, 1000)
+    num_steps = 20
     batch_size = 128
     replay_size = 10000
     target_update_int = 10

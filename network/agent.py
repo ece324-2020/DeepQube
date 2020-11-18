@@ -71,6 +71,7 @@ class Agent:
 
         history = []
 
+        reward = 0
         randoms = torch.rand(num_steps)
         for i in range(num_steps):
             if randoms[i] < epsilon:
@@ -81,18 +82,16 @@ class Agent:
                 cube.moves[action]()
 
             next_state = cube.get_embedding(device).unsqueeze(0)
-            reward = torch.tensor([self.reward_fn(next_state)], device=device)
-            if reward > 0:
-            #    cubesim.visualizer.print_cube(cube.state)
-                history.append(0.0)
-                break
+            reward += self.reward_fn(next_state)
 
-            self.memory.push(state, action, next_state, reward)
+            self.memory.push(state, action, next_state, torch.tensor([reward], device=device))
             state = next_state
 
             loss = self.optimize_model(optimizer, criterion, batch_size, gamma)
             history.append(loss)
-            # TODO: stop if we solved the cube
+
+            if reward > 0:
+                break
 
         return history
 

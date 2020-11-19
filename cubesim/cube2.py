@@ -2,6 +2,9 @@ import numpy as np
 import torch
 
 
+SOLVED = np.array([np.tile(i, (2, 2)) for i in range(6)])
+
+
 class Cube2:
     """Cube2 is an implementation of a 2x2x2 cube
 
@@ -67,8 +70,11 @@ class Cube2:
         for move in s.split(' '):
             self.moves[self.move_mappping[move]]()
 
+    def is_solved(self):
+        return np.array_equal(self.state, SOLVED)
+
     def reset(self):
-        self.state = np.array([np.tile(i, (2, 2)) for i in range(6)])
+        self.state = np.copy(SOLVED)
 
     def front(self):
         self.__rotate('F', prime=False)

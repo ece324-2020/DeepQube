@@ -70,7 +70,7 @@ if __name__ == '__main__':
             epsilon = epsilon_scheduler.get_rate(episode)
 
             losses = agent.play_episode(optimizer, criterion,
-                    scramble, batch_size, gamma, epsilon, num_steps, device)
+                                        scramble, batch_size, gamma, epsilon, num_steps, device)
 
             if episode % save_int == 0:
                 torch.save(target_net, f'checkpoints/{episode}.pt')
@@ -79,8 +79,8 @@ if __name__ == '__main__':
             if episode % target_update_int == 0:
                 target_net.load_state_dict(policy_net.state_dict())
                 val_acc = validate.validate(target_net,
-                        gen_validation_scrambles(current_depth, validation_len),
-                        current_depth, device)
+                                            gen_validation_scrambles(current_depth, validation_len),
+                                            current_depth, device)
 
                 print(f"{episode}\t{train_loss}\t{val_acc}")
 

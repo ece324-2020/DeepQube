@@ -8,6 +8,7 @@ import torch
 
 import cubesim
 
+
 def _attempt_solve(network, scramble, max_moves, device):
     cube = cubesim.Cube2()
     network.eval()
@@ -26,8 +27,9 @@ def _attempt_solve(network, scramble, max_moves, device):
 
         return move_count
 
+
 def validate(network, scrambles, max_moves, device):
-    solve = lambda scramble: _attempt_solve(network, scramble, max_moves, device)
+    def solve(scramble): return _attempt_solve(network, scramble, max_moves, device)
     solutions = map(solve, scrambles)
 
     solved = 0
@@ -38,6 +40,7 @@ def validate(network, scrambles, max_moves, device):
             solved += 1
 
     return solved / total
+
 
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -52,4 +55,3 @@ if __name__ == '__main__':
     accuracy = validate(network, scrambles, max_moves, device)
 
     print(accuracy)
-    

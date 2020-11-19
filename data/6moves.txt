@@ -248,6 +248,1506 @@ R' U' F F U' R U'
 F U' F U' F U U
 R' U U R' F R R U'
 U U R' F U' R R U'
+R' F' U' F U U R'
+R R U U R R U' F R R
+R' F' R' U U R U
+U U R U R U U R R
+U' R U' R' U U R'
+R' F R R U U R R F
+U U R' U R U' R'
+U R F' U U R' F F
+U U F U' F U' F'
+U U R U' R' U U R
+R' F' U' F F U' R R
+R R F' R U U R U'
+U R U U F' R R F
+R' F' R U R' U'
+R' U U F U R' F
+R U' F R U' R
+R U U R' U U R U'
+R R U' R R U U R' U'
+R' F U' F R R U
+U R F' R' U' F'
+F R U U R U' R R
+U U R' U U F U F
+R U U R' U R' F'
+U U R U' F' R R U U
+U R' F U' R R U U
+R' U' F F R U' R'
+U U F' U R' F R
+R F' U U R' U R
+U R' U U F U U R R
+R' U' F U' R F'
+U U R' F R R U R
+U U R' U U F R R U U
+U' R F U' F U U
+R F' R' U' R' U'
+R F U U F U' F
+U' F' R' U R' F F
+U' R F' U' R R F'
+U' R U' R' U' F
+R' F' R U U R' F
+U U R' U' R F U'
+U R F U R U'
+U R U' F R R U U
+U F U' R U U R'
+U U R' U' F' U' R
+R R F' U U F R U
+U' R' F R F R'
+R' F F R U U R' U
+U R' U' F U U F'
+R R U U R' U U R' F F
+R' F U' F R R U'
+U' R U U F' R U U
+U U R' F' R U R
+U R U' R R U' R
+R' U' F U' F U
+R' F' U' R U R'
+U R' U' R R U U R'
+U U R F' R R U' R
+U U R' F' U R U'
+U' R' U R U' R
+F' R R U' R U R
+U U R' U' R U R'
+R' U F R U U R
+U R' U' F R U U
+R U' R' U U R' U'
+U R' F U' R R U'
+R' U U F F U' R U
+R U' F' U R U'
+F U' R R U U R R F
+R' U F R U R'
+U U R U' R' U U R
+R' F' U U F' U U F
+R' F U' F U' F
+F U' F R R U U R R
+U R' U U R U' F
+R' U U F U' F R R
+R' U' R F U F'
+R' F U' R U' F
+R' U U R' U' F U U
+R R U' F U' R' U U
+U R' F R R U' F'
+R R F' R U R' F'
+U' R' U' F U U F
+R U U F' R R U U F F
+R' U' R U R' F
+R' F U U F' U' R'
+U R U' R U' F
+U' R' F U U R R U'
+R' F' U' R U R
+R' U U F F U U F U'
+R' U U R U' F' R
+U R' U U R U R'
+R U U R' U R F'
+R' U' F F U' F' U'
+U F' U U R' U R'
+R F U R U R'
+U U R' U U F R U U
+R' F F R' U' F R
+U' R U' R R F' R
+U R' U' F U' R
+R U R' F R R U'
+U' F' R' U R' F
+U R' F U U R' F
+U' R F' U' R R F
+U U R' U' F U' F'
+R U' F' U U F R
+U' F R R F' R R F'
+R' F U' F R R U'
+F R U R U' R R
+U' R' U U R' F F R'
+R' F F R R U' F' U'
+R U' R R U U F' R R
+U U R' F R U R
+R R F R U U R U'
+U F U' R U U R'
+U R' U U F U' R'
+R F U' F U F
+U U F' R U' R' F
+U' R' F R R F' U U
+R U' F' R R U U R
+R' F F R U' R' U'
+R' F R' F U' R R
+U U R' F F U U F U'
+U' R' F U' R F'
+U' R' U F R R F'
+U U R F' U' R' U
+U U R U' F U' R
+R' U U R U' R' U U
+U U R U' R R U U F
+R R F U' R U' R
+U U R U' F' U' R'
+R' U' F U R' U U
+U U R' U' R R U U R R
+R F R U' R' F
+R U' R' F U U R'
+U' F U' R' U U R R
+U' R U' F' R' U
+R' F R F R U U
+U R' F F R U R R
+U' R' F R U R
+F U' R U' R U U
+U' R' U U F R R F
+R' U' F R R U' R R
+U R' U' F U U F'
+R' U U F' U F R
+U U R F U U R' U'
+U R F' R R U R
+U' R U' R' F U'
+R' U U R U' R U
+R F R' F U U R R
+R F R R F' U U R R
+R U U R R U' R U U
+R' F' U' R U U R'
+R U' R U U R R U U
+R' U' F U U R F'
+U R' F R R F' R R
+R' U U F U' F U'
+R U' R' U U R' U'
+U' R' U U F' U R
+U R' F R R U' R'
+R U' R R U' F R R
+U U R F' R R F U
+F U' F U U F' U'
+U R F' R' U' R'
+U U R U' F R R F'
+U R R U U F U' F
+U' R' U F U' F F
+U' F F R' U' R U'
+U R' U U F R R U'
+R U' R R U' F R
+R U U R R U' R F
+U' F' U U R U' R'
+U' R F R' U' R R
+U R' F U U F R R
+U' F R U R' U U
+F U U R U R' U'
+F R R U' F' U R'
+R' U F' R' U' F
+R' U' R' F' U' R
+U F' R R U' F' U'
+R F' R R F' U F
+U' R' F U U F' U
+U R' U U R U' R
+U' F F R U U R' U U
+R' F R U U R' F F
+R U U F' U' R' U
+R' U' F' U' R U U
+R U U R R U' F U
+U U R' U U F' R U'
+U' R U' R R U U R
+U U R' F U' F' U'
+R U' F' R' U' R
+U R' U' F' R U U
+U' R' U' F R R U U
+R' U' R' F U' F
+U' R U' F' R' F
+R R F' R R F U' R R
+R' F U R' U R R
+R' U F R R U U R'
+R' U U R U R' U U
+U U F U' R U' F
+R' F' R R F R U
+U' R' F R F U'
+U' R' U' F' R U'
+R' U' F' R R U R'
+U U R' F U U R R U'
+U R U U R' U U R'
+R' F R R U' R' F F
+U F U' R U U R R
+U' R' F' R' U U F
+U U R' F U R U U
+U U R R F U R U U
+R U' R R F F R U
+U U R U' F' R R F
+R R U U F U' F R
+R U' F U' R R U'
+U U R U U R R U U F
+R' U' R' F R R U'
+R' U R U' R' U U
+U R' U' R U' R
+F' U U R R F U' R
+R' U' R' U' F U U
+R' F' U' R R U' R R
+U' R' F R R U' R R
+R' F U' R R F F R
+R U U F U U F U'
+U R U U R R U' R
+R' U F R U U R
+U U R' U' F F R R F'
+U' R U' R' U U R'
+U U R' U F' U U R'
+U U R' F U U F' U U
+F U' R U' R R U'
+U U R' F U U R' F
+R U' R R F F R U'
+U R' U R R F' R R
+U U R' F R R U' R R
+R' F R R U' R U'
+U U R' U U F U' F'
+U R' U' R F U'
+U' R' U U F R' U
+R U U R' U' R' F
+R' F U' R U' R R
+U' R' U' F F R U
+F R F R U R'
+U U R U R' F F U'
+R' U' R R U U R' U U
+U R' U U R F R R
+F' R U U R U' R R
+U' R' F' R R U' R R
+R' U' R R U' R R F F
+R R F' R U U R' U'
+U U R U U R R U' F'
+U' F U' R U R
+R U R U U R R U'
+R' F U U R R U U R'
+R' F R' F F R U
+R' U U R F F U' R
+U' R' F U' R R F
+R' F U' F U F'
+U' R' F' R' F U U
+U U F U U R R U' F'
+U U F U U R U' R'
+R R F' R U' R' F'
+R' U' F' U' F U'
+U R U U R' U' R
+U' R F' R R U U F
+R' U' R' F' R U
+U' R' F R U R
+R' U U R F U' R R
+U R' F' U R R U U
+U R' F' R U' R'
+U U R' U U F R R U'
+R U U R' U U R' F'
+U U R' F U' R R U U
+R' F' U' F' U' R R
+R' U U F' U' R' F
+R' U R' U R U'
+R' U' F F R R F U'
+R U' R R F F U U F'
+U R F' R R U U R
+U F R U' R' F
+R' U' F F U R R U'
+U' F' R R F U' R
+R' U' R' F U' R'
+R' U F U F U U
+R R U U F U' F' R
+U R' U' F F U' R
+R' U U R R U U R' U'
+U R U' F U' F
+U U R' U R U R
+R' U R R F' R R U U
+R' F U' R R F R
+R' U' F F R R F U'
+R' F' U' F R U
+R' U' F' U F' U'
+U U R F U' R U U
+R' U' R U U F' U U
+U R U U F' U' R R
+R U' R R U' F R R
+U R U U F R' U'
+R' F R R U U R R U
+R U' F' U R U'
+U U R U' R' U' R'
+U U R R U' R R F' R R
+R' U' R R U' F R
+R U' R R F F U' F
+R' U R U' R U U
+U U R' U R' U F'
+U R' F' U' R U'
+R' U' R U R' F'
+R F U' F F R R U U
+F U' F R U' R'
+U' R' U U F' U U R
+F R U' R R U U F
+U' R' U' R R F' U U
+R R U' F U' F R'
+U' R U R' F U'
+F' U U R U' R' F'
+U' R U U R U' F'
+U R U U R R F U'
+R' U' F F U' R' U U
+R' U U F' R R F' U
+R' U' F' R R U U R'
+R' U U R U' R R U'
+R' F U U R F' U U
+U R U' R R F R R
+R F' U U F' U U R'
+U U R' U U R U U R
+R' U R' F' U' R R
+R' U R U' R U U
+R' F R R U' R' U'
+U U R' U' R R U' R R
+U R U U R' U U R R
+U R U' R R F' R R
+U' R R U' R U U R'
+U U R R U R U U R'
+U' R F U U F' U U
+U' R' F U U F U'
+R U' F U R U U
+R' U' F U F R
+R' U' R U' R' U'
+U U R' U' R R F' R'
+R U' R' F U' R
+U' R U R' F F U
+U U R F U' R R U U
+R F' R' U R' U'
+R R U' R R U' F' U U
+U' F U' F R R F
+R U' R R U F' U U
+R' U' F F U' R R U'
+R R F' R R F R U'
+F' U U F U' R U'
+R U U R' U' R U'
+R' U U F R R U' F'
+U U R U' R' U U R'
+U R U' R' U F
+R' U U F U U R U
+R' U U F U' R U'
+U U R F' U U R R F'
+U' R F' R U' R
+U U R' U' R R U' R R
+R' U' F' U' R' U
+F' R U U R' U U R R
+U R' F R R F' U'
+U' R R F' R U U R
+R U' R R U' R R F'
+R' U' F' R R F' R'
+R' U' F F U' F' U
+U' R U U R' F R
+U U R U U R R U U F
+R' U F R U R'
+U U R' F R R U U F'
+U R' F R F F U U
+U R R F' U' F R R
+U' R' U' R R F' U U
+U R' U' F U U R
+U' R U' F' U' F'
+R R U' R U U R U'
+U R' U U R U' R'
+R U' F R U' R'
+R U' R' U R' U
+R R U U F R U R'
+R' U U F' R R U' R R
+U R' U R F' U'
+U U R' U U F U F F
+U R' F U' F' R
+R' U' R U' F U'
+R' U U F U' F R
+U' F' R R F' R' U U
+U' F U' R' U' F
+R' F U' F F R U'
+U R U U R R U' R R
+U' R U' R R U' R'
+U R' U R U U R'
+R' U' F F R' F U'
+U' R U R' F' R
+R' F U' F U' R R
+U U R' F' U U R' F
+U U R' U' R R U' R'
+R F' U' F' R R U'
+U U R' U' R U' R R
+U' R' U' F R' F F
+R' U' R R F U' F
+U U R R U R' U U F
+U' R U R' U U F F
+U U R' F F U U R U'
+R U' F' R R U R
+R U' R' U U R' U
+R F U' F U R
+U' R' U U F F U U R
+R' F U' R R U U F'
+U' R U' R' U F'
+U R U U R R U' F
+R' F R R U U F' U'
+U F U' F U U R R
+R U' R R U R U U
+U' R' F U' F' U'
+R U U R' U' R' U U
+R F' R R U U R' U'
+U R' U' R U U R'
+U' R' F U' R U
+R' U' R F' R R U U
+U' R F U' R' F
+U U F U' R R U' R'
+R U U R' F' U' F
+U' R' U' R R F U
+R R U' F R U U R'
+R' F U F' R R U'
+F U' R U U R' U U
+R U' R R F' U R R
+U U R F' U' R R U'
+R U U F' R' U U R
+U U R U U R F' R'
+R U U R U' R R U U
+U U R U' F R U
+U' R U U R' U' F
+U U R' F U' F F U'
+U' F U R U U R'
+U' R R F U' R' F
+U R' F' R U' R
+U' R' U U R R U' R'
+U R U U R R F F U'
+U U R F' U U R' U'
+U U R U U R R U' F F
+U' R U U R F' R'
+R' F U' R R U U F
+R' F U' R U R
+U F R U U R U U
+R' F R U' R U U
+U R R U' R' U' R'
+U' R U' F' R R U U
+U U R' F U U F R'
+R' U' F U' R R F'
+R U' R R U U R' F
+R' U U F U' F U
+U R' F F U U F' U'
+U R' U' R' U U F
+R' F' U F U U F
+U U R U' F' R' U U
+R' F U U R U F
+U F' U' R U' R
+R' U' F' U' R U'
+R U' F' U U F' R R
+U' R' U U F' U U R
+U U R' F U' R U
+R' F U' F U' F
+U R F U U F' R
+R' F F U' F U' R R
+R' U U F R' F U U
+U F' U U R' U U R
+U U R' F U' R R U'
+R R U' F U' R U'
+R U U R R F R' U
+U' R' U U F R R U'
+R' U U R U' F U U
+R F F U U F U U F
+U' R' F' R U' R'
+U R' F' U' F' U U
+R' U R' F R R F'
+F' R' F R R F' R R
+R F' U' R' U U R'
+R' F U' F U' R R
+R' U U F U U F U U
+U U R R U' R R U U F
+R' U' R R U R' F'
+U R U R' U' R
+R R U' R R U U F R R
+U U R' U U F' R U U
+R F' R R U F' U'
+U' R R U U F F U U F
+F F U' F R R U' R'
+U' R' U U R R F' R'
+U' F R R U' R' U
+U U R R U' R U U R'
+U R' U F U' F
+R' F U U R R F U'
+U' R U U R R F U U
+R R F R R U' R' U
+R' U' F U U R U U
+R F U' R U R'
+R U U R U' R R U
+R' F' U U F U R
+U U F U U F' R U'
+U' R U R F' R R
+R' F R U' R' U'
+F R U R' F R
+F' R R F R U R
+R F R U U R F
+R' U' R F R U U
+U' R' U F' U' F
+R' U F U' F U'
+R' U U F U U F U U
+U U R' F' U U F U'
+R R F R R U U F' R'
+R' U' R U U F' U'
+R' U' R R F R U
+U U R F F U U F R
+R U' R' U U R' U U
+U R' U' F R U'
+U' R U U R' U F'
+U' R' U U F U' F'
+R' U U F U U F' R
+R' U U F R U U R
+U U R' U U R U U R'
+R' F F U U F' R R U'
+R' U' R U R' U'
+R' U' F U' R' F
+R U U R R F F U' R
+U' R' F R' U F
+R F' R R F R' U'
+R' U F U' F U'
+R U R' F' U' R R
+U U R' F U' F U U
+U' R' U R R U' F'
+U R' F U' F U'
+U R F' U' R R U'
+U R' U' F' R U
+R' U' R R U U R' U U
+R U U F' U' R R U U
+R R U U F R R U' R R
+U R' F' U R U U
+U' R' F R' U U R
+U' F R R F' R R U U
+U F R U U R' U'
+R F' U' R' U R
+U U R U' R U U R'
+R' U F' U' R U U
+U U R' F' R R U' R R
+R U U R' U U R' U
+U' R' F R R U U F'
+U' R' F' R U R'
+R' U U R U U R' U
+U R' U' F' R U
+R' U U F U U F U'
+R' F R U R' U'
+R U' F' R R U' F
+R' U' F R U' R'
+U U R R U' F R U'
+U' R' U U F R R U'
+R' U F' U' F R
+U U R' F U U F U'
+U U R U' R R F R
+U R' F U' R U'
+U U R U U F' U' R R
+R' U' F R' F' U
+R F U U R U F
+U' F' U U R R F' R'
+R' U U R R U U R U U
+F R U' R' U' R R
+F' R U' R' U' R
+F' U' R U' R' F
+U U R U U R R U' F
+R' F U' R U U R'
+U R F R U' R
+R U R U' F' U'
+U U R' U U R' U U F'
+R' U' R U' R F'
+R U' R R U' F U U
+R F' R' U R' F
+U U R' U' F R U U
+U R U' F' R' U
+U' R' F' R R U' F
+R' U F U R U'
+U' R' F F R R F' R R
+R U' F' U' F' R'
+R' F R U U R' U
+U' R F R' U U R
+U U R' U' R F' R R
+R U' R R F' U' R'
+R F U' R U R'
+R R U U F' U U R U U
+U' R' U R' F U U
+U R' U U R R F' R R
+R F' R R U' F R
+U' R' U U F U U F
+F R U U R U' F
+R' F U' R R U' R'
+F U' F R R U U R R
+R U' F' U' R' U
+U R' U' R R U U R R
+R' U' F U U F U U
+U R R U' R R F R
+F U' F R R U' R
+U U R U U F' U R
+U' R U R U U R R
+R U' R R U' R U'
+R U R U U R' U U
+U' R U U R' U F
+R' U' R R U U F R'
+U U R R U' R U U R'
+F R R U' R' U R
+U' R' F U R U U
+R U U F' R' U U R R
+R U' R R U U F U'
+U R U' R' U U R
+R U U R' U U R' F
+R' U' R R F' U' F'
+U R F' U' R' U
+F F U' F' R U' R'
+R U R F' U' R'
+U U R' F' R U' R'
+R U' R R U R R U'
+F R U R' U U R
+F U' R F R U
+U U R' U' F' U' F
+U R U' R R U R'
+R' U' F R' U U F
+R' U U F U U F U'
+U' R' U' R U R'
+U' R' U U F U F
+U U R' U F U' R
+U R' F' U U R F'
+R U R' F U U F'
+R U' R' U' F F R
+U U R' F F R U' R
+R' F U U R R F' R'
+R' U F U' R R U U
+U' R' F U U F U'
+R' U U F F R' U' F
+U' R' U' F' U' R
+U' R U U R R F' R'
+U R' F U' R U U
+R' F' R U' R' U'
+R' U' R U R' F
+U' R R U U R U R
+U' R U' F U U R
+U F U U F R U U
+R' F R' U U F U'
+R F' R' U R U'
+U F' R F R U'
+U' R' F U U R R U'
+U R F F R U' R'
+R F R U' R' U'
+U' R' F R F' U U
+R' F F R U' R' F
+R' U' F U R' U'
+U U R' U R F R
+R' U' R R U R' F
+U R U R U' R R
+U' R U' R R F' R R
+U R' U U F U U R'
+U' R' U U F R U
+F U' R R U U R' U U
+R' U R' U F' U'
+R' U' R U U R U'
+U' F U' F U U F'
+U R F' U' F' R R
+U R' U F R R U U
+R' F U U R U' R
+U R U' R R U U F
+R F' R R F' U' F
+U R U' R' U U F
+R' U R R F' U' R R
+R' U U R U' R' U
+R' F U U R U R R
+U R' F U U F U'
+F U' F F U U R U'
+U' R F' U U R R F'
+U R' U' F U R
+U F' R U R' U U
+R U R' U' F U'
+U' R' U' R U' R'
+R' F' U U R R U' R R
+U R' F R U R'
+R' U' F' R R U' R'
+U R' F R U' R'
+U R U' R R U' F
+R' F F U U F R R U'
+U U R' F U' F R'
+U U R U U R R U U R R
+R U U F' R R U' F'
+R' F U R R U' F'
+R' U U R R F' U U F'
+U U F R R F' R R U U
+F' R' U U R U U R
+R' F U' R R U' R'
+R' U' F' U' F F R
+U' R' U U R R F' R'
+F R U' R F' R R
+R U U R R U' F F U'
+R F U' R U U R
+R' F U' R U' R R
+R R F R R U' R R U'
+R R U' R R F U' R'
+U R F' U' R R F F
+U' F U' F F U' F
+U' R F' R' U' R
+U R' U U R U' F
+U U R F' R R F' R
+R' F' R U U F' R R
+R' F U' F' U R
+U' F' U' R' U' R'
+R' F U U R U R
+U' R' F U' F' U U
+R' U U F U' R F
+R F' R R U F F U'
+R U' R R U R U U
+R U' R F' U U R'
+U U F R' U U R U U
+U' F U U R' U' F'
+R' U U F' R F' U'
+U U R' F R U' F'
+U' R' F U' R F F
+R' U' R R U U R' F
+U R' U R' U' R R
+R' U U F U' R U
+U' R' U' R R U' F'
+U' R R U' R R F R
+R U U R R F' U' R
+U R U' R' U' R'
+R' U U R U U R' F
+U U F U U R R F' U'
+R' U U R F' R' U
+U R' U U F U U F F
+U R' U U F' U R
+R' U U F U' R' F
+U U R' U' R' U F
+U' R' F' U U F U U
+U R R U' F F U' F
+U' R' U' F R R U'
+U U R' F' U U F R R
+R' F R U' R R U'
+U R U U F' R R F
+R' U U R R F' U' R'
+R' F F U F' U U R
+U R U' R R F' R'
+R' U F R U U R
+U' R F' R' U R
+R' U' R R U U R F'
+U R U U R' U R'
+R' U R' U' F F U U
+R' U U F U U F U
+R' F R' U' F U'
+U U R R U F U U F'
+R' U' F' R R U U R'
+R' F U' R U U F'
+R U U R' U R U U
+U R U' F' U' R R
+R U U R R U U F' R R
+R' U R R F' U' R R
+U' R' F R U F'
+R' U' F' R U R
+U U R U' R' U U R'
+R U U R R U U F U'
+F' R U R' F' U'
+R' F R' F U U R
+U R' F F U U F U'
+U R' U R U' R
+F U' R U U R' U'
+F' R U R U U R'
+R U U F F U' F U U
+U' R' U' F U' R'
+R U U R R U U F' R
+U U R' U' F R R U'
+R' U U R U R' F
+U' R' U U F' U' F
+R F' R' U R F'
+U U R' F' U U R' F
+U R R F' R' U' R
+U R' F' U' F' U'
+R' U U F R F R R
+R R U U R U' R' F
+R R U U F R U U R'
+U U R U R' U F'
+U' R' F U' R R F'
+U U R U' R' F' R R
+R' U' R R F U U F
+U' R' U' R U' R R
+U R' F F R R U' R R
+R' F U U F U' R R
+F U R R U' R R F'
+R U' R R F U U F
+U U R' U' F R U U
+U R U U R R F U U
+U' R F' R R F U'
+R' U' F' R' U' R
+R' U U R' F U' F F
+R' U U F F U' F U'
+U' R' F U F U U
+U' R U U R R F' U U
+R U' R R F R U
+U R' U R U R'
+U U R' F R' U F'
+R U U F' U' R' U
+U R' F R U' R R
+U U R' U' F F R U U
+F U U F U' F U U
+R' U U F F R U U R
+R U' F R U R'
+R' U' R U R' U U
+U U R' U' R F' R
+U R' U R' F U
+U F R' F R R U'
+R' F R' F R U U
+U' R' U U F U' R'
+R U' R' U' R U'
+R' U' F R U' R
+R' U F R' U U R'
+R U' R U' R R F'
+U R U' R' U U R'
+F R' U' F R U U
+U U R' F U U R U U
+R' U U R F' U U R R
+U' R' F F U U F' U U
+R R U U F' U' F' R R
+U F' U' F' U U R R
+U U R' F R' U' R R
+U R U' R R F R'
+U R F U' R U U
+U R' U' F U' R R
+R' U R F R R U'
+R U' R R F' U' R
+U U R U' R' U R'
+R' F U' F U U R
+F' U U F R U' R
+R R U' R R U' F U'
+R' U' R R F' R' U
+R' U' F R R U' R'
+U' R' U' F U' F F
+U' R U' R' U R
+R' F' U R' U U R R
+R F' R' U U R U U
+U' R U' R R F' U U
+R' F U U R R F R
+U U R' U F' U U R
+R' U' F' R U U R'
+U R' U U R' U' R
+U R U' F' U' R R
+U R' F U R R F
+F U U F R U U R'
+F U U F U' F R
+U R' F F R U U R
+U U R' U' F F U' R
+R U' R' F R' F
+R U U R R U' F F R
+R' F F U' F U' R
+U R' U' R R F' R'
+R U' R' U U F R'
+U' R R F R U U R'
+R' U U R U U R U'
+R R U' F' U U R' U U
+U R U' R' U U R'
+R' U' F U R U
+U U F U' F R' U U
+R' U' F U' R U U
+U R U' F U' F
+F' U' R R U U F R R
+U R F' U U R R F'
+U R R U' R U R'
+R' F' U' R R U' R'
+U U R' U F R R U'
+U R U' R R F U'
+U U R F' U' F R
+R' F R' U U F R R
+R' U U F U F' R
+U' R U U R R F' U'
+R F' R' U U F R
+U U R' U' F R' F'
+U U R' U U R U R'
+R' F R U U R F
+U' R U' F' U U R R
+R' U' F R U U R'
+R R U U R U R' F
+U' R U U R R F R
+U' R' F U U F' R
+R' U U R' F' U' R
+U U R' F' U R U'
+R' F U U R U U R'
+F U' F R R U' F
+R F' R' U U R' U U
+U' F' U' R R U U R R
+U R U' F' R' U'
+U' R' U' R U R R
+R' U F U' F U'
+U R R F' U U R R U'
+R' F R R F R U'
+F U U F R R U' F'
+U' R' U U R U R'
+R' U F R R U' R
+U' R' F U U F' U U
+U U R F' R R U' F
+R' F R U R' F
+R U' R R U' R R U U
+U R' U U F R U U
+U' R' F R U U R
+R' F' U U F R U'
+U' R U' R R U' R
+R' U' R R U U R' F
+R R U U R U U R' F
+R U U R R F R' U'
+R U' F' R' U' R R
+R U' R' U U R' F'
+R' U' F U U R U
+U' R' F' U R R U'
+R' U U R R F' U' R R
+R U' F U' R U'
+F' R U R' F R R
+U U R' F U' R' F
+U U R U' R' U' F
+U' R' F U' F U'
+R' F R U' R' U U
+U F R U R' U U
+F R R F' R' U' R'
+U' R' U U R' F U
+U R' U' R R F U
+R' U' F U' F R R
+R U' R' F F U' R
+U R U' R R F R R
+U' F F R R U' R R U U
+U U R F U U F R'
+U R U' F' R R U U
+R F' R R F U U F
+R' U F R U R'
+U R' U U F R R U U
+U' R' F R U' R'
+R' U U R F' U' R R
+R' U R R U U R R U U
+U U R U' R R F R R
+U U R' F' R' F U'
+U R R F R U' R
+U R' U R U' F'
+U' R' U' F U' F'
+R' U' F R R U' R R
+U' R F' R R U F F
+U R U' R R F F U'
+U R' U' R R F' R'
+R' U U R' U U F U'
+R' U R R U U R' U'
+R' U U F U F R
+U R' F U' F' U'
+U' R' U U R' U' R R
+U U R U' R R F U U
+U U F' U U F R R U U
+R' F R U' R R F
+F U U F' U' R R U'
+R' F R' U R R U'
+R R U U F U U F R
+U' F' U' R U R'
+R' F F U U R U' R'
+U U R' F R F R R
+U R' U' F' R U'
+U R' U' F F R U U
+U U R' U' F R U
+F U U R U' R' F'
+R U R U' R R U'
+U U R F' R' U U R'
+F U U F F R U' R'
+U R U U R' U R'
+U' R' U U R' F R
+R' U U R U U R U'
+U R U' F' U' R R
+U U R' U' R R U U R'
+R' F U R' F R
+R' U R' U U R U U
+U' R' U' R R F' U'
+U' R' U U R U R
+R R U' R' F' R R U U
+R U U R R F U' R
+R U' R R U U F' R R
+U R' U U R' F U U
+R' F U U R R F' U'
+U U R' F U F' R
+R R U U R R U' F' R R
+R' U' R' U R U U
+U' R U' R R U U F F
+R U R' F' R U'
+U U R' U' F' R U
+R' F U' F F R U'
+U U R' U' R R U' R R
+U U R' F U R U
+R' U R U' R R U U
+U' R' U' R R F' R R
+R' F U U R U F'
+U' F U' F R R U'
+U R U U R R U U F F
+U U R' U U F F U U R
+R' U' F U' R' U
+R U' F' U' F' U'
+U U R' U' R U U R'
+R' U U R R F F R R U'
+U' R' F U U F U U
+U U R U U R' U U R'
+U' F' R R U U F U
+U' R' U U F R R U'
+R R U' R R U' F' R R
+U' R U' R R F U'
+U' R' F U U F' U'
+R' F U U F F R' F'
+R R U U R U U R' F'
+U R' U R U U R'
+R U' R R F U U F'
+R' U' R R U' R R F
+U' R' U' R R F' U'
+R' U U F U' R R U U
+R' U' F R' F R R
+U R' U U R' U U R
+R' F R F R U
+U R U U R F' R R
+U R R U' R U' R'
+U R' F U' R U U
+R' U' F R U U R
+U' R R U' R U U R'
+R U' F' R' U U R R
+R' U U F U R U
+R' U' R' F U' R'
+F U' R R U U F' R'
+R U' R R F' R R F'
+R' U U F' R' F' R
+R' U U F' R U U R'
+R F' R R U' R R U'
+U F U' F U U F
+U R U U R R U' F
+U R' F U' F U U
+R R U' R R F' R R F'
+R' F' R' U U F U
+U R U U F' U' R R
+R F' R' U' R U'
+U U R F U U F U'
+R' U U F' U' R U U
+U' R U U R F U'
+R' U' R' F U U R R
+U R U' R R F U U
+U F' R U' R' U'
+R' F U U F U' F
+U R R F R U U R
+U R U U R R U U F
+U' R U U R' U R'
+F R U U R' F' U'
+R' U U R' U' R R U U
+R' U U F U' F F U'
+R' U' F U' F R
+U' R' U' F' U U F'
+U' R' F' U U F R
+U R' U U F U' R
+U R' F U R U'
+U' R' F R R U' R R
+R R F U' F U' R
+U R' U' R U F'
+U' R' U F R U U
+R' U U R R U' R' U'
+U' R' U U F U U F'
+U' R' F R R U' R R
+R F' U' R' U F'
+R U U R' U U R' U'
+U' R' U' F' R U U
+R' U' R U F U
+R' F F R' F R R F'
+U U F' R' U U R' U'
+R' F R R F U U R
+F' R U' R U' F
+R U' F' R' U' R'
+R F U' R' F U'
+U U R' F U' F U'
+R' U U F U R U'
+R U U R R U U R U
+R' F F U F' U U R R
+U U R U' R' U U R
+R' F F R R U' R R U'
+R F' U' R R U' F'
+U U R' U' R' F U'
+R' U' F F U U F U'
+U U R' U R U' R'
+U R' F' U R U'
+R R U U F R R U' R'
+U' R U U R R F U U
+U' R U U R' U' F
+R U' R R U' F R
+R F U' R R U U R'
+R U U F U R U U
+U' R' F U U R U
+U U R U' R F' R
+U U R' U U F F R U'
+F F U U R R U U R' U U
+U R' F' R U F
+U U R' F R R U' R'
+U' R' F U F U'
+U' R F' U U R R F
+U' R' U' F' U U R R
+R' U U R R U' R R F
+U' R' U' F F U U R
+U U R' U U F U U F'
+R U U R R F U' R'
+R F' U U R R F R
+R F' U' R R F R
+R U U R R F' U U R
+R' U R U' R R F F
+R' F' U U F' U' F
+R' F U U R U' R'
+U U R U R' F' U'
+U R F' R R F U U
+U' F R U R' U'
+U R U R F' U'
+F U' F R R F R
+U' R R U' R R U' F
+R F U' F' U' R R
+U U R F U U F U
+R' U' R U' R F'
+R U U R R U' R R U U
+R' U U R U R' F F
+R' F R F R U
+R R F U R U U R'
+U' R U U F' U' R R
+U R' F' U U F U U
+U' R R F' U' R R U'
+R' U U F R' U' R
+R U U R U' R R U
+R U' R U' R R F
+F U' F U U F' R R
+R' U F' U U F U'
+U' R' F R R U R
+F R U U F U' R
+U' R' F' R F' U'
+U' R U U R' U R'
+R F' U U R' U' R R
+U R' U R' F R R
+U' R U' F' R' U'
+R' F U F R R U'
+R U R' F U R R
+R' F R R U' F' R'
+R' F U U F R' U'
+F U' R U' R' F
+R' U' F' U U F R
+U U F' R R F' U' F
+R' F R U' F' U'
+U R U U R R U F
+R' U' R U F R
+U U R' F' U U R R U U
+U' R' U U R U' F
+R' F' R U' R' U'
+R' U' R F' R U'
+U U R U U R' U U R'
+R' F' R U' R' U U
+U R U U R' U R'
+R' F' U' R R U' R R
+U U R' U' F R' U
+U' R' U F' U U F
+R' U' F R' U' R'
+U F R' F U U F
+R' F' U U F R' F
+U' R' F' R U R'
+U' R' F R' U' R R
+R' U' R R U U R R U'
+R F U U F' U U F
+R' U U R U U R' F'
+U U F U U F R R U U
+U R' U U R U R'
+R R F U' R R F U'
+R' U' R R U R' F'
+U' R' F' U U F' R R
+R U U R' U' R' U U
+U U R' F' U U R F
+F R U U R U U R R
+R' F' R R F' R R F
+U' R' F U U F U'
+R U U F U' F U U
+U R R U' F U U R R
+U R' U' R U R'
+R U U F' R R F U'
+U U R' U U R R U' R'
+R' U' F R U U R'
+U R' F R' F' R
+R F' R R F' R U'
+R' F R R U' R' U
+R' U U F U' F' U'
+F R U R U U F'
+R U' R R F R U'
+U U R' F F R R U' R R
+U R' U U R U R'
+R' U U F' R U U R
+U U R' U' F U' F
+U' F U U R' F R
+R' U F U' R R U'
+F U U F' U R' F
+U R' U U F U U R
+U F U' R R F U'
+U' R' U U R R F' R'
+U R' F U U R U'
+U' R' U' F U' F
+R' U F U U R' F
+F U R U R' F
+U' R' U R U U R'
+R' U' F' R U' R
+R U U R R F R U
+R' F U F R R U U
+R R F U U F U' F
+R R U U R U R U U
+F R U R' U' F
+U U R' F U' R U'
+R R U R U' R R F
+R' U' R U' R F'
+U F' R U U R' F
+R' U' R U R' U'
+U R' F' U U R U
+F' R R U' F R U U
+U R' F' R U U R
+R F' U U R' U U R R
+R U U F' U' R' U U
+U' R' F R U' R
+F' U U R U R U U
+R' U' R' U U R U
+U U R' F' R U' R
+U' R U U R R F U'
+R' U' R U' R R U U
+R R U' R R U U R R F
+F R R U U R' U R'
+U U R' F' U U F' U
+R' U' F U' F U U
+R' U U R U' R' F
+U' R U U R' U U R
+U' R' F' R R U R
+U R' F U' F F U U
+R R F R U' R U U
+U U R F F R U R'
+U' R U' R' F U'
+R' U' F R F' U U
+U U R' F' U' F' U'
+F U' F U U R R U'
+U U R U U F R U
+U' R U' F' R R F'
+R R U' R F' U' R'
+R' F' U U F R R U'
+U R' F R U' R R
+R U' R R U F U U
+U U R' U' F U U R
+R U' F' R R F' U U
+R' F F R U R U
+U U R U' R' U R'
+U U F U' F U F
+U' R' F U' F U
+U U F U' F U' R
+R' F' R R U' R' F'
+U R' F U' F F R R
+R U' R R U' F' U U
+R' F U F U' R
+U R' U' F U' R R
+U' R R F U' R R U U
+R U' R' F U U R R
+U U R F' U U F' R R
+R F' U' R R F R
+U' R U' R R F R'
+R U U R' U U R' F
+F R U U R' F' U'
+F U' F U U F R'
+U U R' F' R R U' R'
+R' F R U R' U U
+U' R U U R' U U R
+R U' F' R R F U
+U' F' U U R R U' R R
+R U U F' R' U' F
+R U' F' R R U U F
+R U' R' U' R F'
+R' U U R R F U' F'
+R' F' R U' R U U
+U' R' U' F U' R'
+U U R' U F' U R
+R' U' R U' R' F'
+F' U U R U R U'
+U R' F R U U R R
+U' R F U' F' U'
+F' R R U' R' U U R'
+U U R' F' U' R F
+U' R U' R R F' R
+R U' F' R' U U R'
+U R U U R' F R
+U' R F' R R F R
+R' U U F R' F U'
+R' U' F' U R' F
+R U' R' U' R R F
+R R U' R R U' F' R
+R' F R R F U' F F
+U U R' U U R R F' U U
+U U R U' R' U' F
+F R R U U R' U U R'
+R' F' R R U U F U'
+R' U U F' U' F R R
+U R' U' R F U'
+R U R' U F U'
+F' U' F' R R F R R
+U F R R F' R' U U
+U' R' F' U U F U'
+R' F U U F U' F
+R R U' R R U' R R F
+R F' U U F' U' F
+R' U U R U' F U U
+U R' F F U' F U U
+R' U U F U U F U U
+R F' R' U R F'
+R' F U U F U' R R
+U R' U' F' U' R R
+U' R' U U F F U' R
+U R' U' F R U'
+R F' U' R R F' U
+U U R' F R U U R'
+R U U F U U F R
+U' R' U U R U' R'
+R U' R' U' R' F
+R' U R U U R' U'
+R' F R' F R R U U
+R U' R R F U' R R
+U R' F U U R U
+U R' U U F' U R R
+U' R' U U R R U U R'
+U' R' U R R U' F
+U R' F U U F U U
+U U R' U' R F' R
+R' U R' U R' U'
+U' R R F U U R U
+U U R' U U R U R'
+R U U R R U U F' R
+U U R' F R F' R R
+R R U' R' U' R U'
+U' R R U' R R U U R R
+R F R U' R U U
+R U' R R U' F' R
+R U U R U U R' U
+R U' R' U U R' F'
+R R F R R U' R U'
+U R' U' F' U U F
+R F' R R F' U' F
+R' U F U' F U'
+R' U' F R' U R'
+R' F U' R U U R
+U' R' U' F U' F
+R' U' R U U R R U U
+U R' U R F U'
+R F' U' F' R' U'
+U U R F U U F R
+R' U U F U' R U
+U' R F' R' U U R'
+U R' F' R U' R
+U U F R R F R U U
+F' R R F' R U R'
+R' U R R U' R R F
+U' R' U' R U' R R
+U R F' R' U F F
+R F F U' F R U'
+R R U' R R U U R' U U
+R' U U R R U' R R U U
+F R U U R F' U'
+R' F R R U U R' U
+R U' R U U F U U
+R' U U F U' F U
+R' U R R F' U' R'
+U' R' U' F R' U
+U R R U' F R U
+U R' F R F R
+R' U F U' F U'
+R' F U' R R U' R'
+R' U U F' R U R'
+U R' U F' U' F
+U F' U' R R U' R'
+U U R' U U F U U F
+U' R' U U F' R U U
+U R' F F U' F' U U
+U' R' U R R F' R R
+R' F R U R F'
+U R' U U R U' F'
+R R U U R' U R U U
+U R' U R R U' R'
+U U R U' R' U' F
+U' R' U U F' U R'
+R U' R' U' R R U U
+F' R U' R U' R R
+U U R' F U' F R R
+U U R' F U U F R R
+U R' F U' F' R R
+R R F' R R U' R R U'
+U' R' F' U' F F R'
+R R U' R R F' R' U'
+R' U' R' U' R U
+R' F R U R U'
+U' R U' R' U U R'
+R' U U F R R U U F'
+U U R U U F' U R'
+U R F' U' R' U'
+R' U U R U R' F
+R U' F' U' R R U'
+U R' U U F R U'
+F' R U U R' F U
+R U' R' U U R U'
+U R' U' R U' R'
+R' U' R R U' R R U U
+U R' F F R' F R
+U U R U U R U' R'
+U R' U U F U U F
+R U U R R F R R U'
+R U U R R F' U U F
+U U F R R U' F' R R
+U U F U U F U' F'
+U U F U' R R U U R
+R' U U F F U U F U'
+F' R R F' U U R' U U
+R' F F R' U U F U'
+U' R' U U F F U R R
+U R' F R U' F'
+U' R' F U' R U
+U R U' R' F' R R
+U U F R U R' U
+R U' F' U' F' U'
+R' U U R R U' R R U'
+R' F' U' R R U U R'
+F' R' U U R' U U R
+U U R' U R R U' R R
+R' U U F U R U
+U' R U' F F R U'
+U U R' F U U R U'
+R U' F' U' R R F
+U' R' F R U R
+U' R U' F' U U R R
+R' U F R R U' R'
+R' U U R R U' F' R R
+U' R' F R U U R'
+R' F U U R U' F
+U R' F U U R' F
+U R F U' F F U'
+U' R R F' U' R R F
+R' U R U U R' F
+R' F R' U' R' F
+U U F U' F R' F
+U R U' R R U' R
+R U' F' U' R R F'
+R U' R' U R R F
+U R' U U F U U R
+F R R U U R' U' R'
+R' U U F F U' F U U
+U' R U U R' U R'
+R' F R R U' R F'
+R' U' R U' R' F'
+U' R' U U F R U'
+U U R U U F' U' R'
+U' R' F' R U U R'
+U' R U' R R U U F
+R' F F R U U R R F'
+R' F' U' R R U' R
+U U R' F U' R U'
+R F' U R' U' F
+R' U' F R R U U R R
+U' R U' F' U U R R
+F U U R U R' F
+R' U' R' F R U U
+U U R' U' F' R R U
+R F' U' R' U' R'
+R' U' R U R R F'
+U U R' F U' R U
+R' F' R' F R R U'
+U U R' F' U U R R F'
+R U R' U' R U
+U' R R F' U' R U
+R F' U' R R U U F
+U' R F' U' F' R'
+R' U U R F U R
+R F' R F' U U R R
+U U R' F' R U' R'
+U R' F U' F R'
+R' U U R R U' R' F'
+R U U R R U U R' F'
+U' R' F U' F' U'
+U U R' F' U' F R R
+U R U' F' U R'
+R U U R R U' R R U'
+R' F' R' F U' F
+R' U' F U U R F F
+R' F U R' U' R R
+R' F R U R R U'
+U U F' R' U R' U U
+U U F R U U R' U U
+U R' U U R R F' R'
+R' F U U F' R U'
+R' U R U' R' U'
+R' F U' R U U R'
+R' U' R U U R' U'
+U U R F' R' U' R
+U' F F R U U R' U'
+U U R U' R' F R
+U U R' F' U' F' R R
+U' R U U R' F U U
+U R' F U' R U U
+U U R U U F' U' R'
+R U U F' R' U' R
+R' F R U U R R F'
 U R' F U U R U
 U R' U F U R
 R' U' R U F R R
@@ -373,6 +1873,756 @@ U R U' R R U R'
 R' F' U F R R U U
 R' F' R R U R' U U
 F U U F U' R U U
+U U R' U' F' U U F
+R' U' F U U F U U
+R' U U F' R F' R R
+U R R U U F' U U R R
+U U R U' F' U U F
+R' F R' U' R R U'
+R F' R' U' F U'
+U' F' R R U' R' U
+U' R' U F' R' F
+U' R' F U' F U'
+R' F R R U R' F F
+R' U U F R R U' R R
+R' F R U U R U'
+U R U' F' R' U
+U' R' U' R U' F
+R' U U R F' U U R
+U' R' U' R U U R
+R' U U F' U U R U'
+R' U U R' F R R F
+R' F R' F U U R
+R U' R R F F U U R
+U U R' F U' R U U
+R' U U R U U R' F'
+U F R R U' R' U'
+U' R' U U F' R U
+U' R' F F U U F U'
+U U R' F F U U R R U'
+F R U R' U U F'
+U' R' U' F F R R U U
+U R' U U F U' F F
+F U U F U R U'
+R F U U F R U'
+R' U U F U R R F
+F R' U U R U U R'
+R' U' F R U R'
+R U' R' U F' R R
+R U U R' U U R' F'
+R F' U' F' R' U'
+R F' R R F U' F F
+U R R U F' R U
+R R U U R U R F'
+R' U U F U' F U'
+U R U U F U' R
+U R' U' R R F U'
+R F' R' U U R' U'
+R' U R R F' R R F'
+U U R F' U' R' U U
+U R R F U' R U
+U R' U' F R' F
+U' R' U U F' U U F
+U' R' U U R R F' R'
+R R F F R R F' U' R'
+U' R U' R' U' R'
+U U R' F U R R F'
+R' U F U' F U'
+U' R' U U F F R R U'
+U F U U R U R'
+R U U R R U F R R
+R R U' F R U U R'
+U U R U' R U U R'
+R U' F' U U R R U'
+U U R' U' R U U F
+U' R' U F' U F'
+U U F R R U' R' U'
+U F' R' U' R' U U
+R F' R' U U R' U
+R U U R R F F R' U'
+R' F' U' R R F' R
+R' U' R U U F U'
+R' F' R U R' F'
+R' U R R U' R R U'
+U U R' U U F U U F
+R U' R' U U R' U'
+U U R' F U U F R'
+U' R U U R U U F'
+U' R' F' R U' R
+R U' R R F U' R
+R' U R U' R' U'
+R' U' R U' F R R
+U' R' F R' U' R
+R U' R' U U R' F
+R' U U R R U' F' R R
+R' F U' R U' R R
+U R U R' F F U'
+F' R U R' F' R
+U' R' U U F R U U
+U' R' F U R' U'
+F U U F' U' R U
+U U R' U U R R U U F'
+R U' R' U U R U U
+U' R F' U' R' U'
+R' F R U' R F'
+R' F' R U U R' U'
+U' R U' R' U R'
+U U R U U F R U
+U R U' R' F U'
+U R U' F U U R R
+U' F U U F' U F
+R' F U' R' U U F
+U U F R' U U F R R
+U R R F R R U U R R
+F' U U R U' R' U'
+R' U' R U' R' F'
+U R' F R U F'
+F R U' R F' R R
+U' R' U R U U R
+U R' F' U U R U U
+U R' F U U R R U'
+U U R U U R R U' F
+R F' R' U R U U
+R' F' U' R U U R R
+U' R' U F U' R
+R' F U F R R U U
+R' F R R F R' U
+R' U R F R U'
+U U R' U F U' R R
+U' R' F' U' R R F
+R U' R' U R' U U
+U U R' U' R' F U U
+U' F R R U' F' U U
+U' R' F U F U'
+U F R U' R U
+U' F R U U R' U'
+U R U U R' U' R'
+R F U' F R U
+R' U U F' U' R R U
+R U U R R U U F U
+R' U F F U' F R R
+R' U' F R R F' U'
+U' R' U U R R U U R'
+F U U R R U' R' U
+R U U R R F' R R F'
+F U U F U' F R R
+F U U F F R R U' R'
+R' U U F U' F U U
+U U R R F U R' F
+R' F U' R R F' R R
+R' U U F U R F'
+U R' F U' R F'
+U R' U U R' F U'
+R F' U U R R F U'
+U' R F' U' F' R R
+U U F U' F' U' R R
+U' R' U' F R U
+R' U' F U' F F R
+U U R' U U F U U R
+R U' R' U R F'
+U U R' U' F' R U U
+R' F F U U F R F
+U' R' F F U' R U'
+R R U' R R U R F
+R' U' F U' F U U
+U' R F R R F' R R
+R' F U U R U' R'
+F' R U' R' U U F
+U R' F U U R' F'
+U R U U R' U R'
+U' R' U' R R F R
+R' U' R' F R U'
+R' U' R' U' F U U
+U' R U U R R U' R R
+U U R' U F R U
+R U U R U' R' U U
+U U R R F' U U R' U U
+R U' R' U R' F
+R' F U' F' R R F'
+U R U U R' U R
+R F R R U' F' R'
+U U R' U' R U F
+R U' R R F U R'
+U R U' R R F R R
+R U' R' U U F F U'
+R' U' F R F U U
+U' R' U F U' F'
+U R' F F R R U' R'
+U' R' U U F F U U R
+R' U U F R U' R
+F U' F F R R U U R'
+R' U' F U U F U'
+U U F U F U' R
+R U' R R U F R
+U' R' F U R' U'
+U U R F' U U R' U
+U U R U U R R U U F
+U U R' U U R F U U
+R R F U' F' U' R
+R U R F' R' U U
+R R U' F' R' U R'
+R U' F U' F' U
+R U' R R U' F U U
+R' F R U' R' U
+U' R F' R R U U R
+U' R R F R U U R
+R U R' F U' F
+U' R' U U F U' F F
+U U R' U R U' R
+R' U U R U R F'
+U' R U R R U' F
+R R U U F U' F U U
+U U R U' R' U R'
+R F' U' F' U U F
+U' R F' U' R R F'
+U U R' U' F R' U'
+U F R R U U F' R'
+R U' R' F' U U R R
+R' F U' R R U U R R
+R F' R' U R F'
+R' F' R R U' R R U U
+R U' R R U' F R R
+U U R U' F' U U F'
+U R' F' U' R U'
+U U R F U U F F R R
+R' U' F U U R U'
+R U' R R F U R R
+F U' F' U U F' U'
+R' F U R' F R R
+R U U R U' R R U'
+U R' U' F U U R'
+R U' R R F R F'
+U F R R U U R' U U
+U' F U U F R R U'
+R' F R' F U U F
+F F R U' R' F R
+R' U U R' U U R R U'
+R' F' U U F R' F'
+R' U U F U' F R
+U R F U U R U
+R F U' F R U'
+R' F R R U R' F
+U R U' F' R R U U
+R F F U' F R U
+F U' F R R U U R'
+U' R' U' R U' R
+R F' U' F' R' U
+U U R' U R' U' F
+F' U U R' U R' U
+U R' F R R U' R R
+R' U F R' U' F
+R' U' F R R U R
+U' R R U U F' R' U
+U R R U' F R R U'
+R U U R R U' R R U'
+R' F U' F U' R
+R' U' F' R R U U R
+U U R U R U U R'
+R' F' U' F F U' R R
+U R' F' U R R U'
+U R' F' U' F' R
+R' F' U U F U U F
+U' R U U R R U' R
+U' R F' U' R' U'
+U U R R U U R R U' F'
+R U' R R U R' U U
+U R R U' R U F'
+R' U U F' U' F R R
+U' R F' R R F U'
+U U R U' F' R' U
+F R R U U R R U U F'
+U U R U' R' U' R R
+R' F' R' U' F U U
+R U U F' R R F R
+F R U U R' U U F
+U R' U' F U' F
+U U R F' U U R R U'
+U U R' U' F R U U
+R' U U F' U U F' R
+U' R U' R R F F U'
+U U R' F' R U F
+R' F F U U R U R'
+U' R' U' R R U U R
+R' U U R U U R U'
+R' F' R R U U F F U'
+U R' F R R U' F'
+R' U U R U' R F'
+R U' R' U U R U'
+R' U R' F R U
+U R' F' R R U' R R
+U' R' U R U' F
+R' F U' R F F R R
+R' F U' R U U R
+R' U' R F R U'
+R' F U' F' U' F
+U F U' F U U F'
+U U R R U' F F U' R R
+U U R' U U F R' U
+R' U F' U' R U
+U R' U U F' U' F
+U' R' U R R U' R'
+R U' R' U' F' R
+U' R' U' F R' U
+U' R U U R R U U R
+R U U R R F U' F'
+R' U U F F U' F' R
+U R' U F R R F'
+R U U F U' R R U'
+U U R' U U F' R U U
+R' U R U' R R F F
+U U R' U U F' R R U'
+U U R' F' U' F' R
+R U' R R U' R U U
+R U' F' U' F' U'
+U R U U F' U' R'
+U' R' U' F U' R R
+U U R U' R' F' R'
+R' F' R U' R' U U
+U R F R U' R
+U U R U' R R U' F
+R' F U' R F U U
+R' F' R U' F R
+R' U U F F U' R R U U
+R U' F U' R R U'
+U R' U U F' U F
+U' R' U' F F U U R R
+R' F' R R U' R' U U
+U R R U' R R U U F
+U R F' U U R R U'
+U' R' F R U U R'
+R' U U R U' R' U'
+U U R' F U U F U'
+U' R U U R' U' F'
+R' U R R F' R' U'
+R' F U' F U' F'
+U R U U F U' F F
+R' U' F F U' R U U
+U U R U U F U' F
+R' F U U F U' R'
+U R U' R R U U F F
+R' U' F' U U F R
+U U R U U R' U' R'
+R U' R R U U R U U
+U' R' F U' F F U'
+R' U' F' R U U R R
+U U R' F U' R R U'
+U' R' U' R' F R R
+R' F F U R U U R'
+R' U U R U R R F
+R U' R R U U F' U
+R R F' U U F' R U'
+U R U' R U U R R
+U' R' U R' F R R
+U' R R U U R' U' R
+R R F R U R' U
+U R' F' R U R
+R' U U R U U R' U'
+R' U U R U R F'
+U' F U R R U U R R
+R' U R' F U' F
+R F' R R U F F U'
+R U' R F' U U F'
+U R' U' R R F R
+U' R U' R' F' U U
+R' U U R F' U' R
+R' U U F' R U R
+U U R' U' R R U' R'
+U U R U' R R U' F'
+R U' F' R R F U'
+R' U F' U U R R U'
+R' U' F U R F'
+U' R' U' R' U U F
+U' R R F F R' U U R
+U' R U U R R F F U U
+R' F R U' R U U
+R' U' F U' R U
+R' U' R' F U U F
+R U' R R F R U U
+U' R U' R' U R'
+F' R R F' R U U R'
+R U' F' R' U F
+U R' U U R U U R
+U' R' U U F R R F'
+R' F R' U U R' U'
+U U R' U U F U' F F
+R U U F' U' F' U U
+U U F U' F U' F
+U' F U' F' U' R
+R' F F U U R F R
+U' R' F F R U' R
+U R' U' F U' R R
+R U R F U U F
+R F' U U F' U' R'
+U' R U U F R U'
+U R' U' F U' F F
+U' R U U F' R' U
+U R' U U R U' F
+R U' R R U R R U U
+R U U R' F R U'
+U' R U' R' F F R R
+R U' R R U' F U'
+U' R' U U R U' F
+U U R' F U' R R F
+R' F' R U U F' U U
+R' U' R U R' U'
+U' R U' R' U' R
+R' U' R U F U'
+R' U' F' R' U U F F
+F' U U R' U' R' F'
+F' U U F R U U R'
+R' F R U U R U'
+R' U U R U F' U U
+R R U' R R U U F' R'
+R R U U F U R U
+U' R U' R U U R
+U' R U F U' R
+R' U R' U' R R U'
+U U R F' U U F' R R
+R' F R U' R R U
+U U R' U' R R U' R R
+R U' F' U' R R U U
+R' U' R U' F' R R
+R' U U R U U R U'
+U U R' U U F R U U
+R R F' R R U F R
+R F' R' U U R F
+U R R F R U R'
+U' R' F R R F' U'
+U' R' U' R F R
+R U U R R U' F' U U
+R' F F R U R U U
+R' U' R U' R' U'
+R U U R' U R' U U
+R' U' R U U R R U U
+U' R F' R' U R'
+U' R' F R R F' U
+U R U' R F' R'
+R U' F F R U R'
+R U' F' R R U R'
+R U U R R F' U' F
+R F U' R U' R'
+U' R' U' R R U U R'
+U R' U U R U R'
+R' U' R R F U U F
+U' R U U R R U' F F
+U' R' U R F' U'
+R U' R R U' R' F
+R' U' R U' R' U'
+R U R' F R U U
+U' F U U F R R U'
+U U R' F U' R U'
+R' U R' U' F F U'
+R' U U F U' F R R
+R' U U F' R R U' R'
+U U R' F' U R U'
+U' R F' U' R' U'
+R F' R R U U F' R
+U R' F U' R U U
+U R' U U R R U' R R
+U U F' U' F R U U
+U' R' F R U' R'
+R U' R' U' R' F
+U' R' U R' U U R R
+U' R' U' R' U R
+U U R F' R' U' R
+U U F U' R U U R'
+U R U U R' U R'
+U' R R U' F R U'
+R F' R R F' U' R
+U U F' R R U' R' U'
+R R F R U U R U U
+R F' U U R U U R'
+R' U U F' R U R'
+R' U R U' R U'
+U' R U U R R F U'
+R' U U R U U R' U U
+U' R' U U R U R'
+R' U F U U F R R
+F U' F U' R R U'
+R' U F F U' F U'
+U F' R R F' R' U'
+U U R' U U F R R U
+U' R' U R U R'
+U R' F U' R' U
+R R F U' R U' R R
+U R' U U F U' F F
+U U R' F R R F' R R
+R' U R U U R U U
+R' F R U' R' U'
+U U R U' R' U U R
+U R' U' F F U' F
+U R U' R R F U
+R U U R R F U' F
+R F' U' R R U U F'
+R R U' F R R F R
+U R F' R R F R
+U' R R F' U' R' U
+U R' U' R U U R'
+R U' R' U' F' U'
+U R' F U U R U U
+F R U' R' F U U
+R' F R U' R' U U
+R U U R R U U R' U'
+U R' U' F R R U'
+U R' U' F R F
+U' R U' R R U U F'
+F' R R U R' F U'
+U' R U U R F R
+R' F U' R U R'
+U' R U' F' U U R R
+U U R R U' R' U U R'
+U' R' F U' R R U'
+U R' U' F' U U F
+U' R' U' F R R F'
+U U R R U' R' U R'
+U' R' F' U U F R R
+R' F' R R F' U' R
+U U R' U U R' F U
+U' F' R R F U' R
+R F' U' R R F F R
+R' F' U' F F R R F'
+R' U' F' U U R R F
+F' U' R' U R' U
+R' F' R U' R F'
+U' R F' R' F' R R
+R' F' R U U R U U
+F U U R U' R' F
+U U R U' F F R U
+F F R R U' R' U R'
+R' U F' R U U R'
+R R F U' R U' R
+U R' U R R F R
+R U U R' F' U U F
+U U R' U F R R F'
+F R U' R F' R R
+U R' U F U U F
+U' R F' R' U U R'
+R' U' R R U U R' U'
+R U U F R U F
+R' U U F' U' F R
+U U R' F R R U U F'
+R U' F' U' R R U U
+U R' U R F' R
+R' F' R' F U' R
+R' F R U R' U
+U U R' F U' R U
+U' R R U U F U U R'
+U U R' U' R U U R R
+U U R U U R R F U U
+U R' U' F U F F
+R U U R' U' R' F
+U U R U U F' R R F'
+U R' U R R U' F'
+U R' F U' F U U
+U R U U R' U U R
+R' F U U R' U' F
+R U U R U' R R U'
+U' F R R U U F' R'
+U U R' F' U F' R R
+U U R' U U R R U' F'
+U R' U' R U R
+R F' U' R' U U R'
+U U R' U F' U' F
+F R' F U U F U U
+R R U' R R F' U' F
+U U R U' F' R' U U
+R U' F' U U F' R'
+R' F U R R F' R'
+R' U' R F' U' R'
+R' U' R R U' R R U'
+R' U' F F R U R'
+R' F' U' R U U R'
+R' U' F U' R R U U
+U R F' U U R R U'
+U U F U U F R R F'
+U R' U U F U' R R
+U U R' F U U F R'
+U R U' R R U F
+U' R' F R U F'
+U R F' R R U R
+R' F U U R' U U F
+F' R U R' U' R
+U U R U U R R U U F'
+F R U' R U' R R
+U R' U R U U R'
+R U' F R R F' R'
+R R U' R R F U F F
+R U U R' U R' U U
+U R U U R R U U F'
+R' F U' F' U F
+R' U' R U' R' U
+U U R U U R' U R
+U' R' U' R U R'
+R' F U U F' U U R R
+U' R' U F F R R F'
+R' F' R R U R' F'
+U' R' F' U' F F U'
+U' R R U R R U U F'
+U U R' U F R U'
+R' U' F' R U' F'
+R' U U F F U' F R R
+R U U R' U U R' U'
+F F U U R U U R' U U
+U' R R F R R U' F'
+R U' R R U U R R F'
+R U U R' U' R' U'
+R F' R R F U U F
+R F' U U R R F U U
+R' F U' R U U R'
+U' R' F U R U'
+R' F U U F U U R R
+U' R' U' F U U F
+R R U' R' U U R' U'
+U R F R U' R'
+R' U F U' R F
+U R' U' R U R'
+R' U F U' R R F'
+R U' R' U R U'
+R' U U R U R F'
+F U U F R U' R'
+U' R' F R R F U U
+R' F U U R' F R
+R' U U R F F U U F'
+R' U' F R R U' F'
+U U R R U' F R U U
+R' U' F R R U U R R
+R' F F U' F U U F'
+R U' F' U U R F
+U R' U' F U R'
+R R U U R' U R' U U
+R U' F' U' R' F
+R U' R' U R' F'
+U U R R F R U' R
+U' R U' R R U' F
+U R F R' U U R
+U F U' R R U' F'
+U R F' R R U U F
+U U R' F R F' R R
+U' R U' R R F U U
+R' F' R U F' U'
+U U R' U R R U R'
+R' U' F F R' F U
+U' R U' R' U' F
+U U R F U U F U
+U R' F R' F U'
+U R' F U R' U
+U' R' F' U R U'
+R U U R R U' F U'
+U R F' R U U R R
+U' R' U' F' R R U'
+U U R' F' U F R R
+R U' R' U U R' U U
+U U R U' R R F U
+U R' U' R U' R R
+R' F' U' R R U' R R
+U R U U R' U R'
+R U' R' U' F R
+R U U R' U' R F'
+U' R' F R U' R'
+R' U F' R R U' F'
+U' R' U' R R U' R'
+U' R' F U R' U U
+U R' F U U F R R
+R F U U F U' F
+U' R U' R' U U R'
+U R U' R' U U R'
+U U R' U R' U R'
+R' F R R F' R' U
+U' R' U U F' R U'
+R U' R' U' R R F
+R U U R R U U F U'
+R U' R' U R R F'
+R R U U R U U R' F F
+F U U F U' F U U
+U R' F R U F'
+F F R U' R' U' F
+U U R U R' U U R
+U U R' F F U U R U'
+R' F R' F U' R
+R F' U' R R U' F
+U' R' F U' F F U'
+U' R' F U' F' U U
+U' R' F U U R' U'
+R' U' R U' R F
+R' U' R R F' R R U U
+U R' F' R U R'
+U R' F U' F' R R
+R R U' F R U' R'
+U R F' R R F U'
+R' F' U R R F' U'
+U U R' F U' F U U
+R' U' F' U U R U'
+R' F' U' R R U' R R
+R' U' R U' R U'
+F U' F U' R' U U
+R U' F U' F R'
+F R U F R R U'
+R' F F U R' U' F F
+U' R U' R R F R R
+R' F U' R U U R
+R' U' F U R U'
+U' R U' R R U' R'
+U R F' R R U R
+R U' R' U' F U U
+F' R U R U' R R
+R' U U F' U U R R U U
+R' U' F R U U R R
+U' R' U' F R' U
+U R' U' F F U U R
+R U' F' U U R U'
+U U R' F' R U' R'
+U' R U U R R F U'
+R' U R U R' U U
+R' U' F U' F F R R
+U F U U R U' R'
+R' F F U' R R F' R'
+U R' U' F R U
+U U R' U U R R U U R'
+U U R F' U' R' U U
+R' F F R R U' R R U U
+U U R U' F' U' R R
+F U R U' R' F
+U' R R U' F U' R
+R' U U F U R U U
+R F U R U' R'
+U U R' F R U U R'
+R U' F' R R U R'
+U R' F' U' R R U'
+R' U' R R U' F' U'
+U' R R F U' F' U'
+R' U U F U U F R
+U F U' F' R R F'
+U R U U R' U U F
+U R' U' R R U U R'
+U U R' U' R U R'
+U' R F' U' R' U U
+R U U R' U' R F
+R' U U R U' R' F
+F U U R U U R' U'
+F' U U R R F R U U
+U' R' U' F' U' F
+R R U' F R F R
+U R' F F U U F U'
+R F' U' R R F U'
+R' U F U' R R U'
+U U R F' R R F R
+U R' F R U U R'
+U R' U' F' U R R
+R' U F R R F U'
+R U' R R U U R U'
+U' R U U R R F' U'
+U F R U R' F
+U U R F' R' U U R R
+R' U U F U U F' R
+F U U R R U' R R F
+U R F U' F' R
+R' U U R R U' F' U'
+R' F R U R U'
+R' F U' F U' F
+U R' F U' F U'
+U R' U U F' U' R
+U' R U U R' U F
+U U R' U' F U U F
 U' R' U' R U' R R
 U U R' F F U R' U'
 U U R' F U U R U'
@@ -498,3 +2748,2253 @@ R F' R R F U U F'
 U U R' F U U R' F'
 R U' R U' R R U U
 U' R R U U F U' F
+U' R F U' F' R
+R R U' F U' R U
+R U U R R U' R R F'
+R' F R R U U R R U U
+R U' F' U R U'
+U U R' U' F' U' R
+R' F U R R U R
+U' R U U F R U U
+U R' F F U U R R F'
+R F' R R U R U'
+R' F R R U' R R F
+U U R' U U R U F
+R U R' F U U R R
+R F' R R F R' U'
+U U R' F' U U R U'
+R' U U R F' R R F'
+U U R U' R R F F U'
+U R' F R R F F R
+U R' U' F' U R
+U' R' F U' R U U
+U' R' F U' R' U'
+R' U U R U U R F
+R U U R R U R U'
+R U' F' U' F' U U
+R' F R R U' R' U'
+U U R U' F' U' R R
+U R' U U F U' F F
+F U U F R' F U'
+R' U R U R R U'
+R' U' F R' F U
+R' U' R U U R' U'
+R' U U R U R' F
+U' R' U F U U F
+R' U' R R U' R' U
+R U U R F' U' R R
+R' U U R R F' U U F'
+R' U U F R' U' F
+R R U U F U' F U'
+R' F' R U' R' U'
+R' U F U' R R F'
+U R' F' U' R' U U
+F U' F U U F U U
+U R' U U F U' R
+R U' R' U U R' F'
+U' R R U U R' U U R'
+U' R' U U F R U'
+R' F U U R U R'
+U R U U R R F R'
+U U R R F' U U F U'
+R R U' R U' R U'
+R' F U U R' F R R
+R' F R' U' F R
+R F' R R U U R U
+U' R R F R U R'
+F R U' R' F R R
+U' R F U U F' U U
+U' F R R U' R' U
+U R' U' F' U' F
+F R U U R' U' F
+U' R' U' R U F
+R F' U' R R U U R'
+U' R' U F R R F
+U F U' R R F' R R
+R' U' F U U F U'
+U' R U U R' U R
+F R U U R' U F
+F U' F R R U' R R
+U R F' R R F U U
+R U R F' R R U U
+R' F' U' F F U' R
+U U R U' R R F U
+R U U R R U U F R R
+U R U U R R U F
+U R R F' U R R U'
+R' U' R R F' R R F
+R' F' U' R U' R'
+R U U F U' F U
+R U' F' R R U' F
+U U F U' R U R
+U' R U' R' U U R'
+R' F R R U R' U'
+R' U U R F' U U F'
+U R' F U' R U'
+R F' R' U U R U'
+U' R' F' R' F' R
+U U R R U' R U U R'
+R' F U U R U' F
+U R' F' U' R F
+R U U R' U R' F'
+U' R U' R R U U R
+R' F U' F' U' F F
+R' F U' R U U F
+U R' F R U U F F
+U R F' R F' R R
+U U R' F R U R
+U' R' F U' F R'
+U' R' F' U' R U'
+U R F U' R R F'
+R U U R R U' R' F
+R' U U F' R U' R
+U' R F' R R F U'
+R F' R' U R' F
+U R U U F' R R U U
+R' U U F F U' F' U'
+U' R' U U R F F U'
+R' F' R R F' R R U'
+R' U U R U U R F'
+U' R' F' R' U U F
+U U F R U' R' U
+R' F U' F U U R R
+R' U F' R U R'
+U U R F' R' U R R
+R R F U R U R'
+R' F U R U' R'
+U R' F U U R U
+F' R' U' R' U' F
+R U' R' U R' U U
+R' U U F' R U R
+R U U F' U' R' U
+U R' U F R R U'
+U R R F U' F U'
+R' U R U' R' F
+R F' R' U U R' U
+R' U' F R U U R'
+U U R' U' R U' R'
+R U U R R U R U U
+R F' R R F U U F F
+F' U' R R U' R R U'
+R F R R U' R' U
+R U U R' U R F'
+U' R U U F' U' R R
+F U U F F U' F U'
+R' U R R U' R R U'
+R' U' F F R U' R'
+U U R U U R R F R
+U R R F U U F' R
+R' F U' R R U' F
+R F R U U R' U'
+R' F' U U F R U
+U' R' F U' F U'
+R' U U F U' F' R R
+U R' F' U' R U'
+R U' R' U U R' U'
+R' F F R R F' U U R'
+R' F U' F' R R U'
+U R R U' R F U U
+U U R' F R U U F'
+R U U R' U R' U'
+U U R F' U' R' U U
+F R F R R U' R'
+R R F U' F U' R
+U U R' U' R R F' U'
+U U R' U' F U U R
+R' U' F' U' R R F'
+R' F' R R U R' U'
+R' F R U U R R U'
+R' U' R U R' U'
+U U R U' R' F R
+U U R F R U' R'
+R U' F' R' U R'
+U F' U U F U' F
+U' R U U R' U R R
+F R U' R' F F U'
+R U R U' R R F
+R F' R' U U R F'
+U' R' F U U R R U'
+R U' R R U' R' F
+U R' U U R R F' U U
+U U R' F U' R R U'
+R' U' F R' U' F
+U U R' F U U F' U U
+U R U U R R F U'
+U' R' F' U F U U
+U U R U' R R U F
+F R R U' R' U U R
+R R U' R R F U F
+U R' F' R U R'
+R' U' F R R U U R'
+U R' F U U F' U'
+U' R R U' R' U U R'
+R' U' R' F' U' F
+R U' R' U R' F'
+F R R F' R R U U R
+U' R' U' F' U R'
+R U' R R F R R U'
+R U U R U' F' R R
+U U R R F F R U R'
+R R F U' F U U F
+R' U' R U' R' F
+R U U R' U R R U U
+U U R' F U' F F U'
+U R' U U R U' R'
+U U R' U U R U U R'
+R' F F R' U U F U'
+R' U' R U' R U U
+U' R' U U F' R U U
+U' F U U R' U U R
+R' U' F F R R U U R'
+U R F' R' U U R'
+U' R R U F U' R'
+F U' R U R' F
+R' F U U R U R'
+R' F U' R U U R'
+R R U U R' U R' U U
+R' F U' F R R U U
+R R F R R U' R R U U
+U' R' F' R R U' R R
+R' F' R R U' F' R R
+U R' F U' F U U
+R' F R R U U R R U'
+R' U' F R R U U F'
+R U R' U U F U U
+R F' U' R R U' F'
+R' U' F R U U F'
+R U U R' U U R' F F
+U U R' F U U R R F'
+R' U R U' R U U
+U' R' F' U U F U U
+R' U U R R U' R' U
+R' U' F U' F R
+U' R' U' F F U U F
+U U F R U' R U U
+R F' R R U R U U
+R F R R U' R R U'
+R U U R' U F' R
+R U' F' U' R R F
+U' R' U U F U' R
+R' F R U U R' U'
+U R F' R' U R'
+R' F R F' U' R
+U R' U' R R U' F'
+R' U' F U' R U
+U' R F' R U' R R
+R R F F U R U U R'
+U R U' R' U' R'
+R' F F U' F U' F'
+U U R' F' R U' R
+U' R F U' R U'
+R' U' F R U U R'
+U' R' U' F R' U'
+U' R F' U' F U
+R' F F U F U' R
+R U R' F U' F'
+U R' U' F U U F
+U' R U' F U U F
+R' U U R' F U' R
+R U R' F' R' U'
+U R' U' R R U' R'
+R R U U R U R' F
+R' U' F' U U F' R
+F R U' R' U U R
+U' F R R U' F' U'
+U R U U R' U R R
+R' U U R R U U F F R
+R' F' U U F R R U U
+U' R U U R' U R
+R' F R' F U' R
+U' F' R R F' R U'
+U R' F F R U U R'
+U U F' R R U R U U
+U R' U' F U' R R
+R' U U R R U' R R U'
+U U R' U U F' R U U
+F' U' R R U U R U
+R' F U' R' U U F'
+U R' U U F U' F
+R U U R R F' U R R
+U' R' U U F U U F'
+R' F' U U R R U' R'
+R F' R R F R U'
+R' U U R U' F U'
+U R' U' R R U' F'
+U R U' R' U R'
+U R' U' F U' F
+R U' R R F U' F
+R' F R U' R' F F
+U U F' R' U U R' U'
+U U R' U R' F' R
+U U R' U U F F U' R
+U' R' U U R' U U R R
+R' U U R R U' R R F'
+U U R' F U' F U'
+U' R U' R R U' R R
+R U' F' U U R R U
+R' U R' U U R U
+U U R U R' F R
+U' F R R F' U' R'
+U U R' U F U F'
+U R' F U U F F U'
+U U R' F' R R U R'
+R' F' U' F' U U R R
+R F' U' R' U' R'
+R' U U F R U U F'
+R' F F U U R' F U U
+U U R' U U F R R U
+U U R' U U R F U U
+U' R U' F R F
+R' F R F' U U F'
+R' U' R U U R' U
+R U' F R U R'
+R U U R' U R' U'
+R' F' U' R F' U U
+U' R' F' R U' R
+R' F F U' F U U R
+R' F R F' U' R R
+R' U' F U' R' U
+R F' R R U U R R F'
+U R U' R' U R
+U R' F R' U' R R
+R' U U F' U' R R F'
+R U' R R U F' U U
+U' R' F U' F' U'
+R F' R' U U R' F
+U R' F' U' F' R
+R' F U' F U R'
+U' R F R R U' R'
+U U R' U U F R R F'
+U R U' R U U F'
+R F U U R R U' R R
+U' R R U U F U U R'
+F R U' R' F R
+F' U U F' R R U U R'
+U R F' R R U' F'
+R U' R' U' R U'
+R' U U F U' R U
+R F' U' R' U U R'
+R' F U U F R' U'
+R' U R U U R F'
+R' F R' U' R U'
+U' R' U' F' U' F
+U R' U R F' U'
+F U U F' R R U U R'
+R F' R R U U F U U
+R' U U F U F R
+R U' R' U' R' U U
+U R R U U F R U U
+U R' U U F U' R
+U R' U' F F U U R R
+R F R U' R' U
+R U' F' R U U R'
+U' R U' F' R R F
+U' R' U F U R
+R' F U U R' F U U
+R' F R U U R' U
+U R U U F' R R F
+U' R' U F U' F F
+U' R' U U R R F' U
+R' U U R' F U U F
+R' F U U F U F
+U U F R U R' F'
+R F R U U R' F
+U R' U U F F U' F
+U U R F' U U R R F
+U R R F' U U R U
+R' F R U U R' F
+U R' F U F R R
+R' U R U' R' U'
+R' U U F U U R' U
+U R' U R' F' R
+U' R' F F R R U' R R
+U' R' U F U' F
+U R' F R R U' R'
+R R F F U' R R U U R'
+U R' F R U R
+R U U R' U U R' F'
+U' R F' U U F' U U
+R' U' R R U' R R U U
+U U R R U' R R U' F
+U R' U U F R U U
+R' F U U F U' R
+R' U' R R U' R R F F
+U R' F F U F U U
+U R' F R R U' R'
+R' U U R U R' U
+R' U F U' F' R
+U U F U R U U R
+U' R' F R F U U
+F U' F R R U U R R
+R' F U' R F' U
+R U' R' F R U U
+U U R U' R R U R
+R' U U R U R F'
+U' R' U U F F U' F
+U' R U U F' R' U
+U R' U U R R U U F
+R' U' F R U U R'
+F' U' R' U R' U U
+R R U F U' R R U'
+U U R' F U R R U'
+R U U R' U' R U
+U U R R U F R R U'
+R' U U R R U U R R U U
+R' U' F R R U U R'
+R' U U F U' F F U'
+R' F U U F U' F'
+U R' U U F R' F'
+U U R' F' U U R U'
+R U' F' R R F U'
+U R U U R' U' R R
+R' U U R' U R U U
+U' R U R F' R R
+U' R F U' F U U
+U R' U F R R U'
+U U R' F R U' R
+U R' F U U F U
+R R F U' R R U U F
+R' F R U R U'
+R' U' F U U R R U'
+U U R' U' R' U U F
+U U R U' R R U U F
+R U R R U' F R
+R U' R' U R' U'
+U U F' R R U' F' U U
+U' R' U' F U U R
+R' U U F U' F F U'
+R F' U' R R U U F
+R U U F' R R U' F
+U' R' F U F R R
+U' R' F R U R
+U U R' U' F' R' F'
+U R' U U F F U U R R
+R' U' F' U U F F U'
+U' R R U' R U R'
+R F' U U R R U R'
+U U R' F U U F' R
+U' R' U U R U U R
+R' F U' R R U U R'
+U U R F' R R F U'
+U R' U U F F U U F
+R' F' R U F' U'
+R' U U R' F' U' R R
+R' U R' U' R U U
+U' R' U' R R U U R R
+R' F R U R' U'
+R' U F' R R U' R R
+U U R' F' U' F' R
+U' R' F' U R' U U
+R U U R' U' F F U U
+R' U' F' U F' U U
+R' U U R' F R U
+R' F F U U R R U' R'
+U U F U' R R U R'
+U U R' U U F' U' R R
+R' F U' R' U' R
+U U R R U' R' U R'
+R U' R' U U R' U U
+R' F U U R R U U R R
+R' F U R U F
+U' R R F' R R U' F'
+R R U' R' U R' U U
+R U' R' U' F R R
+R F' R R F' R U
+R F' R' U U R' F
+U R' U' R U R'
+U U R' U U F' R R U'
+R R F U' F' U U R
+R U U R R F' U' F'
+R' F U' F' U R
+R R U U R R U' F' R'
+U U R' U' F U U F
+U' R R U U R' F R R
+F' R R U' R U U R
+R' F' U F R U
+R' F F U F' U' R R
+R F' U' F' U U F'
+R F U' F U U R
+R' F R U U R' U'
+R' U F R' U' R
+R R F' U' R R F' R'
+U' R' U' R R U U F
+U' R' U' F U' F F
+R U U R R F U' R
+U' R' U' R U' R
+U U R' F' U U F U'
+R' F U U R R F' U'
+R' U' R R F' R R U U
+R F' R R U U F' U
+R' F U F' R U'
+U' F R R U' R R F
+R U' R R F R R F
+U' R F' U U R' U'
+R U' F' R R F' U'
+R' F U U F U' F'
+R U' R R F R U
+R' U F U F U'
+U' R' U' F U U R
+R U U F' U U R R U'
+R U U R' U R U'
+U' R' U U F F U' R
+R' U' R R U U R R U'
+F R U' R' F U U
+R' U' R R U U R' F
+U' R' U' R U' R
+U' R' U' F' U' R
+R' U' F F U F' U U
+U' R' U F' R U U
+F' U' R U' R U'
+U R' F' R U U R'
+R' U U F' U U R U'
+U R' U' R R F' U'
+R R U U F' R U U R'
+R U' R' U R F
+U R U U R R F U
+F' U U R U R U U
+U R' U U F' U' F
+R' F U U R R F' R R
+U' R U U F' U U R R
+R' F U U R U' R'
+R R U' F' R R U' F
+U' R R U R' U' R R
+R U R' F' R U'
+R' U U R R F R U U
+R U' R U' R R F
+R' F' U R' F' U U
+R U' R' U R' U'
+R' U U F U' R R U'
+U' R U' R' U' F'
+U U F R' U U R U U
+R U' F' R R U' R R
+F U' R F' R R U U
+R' U U R U' R' U'
+R' U R' U F U'
+R' U U F R R U R
+U' R' F U U R U U
+R' F R R U' F' U'
+R' U U R U R' F'
+U R U' R' U' F'
+R' F U F U U R
+R' F U U F U' F
+U U R F U U F U'
+R F' R' F R U U
+R U' R' U R U'
+U U R' U U F U' R'
+U U R' U F' U' F
+F R U' R U' F'
+R U' F U' F R R
+R' U' R U' R U'
+R F U' F U' R
+U R' U' F' R' U'
+R' U U F F U' R R U'
+U' R U U F R U'
+U' R U U R' U U R'
+F R U' R' U' R R
+R' U U R U U R U'
+U' R' U R U' R
+R' F U' F' R' F
+R F U' F U U R'
+R' F' U R U U R
+U U R' U U R R U' R'
+U' R U' R R U U R
+R' U' R R F' R R F'
+U U R' U U R' U U F
+U R R U U F' U U R'
+U U R U' F R R F
+U U R' F R R F' R'
+R' U' R R U' F U'
+R R U' R' U' R F
+R' U U F U U F U
+R' F R U R' F
+F R U F R U
+U' R U' R R U U R
+U U R' F F U R' F
+R F' U' R' U U R
+R U U R' U R' U U
+U' R' U' F F U' F'
+R' F R U' R U'
+U F' R' U' R' U
+F F R U' R U' F'
+U R U' R U U F'
+R' F F U' R U R'
+R U' F' R' U F'
+R' U U F' U' R F
+R F' R R U R' U'
+R U U F' U' R R U'
+R U U R' U' R U'
+U U R U' R R U' F'
+R' F F R R U' F R
+R' U R F R F'
+R' U U F U' F' R R
+R U U F' U' R R F
+R U' F R R U' F'
+R' U U F' U R U U
+F R R U U R' U U R
+U' R F U U R R U'
+R' U R U' R' U
+U R F R R F R R
+R' U U R U' F' U'
+R' U U R R U' R' U'
+R' F U U R R U' R R
+U' R F' R' U' R'
+R U' R R F R U'
+R' U U F F U F U U
+R' U' R U U R' U'
+U' F R R U' R R F'
+R' F U' R' F R
+F U U R R U' R R U
+R U' R R U' F R R
+U' R U U F' R R U'
+R' U R U' R U'
+U R' U F R R U'
+R' U' F U' R F F
+R' F U F U' F'
+U R' F R U F'
+R F' U U R R U' F F
+U U R U' R R U' F'
+R' U R' U' F U
+U R R F' R U R'
+R F' R' U' R' F
+R' U R R F' R R F
+R' F' R R F' R R F'
+U U R F' R' U' R'
+R' U U R U' R' U U
+R R U R' U' F R
+R' U' F U U R' F
+R U' R R F U' R
+U U R' U R U' R R
+U U R' F' U U F R R
+U' R' U U R U F'
+F' R F U U F R
+R U' R R U' F' U'
+U R' U U F U U R
+R' F U' R U U F
+R' F F U' F R R U'
+R U' F U' F R R
+F' R' U R' U U R R
+R U U R' U U R' F'
+R' U U F U U F U'
+R' F R R U U F R
+R U U F' U R F'
+U R R F R F U U
+U' F R R U' R' U
+U R U' F' R' U'
+U R' F' R R F' R'
+U' R U' R' U U R'
+U U R F' R R U' R
+U' R U' R' U R'
+R U' R' U R R U
+R' F' U' F F R U
+R' F U' F' U' F
+U' R' U' F U U F
+R' U F F U' F U'
+R' U' R U U F' R R
+R R F' R R U' F' U U
+U' R R U' F U' R
+F R R U' R R U' F
+F R U' R U' F'
+R' U' F F U' F U'
+R' F R U R' F'
+R F' U' R R U F
+U R R F R U U R'
+U' F U' F U R R
+R' F U' R' U' F
+R' F' U' F' R R U'
+U' R' U' R R F R
+R' U' F U F' U'
+U' R' U R F' R R
+U U R U' R' F U'
+R' U' R U' R F'
+U' R U' R' F' U'
+U' R F' U' R R F
+R U' R R U U F R R
+U' R' F' R U' F'
+R F' R R U F R R
+R F' U R U' R'
+U' R U' F' U U R R
+U' R' U' R F F U U
+U U R' F' R U' R'
+U' R' U' F' R U'
+U R' F' U U R U
+R' U' F' U' R R U'
+R' U' R R F' R' U'
+U' F' U U R R U' R'
+F F R U U R' F U'
+R' F U U F' R U
+R U U R' U' F' U'
+R' U' F' R' U' R
+R U' R R U' R U'
+U R' U F U' R R
+R' U R U' R U U
+U' R' U' R U' R
+U' R' U' R U R'
+R' U' R F' R R U
+R' F F U U R R U U R R
+U' F U' R U' R'
+R' F' R U R U'
+R U U F' R R U' R R
+R' U' F U F U'
+R F' R' U U R F'
+U U R' U' R R F U U
+R' F F R R U' F' R'
+U R' U' R U' F
+U' R' F R R U' F'
+U' R U' R' U R'
+R' U' F R F' R
+U F F U U F U' R
+U' R' U' R F U
+R U' R' F R R U U
+R' U' F' U U R U U
+U R F U' R U
+R U U F' R' U' R
+U' R F U U R R F'
+U R F' R' U' R
+U R' U' F U' F F
+U R' U F R U U
+U' F' R U' R' U U
+R' F' U' F R F'
+U' R' F R U R'
+U' R' U R U' R
+U R F' R R F' R R
+R' U F' U U R U'
+R' U U F R R F' R R
+U U R' U U F R U'
+U R' F U U R U U
+R' F U' F U' F
+R F' U U R' U U R
+U' F' U' R U' R
+U' R U' R' U' R
+R' F R' F R R U'
+U' R' F R R U U F'
+R F' R' U U R' U U
+U' R R U R U R'
+R' F' U' R R U' R R
+F U' F R U U R'
+R U' F' R R F' R
+U' R R F' U' R U
+R' F U U F' U U R
+R' F U U F F U' R
+U U R' F U U R R F'
+R' U U F' R R U U R'
+R F' R R U U F' R
+R' U U F U U F R
+U U R R F' U' R U U
+U U R F U' R U U
+U R' F R F' R
+U' R' U U F R U U
+R F U U F R U U
+U' R' F U R' U'
+R F' U U R R U' F
+R' U' R U' R U'
+R' U' R F U' R
+R U U R R U R R U'
+R' F U' F F U U R
+R R U F U U R U U
+R U U R R F U U R'
+U U R F R R U' R R
+U' R' U' R R F' R R
+U' R' U R U U R'
+U' R' F F U' R F'
+U U R F U R U'
+R' U' R F R U
+U U R' F U' F' U'
+R' U U F U' F R
+U U R U' R R F U U
+U R' F U R' U U
+R F' R' U' R' U
+U R' F R R U U R'
+U' R' U R F' R'
+U F U U F R R F'
+F' R U R F' R'
+U R U' R' U' R R
+U U R' U R U U R
+R' U' F' U' R U
+R' U' R U U R' F
+R' F U U R U R'
+U R' F U' R' F
+R U' F R R F U'
+U U R' F U' F R'
+R U' R' U R U U
+U' R R U U F' U' F
+U U R' F R R F' R'
+U R' F U R R F'
+R F' U' R' U U R
+R' F U' F U' F
+R' U U F R' F U'
+F' U' F' R R F' R'
+F R R U U R' U' R'
+R' F R U R F'
+R F U' F' R U'
+U' R U U R' U' R'
+U' F U U R R U' R R
+U' R U U R' F F U'
+R' F' R U U R F'
+U' R' F R R U U F'
+U U R' U U R F U'
+U U R' U' R R U' R'
+U R' F U F U
+R U' R R U U R U'
+R' U' F' U' F' R
+R U' F' R R F' U U
+U' R' F U R R F'
+R' U' R U U R' U'
+U' R' U R U' R'
+U U R U U R' U' F'
+R F U U F' R U'
+R' F' R R U U R R U U
+U' R U' R R U' R R
+U' R' F U' R R U'
+U' R' U' R U' R R
+U U R' U' F' U' R
+R' U' R U U R U U
+R' U' R U U F F R R
+U U R' U U R F F R
+U' R U' R R U U R
+U U R F' R R U R
+R' U' F U' F R R
+U' R U R' F F U'
+R' U' F' R' U U F
+R F R U R U'
+U' R U' R' F' R
+U U R' F R U U R
+F' R R U' R R F' U'
+U' R' F R R F' R R
+U R' U' F' R F'
+R F' U' R R U' F F
+U U R F' R' U R
+U R R F' U' F U'
+U' R' U' R R U' R R
+U U R' F U' R' F
+U' R' U' F U U R
+R' F U' R U' R'
+R' U U F' U' F U
+R' U' R R U' F' U U
+R' U F R U' R'
+R' F F R' U' R U
+U' R' U U F' R' U
+R' U F U' R U'
+R' U' R' U U R U'
+R' U U F F U' F' U U
+R U U R' U' R' F F
+U' R' U R U' R'
+R' U U R' U' F R'
+F U U R R U' R R U
+U' R' U U R' U' F'
+R' U' F' U U F U'
+U' R' F R R U' R R
+R F' R' U' F U'
+R R F U U R R U U R R
+R U' F' U U R R U U
+F' U' R' U U R' F
+R' U' R' U U R U
+U U R' U' F U U R R
+R' F R U R' U U
+R' F R R F' R' U U
+R' U U R U' R' U U
+R U U F' R R F' R
+U' R F' R R F U
+R' F F U' R U U R'
+U' R' F R U U R R
+R F R U R' F
+U' R' U' R U' R
+U' R' F U' R R F'
+R U' R R U' F U U
+R R F U U F U F
+U R' U F U U R R
+R' U R U F' U U
+U R' U' F' U' R
+U R' U U F' U U R
+R U' F' U' F' R R
+U U R U' R R F R
+R' F R U R' U'
+R U' R R F U' F F
+R R F R R U' R R U U
+F U F R U R
+R' F' U F R R U'
+R' U' R R U' R' U
+R' U' F R U U R'
+U U R U' F' R R U U
+R' U' F U U F' R'
+R' F U' F' U U F
+R R U U F' U' F U'
+U R F' R R U U F
+R R F U' R R U' R R
+U' R R U U F U U F'
+F' U U R R U' F U'
+R R U U R U U R F'
+F U U F U U R U U
+U R' U R' U U F
+R' U' R U R' U U
+R' U' F' R F' U U
+R U U R R U F U'
+U R' U' F' U F'
+U' R' F U U R U
+R' U U F R R U U F'
+R U U R U U F' R'
+U U R' U' R F' U'
+R R U' F U' R U'
+R' U R' U R' F
+U R U' R' U U R'
+F U U F U U R R U'
+R' U' R R F' R R F
+U R' U U R F' R R
+R U U R' U U R' F'
+U U R U U R R F U'
+R U U R R U' R U U
+U U R' U U F R R U U
+U' R' U U R U U R'
+U R U' F' U U R R
+U R' U' R U' R'
+R U' F U' F R'
+U U R' F R R F' U'
+R U' R R U U R U'
+R' F U' F' U' F
+F R R U U R R U U F
+R R U' R' U R U U
+U' R' F U U R R U U
+R' U' R U' R' F'
+R' U' F' U' F' U
+R U' R' F' U' F
+R' F F R U U R U'
+U' R U U R R F R
+R' F U R' U U R
+U R' U' R U U R R
+U' F U' F U' F
+R' U R U' R R F
+R' F' U F U' R R
+R' F' U' R' F U'
+R' U' F F U U R R U'
+U U F' R U' R U'
+U U R' U' F U U R R
+U' R' F R R U R'
+U' R R F U U F R
+R R U U F R R U' R'
+R U U R R U F U'
+U R' U' F R U'
+R' U R R F' R' U
+U R' U' R R U' F'
+U' R' U U F R' U U
+R' F' R U R' F F
+R' U' R R U R U U
+R' U' R R F' U R'
+R' U' R R U' R' U
+R' U' F R' F U U
+R' U' R' F R U U
+R' F U U F U R R
+U U R' U' R U R'
+U R' U' R U U F F
+U U F U' F U' F
+R' F F R U' R' U'
+U U R' U F R U U
+U U R U' R R U U F
+U U R U' R' U' R'
+U' F' U' R R U' R R
+U U R' U' R U' R
+R' F F R U' R U U
+R U' R R U' R U
+R U U R R U U R U
+U U R' U U R F' R'
+U' R' U' F U R R
+R' F R R F' U U R R
+R U R' U' F R R
+U' R' U U F U' F
+R' U' R R U' F U'
+U R' U F R' F
+U U R' U U R R F' U'
+R F' U' F' R' U
+U' F U' F F R R U'
+R' F' U' R R U' R R
+R R U U F' U' F' R R
+R' U' F U' R R U U
+R U U F' R R U' F'
+R' U' F' U' F F R
+U U R' F U U R U U
+R' U U R U R' F
+U U F U U R R U' R'
+U' R U' R' U F'
+U' R F' R' U' R R
+R' U' R R F R R U'
+U' F U' F U U F
+U U R U U F' R' U
+U U F U' R R U' R R
+R' U F R U' R R
+U U R F' U' R R F'
+U R U U R U U R'
+U U R' U U F U U F
+R' U' F F R U U R
+R' F U' R R U U F'
+U' R' F' U U F' U
+U U R' U R' F U U
+U' R U' R' U' R'
+R R U' R' U R' U U
+U U R' U R F' R'
+U R F' R R U' F
+U U R' U F U' R R
+U' R R U' R R U' R R
+U R U U R R F' U'
+R R F' U' F R R U'
+R' F U' R R U' F'
+U R F' U' R R U'
+R' U U R' F' R U'
+R' F R U' F R'
+R F' R R U U F' U'
+U U R' F R F U'
+F R U R U U R'
+U R' U' F U' F'
+R U U R U' R R F
+U R F' R' U U R
+U' R F' U U R' U U
+R' F R U U R' F'
+R F' U U R' U U R'
+U R F' R' U R'
+U U R' U' R F' R'
+R R U U R U R' U U
+U' R F' U U R R F
+U R' F' R' F U'
+R' F' U' F U' F F
+U' R' F' U R U'
+R' U U R U U R' F'
+U U R' F U' R F
+R' F' U U R R F' U U
+R' U' F U U R' U'
+R U' R U' F' R'
+U U R' U' R R F' R R
+F U' F U U F R
+U' R' U U R' U R
+U R' U U F' R F'
+U U R U' R R U' F
+U' R' F R U' R'
+U' R' U U R' U U F
+R' U U R U R' U U
+R R U' R R U U F' U'
+R U' R' U' F R R
+U' F U U R U' R'
+R' U R U R F'
+R' F U' F U U R R
+R' F R U' F R R
+R' F' R' F U U F'
+U' R' F' R R U U F'
+U' R U U F' U' F'
+U U R' F U U R U'
+R' U' R R U R' F F
+R' U' R U' R' U
+U R' F R R U U R'
+U' R U' R' F' U'
+R U U R R U F' U
+R' U R R U' R R F
+R' F U' F U U F'
+R F R U' R' F F
+R R F U' F U' R R
+U' R' U R' U' R
+U U R U U F U U F
+U' R' U' F R U'
+R' F' R U U R' F
+R R F U' R' U U F
+U U R' F F R' U U F
+U R F' R R F U'
+U' F' U' R U' R
+R U U F' U U F' R R
+R' F F R R U U R' U'
+U R U' R' U' R
+U U F' R U R U U
+U' R' F' R U' R'
+U' R F' R R F U'
+U R' F U' R' U'
+F U' F' U U F R R
+R' F' U' R R F U'
+R' F' U' R R F R R
+R' U' R R U' R' F
+U U R' U U F U' R
+R' U' F' R R U U R'
+U R' F R U U R
+U R F F U' F' U U
+U' R' U' F' U' R
+R' F U' R R F' U U
+F R' U' R' F U'
+R' U U R U U R F
+R F U U F U U F
+R' U F U R' U U
+R F' R' F' R' U U
+U' R R F U' F U
+R' U R R U' R R F
+R' U' F' U' R U'
+U' R F U' F R R
+F' R R U U R U' R'
+U' R' U U F U' F
+U R' F F U F U U
+U' R' F R F' U U
+R' U F' U U R U'
+R U U R' U R' F'
+R' F R R U U R' U
+U' R U U R' U U R'
+U' R U R' F R
+U R F' R R F R'
+R' U R' F' U' F
+U R U' R R F U
+U R F' R' U R'
+U R U' F' R' U U
+R' U R' F R' F
+R R U' R R F R' F
+R F' U' R' U R
+R U U F' R' U' R'
+U U F U U R R U U F'
+U' R F' U U F' R R
+U R' F U' F F R R
+U U R' F U F R
+U U R F' R R F' U U
+U U R' U F' R U'
+R' F U' R U' F F
+R' U' F U' F' U'
+U' R' F' U' F U
+R' F R U R U U
+U R' F R R F' R R
+R U U R R U' R U'
+R' U' F R F U'
+R' U U F R R U' R R
+U R F U' F' R
+R F R F R U U
+R R U' R' U U F R R
+R F' U' R R F R'
+R U' F' R R U U R
+U U F U' F U' R
+U' R R F U' R U
+R F R U' R' F
+U R' U' R U R'
+R' U R U U R' F'
+U U R' F U U F R
+U U R U' R R U' F
+R R U U F R U R'
+R' U' R U U R F
+U U R' F U U F U'
+R U' R R F U U R R
+R U U R R U' F R R
+U' R' U' F U' R
+U R' F R U R
+F U' R U R U'
+U R R F F U F R
+U U R' F U U F R R
+R U' R R F U U F'
+U R' F' R U' R'
+R F' U U R U' R R
+R' U' R R U' R' U
+R' F R U U R U U
+U' F R R U' R' U U
+U U R F' R F' R'
+U' R U U R R F U U
+R' U U R F' U R'
+U U R' F' U' R' F
+U R' U U F R R F'
+F' R R F U U R R U'
+U' R' U U F' R U'
+U R' F' U R R U'
+U' R' U F' U U R
+R R F U U R R U' R R
+U' R R F U' R' F
+R' F U U R U' R
+U' R U U R R U' F
+U R' U' F R R U U
+R' U U F R U' R'
+R U U R' U R' F
+R' F F U R R U' R R
+U' R' F' R R F U'
+U R' F' U' R R U U
+R F' R' U U R' U'
+U U R U' F' R' U
+R' U' F F R R F' U'
+R R U' R U U R' F
+R U R' F U U R'
+U' R' U' R F R R
+R' U U F R U U R'
+U' R' F U U F' U'
+R F' R' U R' U
+R U' R R U' R' F
+R' F U' R' F U'
+U U R' U U R F U'
+R' U F' R R U' R
+R' U U R U R U'
+U U R U U R' U' R
+R' U U R U' R' F
+R' U' R U R F'
+U' R' F R R U' R R
+U R U' R U' R R
+U U R F U' R R U'
+U R U U F' R' U U
+U U R' U R U U R'
+R' U U F' R U' R
+R' F U' F' R U'
+U' R U' F' R R U U
+U R U' R R U U F
+R' F U' R U' R'
+U' R R F' U' R U'
+R' U R R U U R' U'
+U U R F' R U' R'
+U' R' U U R U U R
+U' F U' F U U F
+U R' U' R U R'
+U' R F' U' F' R R
+U U R' U F U' F F
+U' R' F' U' F R
+R' F' U R U R
+R U' R' U U R' U'
+R' U F R U R'
+R F' U' R' U U R'
+U U F' R R U' F' R R
+R' U' F R R U' R R
+R R U' R R U U F R
+U' R R U U R U R'
+R' F U' F U' F'
+U' R R U' R' U F'
+U U F' U' R' U' R'
+U R U U F' U' R R
+R U' F' U' R R U U
+U' R' U' F U' F
+U' R' U U F' R F
+U R' U U R U U R
+R' U' R' F U' F F
+U U R U U R U' R'
+R' F U' F R R U'
+R U U R' U' R R U'
+R U U R' U R' F'
+R U U R' F U R
+U' F R R U' R' U
+R' U' R U U R' U U
+U U F' R' U' F R R
+R' F' U F' U' R R
+R U U R R F F U' R
+R' U U R R F' R' U'
+R' U R F' R R U'
+F' R R U F R R U'
+U' R U' R F' R'
+U R' U U F' R U U
+U' R' U' F R U
+U U R' F R U R'
+U R U' R' U' R
+R' U U R U R' F
+U R' U U R R U U R'
+F U' F' U U F U'
+U R U U R R F U'
+U' F R U' R U'
+U R F' U U F U'
+F R U R' U' F
+U' R' U F U R R
+F' U' R R F' R' U'
+U U R' F' R U' R
+R' F U' F R R F'
+R' U' F' R U' R
+R U U F' R' U R'
+U R' U R U' F'
+U R F F U' R U
+R F' R R F U R
+R R U' R R U' F R
+U' R R U R U' R
+U U R' F U' F U'
+U R' U R U' R
+U R' U' F U R'
+U' R' F' U' F R R
+U U F R F' R U'
+R' U' R U U R' U U
+F U' R U U R F'
+U' R' U R' U' R
+F' U' R R U' F U'
+R' F F U' F R R U'
+R U' R R U F U
+U' R' U R' F R R
+R' F' U U F U' F
+R U' R' U' R R U
+U U R' U U F R' F
+U R U U R R F U
+R' U' R R U' R' U'
+U U R' F F U' R U U
+U U R U' R' U U R
+U U R' U U R U R'
+F U F R U' R'
+R U' R R F U' F F
+U R' U' F' R U
+U F U' R U' R'
+R R U' F U F U'
+U F R R F' U U R'
+R U' R' U' F' R R
+R' F' R U' R' U U
+R' U R U' R' U
+R U' R' U U R' U U
+U R F' R' U' R
+R' F U U F R R U U
+R' U U R U U R' F
+U R' U U F U' F
+U' R U' R' U R'
+U U R F' U U F' R'
+U U R U U F' U U F'
+U' R F' U U R R F'
+U U R' F U' F F U'
+U' R' F U' F' R R
+F R F' R U' R'
+R' F' U' F R R F'
+F R U' R' U U F
+R' U' F U U F R R
+R U U R R F R R U U
+U' R' U' F F R U'
+R' F U' R U' R'
+R U' F R R U' R'
+R R F U' F R' F
+R U' R R U R F'
+U R' U U R R F U'
+U U F U' R' U' R
+U U R' U F U U F F
+R' U U R U' F F R
+U' R' U F F R U'
+R' U' F R R U' F
+R' U U R U' R' F'
+F R U R' F U'
+R' U R R U' R' U'
+R' U' F R F' R R
+U' R U U R' F R
+R R U U F U F U U
+U U F' R' U R' U
+R' U U F U' R' F
+U U R' F U' F' U'
+U' R' U' F' U U R
+R' F R U U F' U'
+R U U R R F U U R
+R' U U F R U' F
+U R' U' F' U' R
+R F' R R U' F F U
+R' U U R U' R F'
+U R U U R R F U U
+U R' U R R U' R'
+R F R' U' R U U
+U' R' U' F U' R'
+U R' F R R F' R R
+R U' F' R R F U'
+F R R U' R' U' R
+R F' R R F R U'
+U R' U U R U R'
+U R' U R R F' R R
+R U U F' U' R R F
+U' R' U' R' U' F
+U R U' R R U R
+R' U R U' R U'
+U' R' U' R' U' F
+R' U' F F R U R
+R' U U F' R R F' R'
+U' R' U' F F R R U
+R' U' F' R' U U R
+R' F U' F R R U'
+R' U U F R R U U R'
+R' U' F U U F' U U
+U U R' F R' F' U'
+F' R' U R U' R R
+R' F U U F' R U'
+U R' F U R R F'
+U' R' U F' R R F'
+R F' R R U U F R
+U' R' U' F' R R F
+R' F U F' U' R
+U' R U' R R U' F
+R' U' R U R' F
+R' U' R R F U U F
+R' F F R R U' F' U'
+R' U R U F' U U
+R' F R R U U R' U
+U U R F U' R U
+U' R' U U F R U
+U F U R' F R
+U R F' R' U' R R
+R U U R' F R U
+R' U' R U R' U
+R' U U R U F R
+U U R R F' R U R
+R' F R' U F' U'
+U' R' U' F F U U F
+U R R F R U F'
+U' R U' R R U' R R
+R U' R R U' F' U U
+R' F U' R F F U'
+R F U' F R U
+U' R' U' F U U R
+R' U F U' R U
+R' U U F U U F' U U
+U R' U F F U' F
+U' R U' R U' R R
+R' F R U U F' R
+U R U U R' U R
+F U F U' F R
+U R R U' R R F R R
+R' F U R' F R
+U U R U' R R U U R'
+U R' U U F F R R U'
+U U R' F F R' F U'
+U' R U' R R U' F F
+U' R F U' R R U'
+U R' F R R F' U'
+U' R U' R' U' R'
+U U R' F U' F' U U
+R' U' R' U' F R R
+U U R U U R R F U
+R U' R U' F R
+U R' F' U U R U U
+U U R' U U R R U U R'
+U U R F' U U R' U U
+F' R U U R' U U R
+R' U U R' F U' F'
+R U U R' U R' F
+U R' U U R U' R'
+U U R U U R' U' F'
+U R U' R R U' R R
+R' F U' F R' F
+U R' F R U' F
+R R U U F R U U R'
+R F' R' U U R R U'
+R' F U' F F U U R
+U' R R U U R U R'
+R' F U U F U U R R
+U' R F' R' F U'
+R' U' R R F' U R'
+U U R' F R U' R
+F R U' R' F U U
+U R U U F' R R F
+R U U R R F R' F
+R' U' R U R R U
+R' F R R F' R' U
+R' U' F R U U R'
+R' U' F' R U U R
+R U U R' U' F F R
+U' R R U' R U' R
+R' U' R U U R' F
+R U U R R F U F
+R U' R' U U F U U
+R' U' R U' R' F
+R' F' R R F' R R F
+U' R' F U' F' R'
+U R' F U F F R R
+R' U F R R U' R R
+U R' U F F R R U U
+R R U' R R F U U F'
+R' U U R U R' F
+U U F U U F U U F
+R' U U F U' R F'
+F R U U R' U' R
+R' U U R' F U' F
+U U R U' R R F U U
+R' F' R U F R
+U U R' F R F' R R
+U' R' U R U' R
+R' F R U U R U U
+U' R' U' R U' R'
+R U' F R U R'
+U' R' F' R R U' F'
+U' F R R U U F' U U
+R U U R R U R R U'
+R R F U' R R U U R R
+R' F U U R R U' R'
+U' R R U U R R F' R
+R U' R R U' R U
+R' U' R U R' F'
+R U' R R F U' F
+U R' F R U' R'
+R' U' R R U U F' U'
+R' F F R U' R' F
+U' R F' R' U U R
+R' F R' F U' F F
+U' R' F' U' R U
+R' F' U U R U U R'
+R' F U U F U' R R
+R U' F' R R F' R
+U R' U F U U F
+R R U' F R R U' F'
+R' U F U' F U'
+U R U U F F U' F
+U U R' F' U U F' U'
+U' F R U R' F
+R' F U R F R
+U R R U' F U' F'
+U' F' R' U' R U'
+U R U' R R U' F'
+U R' U' R U' R
+R' U U F' U U F' R
+U R F U' F R R
+R' U U F U' F U'
+R R U' F U' R' F'
+R' F U U F U R R
+R' U U F' U U R U U
+U U R' F R U' R
+R' U U F' U' F U'
+R U U R' U R F'
+R' F U U F F R R F
+R U U F' U' R' U
+U U R' U' F' U U R R
+R' U' R F' U' F'
+R R U' R R U U F F U'
+U' F R U U R U'
+F U U F U U R U U
+F' U' F U' R R F'
+R' F R U' F U'
+F U' F' R U R'
+R' U U F' U' F U'
+U' R U' F U U F'
+R U' R' U R' U U
+R U' F R' U' R
+U R U' F' R' U U
+U U R' F' U' R U U
+U R R U' R U' R'
+R' U' F R U R
+F R U' R' U R
+U R U U R' U R
+R U U F' R' U' R
+U' R' U' F F U U R
+R U' R' F R U'
+R' F' R U' R' F
+R' F U' F' U U R'
+U R U R U' R R
+U R U U R' U F
+R' U' F U' F R R
+R F' U' R' U' R'
+R' U U F U F R
+R' U' F R U R'
+R F U' F F R U'
+R' U U R R U U F' U'
+U' F U' F R' U'
+R' U' F' R U' R'
+R' U U R U' R U U
+R R U U R' U R R U'
+R' U' R' U' R U U
+U F U' R U U R'
+R' U' R U' R' U U
+U R U' R R U' R
+R' U' R R F R U'
+R' U U R' F R U U
+U U R' U U F F U U R
+R U' R' U' R U'
+U U R' U R' F' R
+R F' R' U U R' U
+U U R F R R U' R R
+U U R' U U R U F F
+U' F U' F R U U
+U R' F U U R R U'
+R U R' U U F' U'
+R' U U R' U' R U'
+R R U' R U' R U'
+U' R R U' F R U U
+R' F F U R U U R'
+U' R' F F R R U' R'
+U R U R R F U'
+R' F F R U' R' F
+R F' U' R U' R R
+R' F R U' R U'
+U R F' U' R R U U
+R R F' R' F' R U
+R F' U' R R F U'
+U U R R F R U' R
+R' F F U U F U R
+U' R U U R' U' R'
+U' R U U R' U R'
+U U R' U R U R'
+R F' U' R R U F
+R' U R U' R' F'
+U' R' F' R U U R'
+U U R U U R R F U'
+U U R' U' R U R'
+U' R' F R' F' U'
+R U' R' U U R U'
+R' U' F' U R U U
+U R U U R R U U F
+R' F U U R' F U U
+R' U' F F R R U U R R
+R R F U' R R U' F'
+R' U' R U U R' F
+R' F U' R R U' R'
+U' R' F R R U' R'
+R U U F' R' F U'
+F U' F R U' R R
+U R U' R R F R
+R U U R' U R' F
+U U R' F U' F U U
+U' R' U U F U' R
+U' R' U U F' R R F'
+R' U R U U R' U U
+U R U U F' U U F'
+U U R U' R' U' R R
+U' R U U R R F R R
+U U R' U R U F
+U' F R R U' R R U'
+U R' U U R' U' R
+U R' U U R U' R
+R' U' F' R R U' R'
+R F' U' R' U U R'
+R' U' F F R U' R'
+R' U U F' R U U R'
+R R F' R R F R U
+R U U F' U' R R U'
+U U F' R R U' R' U
+U' R' U U F F R R U U
+U R' U R' F R R
+U R' F U' R R F'
+R U' F' R R U R'
+R U U F' U' F' R R
+U R R U' R U' R'
+R' F' R U R' U U
+R' U' R U' R' U'
+R' U U F U F' R R
+R F U' F U F
+R' F F R R U' R F'
+R U' R R U' F U'
+R' U F' U U R R U'
+R' F U U F' R U U
+R F' R' U R' U U
+R' F U' R U' R
+R' F R U R' F
+U' R U U F' U U R R
+U' R' F U F U'
+U U R F' R' U R'
+U U R' F U R U'
+R R U U F U R' F
+R' U U R U R' F'
+R' U' F' R U' R
+U R' U U R U' R'
+R' F U' F F U U R
+U U R U U R' U R
+R' F U F U U F F
+U R' U U F U' R
+U' R F' U U R' U
+U U R F' R R U' R
+U' R U U R' U U R R
+R' U U R' U' R R U U
+U' R' U U R U U R
+U F U U F R R U'
+R U' F' R' U U R
+U R F U' F U'
+R' F U R' F R
+F U U R U U R' F
+R' F U U F U U R
+R U U R R U U F' U
+U' F U' F R R U U
+U R F R U' R
+F F R R U U R' U' R'
+F R U' R U U R'
+U U R U' F' R' U U
+U' F F U' R R U U R'
+R R F' U' R' U R
+U' R' U' F U U F
+F F R U' R U' R'
+R' U U F R R U' F'
+R' U R' F U' F
+R' F' U' R U F
+R F' U' F' U U R R
+R U U R R U F U'
+U' R R U' R R F R R
+R F U R U U R'
+R' U R' F R R U
+U R' F R' F' R R
+R F U U R' F U U
+R R U' R' U R' U U
+F' U' R U U R U'
+U' F' U' R U' R'
+R R U' R R U' F U'
+R U U R R U U R F
+U' R U U R' U R'
+R' U' R U R F'
+U' R U' R R U' F
+U' R F R R U' R'
+R U U F R U R'
+R R U' F U' F F U U
+U' R' U' R F' U U
+U R' F U U F U'
+U' R' U U F R U
+R U U F' R R F U'
+F U' F U U R R U'
+R U R' U' F R R
+R' F R U' R' F'
+U' R' F R R U' R'
+R' F U R U' R
+R R F' U' F U U R R
+U' R U U R R U' F
+R U' R' U U R U'
+R U' R R U R F'
+U' R R U R F' R R
+U R' F' U U R R F'
+R F' U' F' R' U'
+U R' U' R R F' U U
+R U' R R U' F F R
+U R F' R' U' R'
+F U U F U' F U'
+R' U U R R U' R R U'
+R' U U F U' F U
+R' U F' R U U R
+U' R' U' F R U
+R' U' F' R R U U F
+R U' F' R R F R'
+R' F' U U F U U F
+R' F' R U U R F'
+U' R U R F' R'
+U U R R F' U U R U U
+R' F U' F' U U F F
+U' F' R R F R U'
+R' F' U' F R F'
+R U' F R' U R
+R' U R R U' R R U'
+U' R' F R R F U U
+R' U U F U' F F R R
+U' R' F' U' R R U U
+R F U U F' R U
+R' U R U' R' F
+R R U' R U' F U U
+R' U U F U R U U
+R' F U' F U' F
+R' F' U U R U U F'
+U R U U R R U U F
+U U F R R U U R' U
+U U R' F U' F' R'
+U R R F' U U R R U'
+R U' R R U R U'
+R U U R F U U F
+R U U R' U U R' U
+U U R' U U F U' F
+F R U R U U R'
+R' U U R F R' U'
+U' R U' R R F' R
+R' U' R F' R' U U
+U R U' R' U' R'
+R' F U U R U U R'
+U U R' U' F U' F
+R' F F U U F U U R
+R' U U F R R F' R'
+R' F' R U R U U
+U' R U' R U U R R
+R' U U R U' R U U
+R R U U R U' R' U'
+U' R F R R F' U'
+F' U U R' U R U U
+U U R U U R' U' R R
+U R' U' F' U U R
+R U U R' U' R' F
+R F' U U R R U' F F
+U' R' U F R U'
+R R F' U U R U U R
+U U F' U U R R U' R'
+U' R' U U F U U F
+U' R' U U R F' U'
+U R' F R U' R'
+U' R F R U' F
+U' R U U R R F R
+U U F R U' R F'
+R' F R' U' F R
+R' F U U F' U U F'
+R U' F' R' U R'
+F R U F' R U'
+R' U U F' R U U R'
+R' U' R U' R U U
+R' F R U R U'
+R' F U' R F R'
+R' U' F' R U R
+U R U U R' U R R
+U U R F' R U U R R
+R' F U R' F' U U
+U R' F F R' U U F
+R' F R U F U'
+U' R U U R' F R
+U R U' R' U R
+R' F U U F U U F F
+R' F R U R' F
+U U R' U U F U R
+R' F U U F' R U
+U U R' F U U R R U'
+U U R F U U R' F
+R U U F R U U R'
+U R' U U F U' R'
+U' R' F U' R' F
+R F U' F U' F
+U R' U F U' R R
+U U R U' R R U' R R
+U R' F R U U R R
+R' F' R U' R F F
+R U' R' U R U'
+R U U F' R' U R
+R' U U F R U U R'
+R U' F' U' R R U
+R' U U F F R U' R
+U R' U' F U R
+F' U U R U R' F'
+U F' R U R U U
+U R' U' F' R R U U
+R U U R' U U R' U
+U F' R U R U U
+U' R U' R U U R'
+R' F U' F U U R
+U' R' U R U' R
+R U' R R F U F
+R U' R R U U F U'
+U' R' F U U F R R
+R' U R R F' R' U U
+R' U' R R U' R' U U
+U R U' R R U' F F
+R R F U U F U U F
+U' R' F R R F' R R
+R' F' R U' R U U
+U R U U R R F U'
+R' F F U R R F' R'
+R' U R R F U' R
+R U U F U U F U'
+R U' F' U U F' U'
+U' R F' U U F' R R
+R' F R U' R' F
+R' U' F' U U R R F'
+U F U' F U U F
+R' U U R' F R' F
+U U R' U F R R F'
+R' U U F U U R R U'
+U' R R F U' R U
+R U' R' U R' F
+R' U' R R U U F' R R
+U R' F' U U R U
+U F U U R U U R
+R U U R' U U F U U
+R' U F R U' R
+U' R U U R' F F R
+U R U U R' F R R
+R' U' R R U R' U
+R' U U R' F U U R
+R' U U F F R R U' R R
+F' U' R U R' U
+F' U' F' R U' R'
+R' U' F R U' R
+U U R U' R R F U
+U U R' F U U R R F'
+R' U' F R U' R'
+R' U U F U' R U U
+R U U R R F U' F
+U U R' F' U' F R
+R' F R R U' R' U'
+R' U' F U' F U U
+R' F R' U F' R
+U R' U U F F U' R R
+F R U' R U' R'
+R F' R' U F R'
+U U R' U R R U' R'
+U R U U F' U' R R
+U R' U' R U R'
+U' R' U U F U U F
+R' U' F U' R R U'
+U U R' U' F R U
+R' U R' F R R U U
+R' F' R R U U R R U U
+R' U' F' U' F U'
+U R' U' F R R U'
+R' F R U' R' U U
+U' R' U' F' U U F
+U' R U' F' U' R R
+U U R U U R R U U F
+R' F U' R U R'
+R' F U F' U' F
+R' F' R R F' U' R'
+U R F' U R' F
+R' F R U' R' U
+U R' U' F R' U'
+U' R' U U R U R
+U U R' U U R U U F'
+R R F F R U' R' U'
+R' F U U F F R U'
+R' U' R U F R
+R' F U U R U' R'
+R F U' R F U U
+U R' F U U F' U'
+R R F R U U R R U'
+U U R' U' F' U F'
+R F' U' R' F R'
+R' U' F F R U' R
+U U R' U' F U U R R
+R U' R R U U F U'
+R' U U R R F' R R U'
+U U R U' R' U U R'
+R U' R' U U R U U
+U' R U R' F F U'
+U R' F R F U'
+U R' U U F' R U'
+F R U U R' U' F
+U U R F' R R F U'
+U' R' F U U F U'
+R F U' R U' F
+U F U U F' R U
+U R' F R' U' R R
+R F R U R' U U
+U R' U U F U F
+U R U R' F R R
+U U R F U U F U U
+U U R' F' U' F R R
+R' U' F U' F R R
+R' U' R U' R' U U
+U' R' U U F R R U'
+F R U U R' U U F
+U R U U R R U' R R
+U' R' F' R R U' F
+U' R U' R' U' R'
+U R' F R R F' U'
+R U' R' U' R F
+U' R R U R' F U'
+U' R U U F' U' R R
+R' U U F U' F R
+F U' F' U U R R U'
+F' R' U R U U R'
+U U R' F' R F U'
+R' U' F U' R R U
+U R' U F U' R R
+U R' U U R R U' R R
+R F U' R R U U R'
+R' U F U' R U
+U U R U' R U' F
+R U U R R F R R U'
+R F U' F U U R
+U U R' U U F' R U U
+R' F U R U' R'
+R' F U' F R U
+U U R' U' F R R U'
+R' U U F U' F U
+R' F U' F' U' F'
+U U R' F R U U R'
+R' U' F U R R U'
+U' R' U R' F U'
+U U F U' F U U F F
+R' F R R U U R' U
+U' R' U U R U U R'
+U R' U R U' R'
+U' R U' R' U' R'
+R' F' U U F U' R
+R U U R R U U F U'
+R U R U' R R U
+F U U R R U' F' R R
+U R F' U' R' U'
+R R F R U R' U U
+R U' R U U R R U'
+R' U U R U U R F'
+R' U U F R U U R'
+U U R' U U F R R U'
+R' U U F U U F' R
+R' F U' R R U' R R
+R' U' F U F' U U
+U' R' U U R R U' R R
+R U U R' U U R U
+R' U' F' U U R F'
+U R U U R R U' F F
+R' U' R U' R U'
+R' F U' R U' R'
+R' U U F' U U F' U'
+R' U' R R U' R R U'
+R U U R R U R R F'
+U' R U U F' R R U U
+U R R U U R R U' R'
+R' U U F U' R' F
+R F' R' U U R' F
+U U R R F R U' R
+U R F U' F' U'
+F R R U' R' U R'
+U' R F' R' F' U'
+R F R' U' F U'
+U F R U R' F
+U U R' F' U U R U
+U R' F U R U'
+U' R' U' F U U R R
+U' R U U R R F R
+R' F U U F R U U
+U' R' U' R U R
+R' F U R' U' R R
+R' F R' F U' R R
+R F' U' F U' F
+U U R' U R R U' R R
+U' R' U' R F' U'
+U R' U F' U' R
+R' U U F' R U U R'
+F R U R' U U R
+R F' U' R' U R'
+U U R' U U R' F U U
+U' R' F F R F' U'
+U' R U' F' R R F
+R' F U U F U' F F
+R U' F R U R'
+R' U' R U R' U'
+U R R F U' F' R
+U U R U' F U' F
+R' F R R F' R' U U
+R' U' R R U U R R F
+R' F R' F R F
+U' R F' U' F R
+U U R' F F U' F U U
+U U R' F' U' R U U
+F' R' U R' U' F
+R' F R' F' U U R
+U R' U F U' F
+U' R' F R R F' U'
+R' F' U R' F R R
+R' U' F U U R R F
+R U U R R U F U'
+U' R U U R R F R
+R' U U F F U U F' U'
+U' R U R' U U F F
+R F' U' R' U' R'
+R' U R' U' R R U U
+U R' U' F U' F
+R' U' F U' R F
+U U R' F U U F R
+U' R' U U F U U F
+U U R U' R' U U F
+U R' F R U' R'
+U R' U' R R U' R R
+R U U R R U U F R
+U' R' U U F U' R
+U' R R F R F U'
+R' U U F' U' F' U U
+U' R' F U R U'
+R' F' R' F U' F
+R' U' F U' F R'
+R' F' R U U R' U U
+R' U U R R F U' R
+U U F' R R U U R U'
+R' F R R U U F R
+R' U R R U' F R
+U R R F' R' U' R'
+R' U' F R U R R
+U R R U U R R U' F
+R' F U' R U U R'
+U R R F R U R'
+U U F' U U R U' R'
+R' U' R F U U F
+R' F U' F' R U
+U U R F' R' U R
+R U U R R U U F R'
+R F' U U R U' R R
+U U R U' R R F R
+U R' U' F R R F'
+U R R F F R U R
+R U' R' U R' F
+U' R F' U' R R F F
+U R' F U' F R R
+R' F' R' F R U
+U U R' U' R U R'
+R' F U U F R U'
+R' F F U U F R R U'
+R U U R' U R' U U
+U U R U' R R F F R R
+R' U R R U' R R U U
+U' F U U F R R U'
+U U R F' U U R R U U
+U' R' U U F R R U'
+U R' F U R R U
+R F' R' U' F R R
+F U U F R U' R'
+R U U R R U' R R F'
+U U R U' R R U U F F
+F U U R U U R U'
+U U R' F U U F' R'
+R U' F U U R U U
+R' U' R U' F U'
+U' F' U U R F U'
+R' U' R U' R' U U
+R U U R R F U' F
+R U' R F U' F
+R U' F' U U R R U'
+R' F U U R U R'
+R R U U F U U F U U
+U U R R U' R U' R'
+R U' F' R R U' F
+R' F' U U R F U U
+U R F R U R'
+U' R' U' F F U' R'
+U' R U' R R F U
+U R' U' R U' R'
+U' R U' R' U R R
+U R U U R F' R'
+U U R U U R' U' F
+U' F' R' U' R F'
+U' R U' F' U' R R
+R' U U F R F U'
+U R' U F U' R R
+U' R U' R' U U R'
+F' U' R U' R' U U
+F U' R U U R' F
+R' U R' U U F U'
+R' F' U' R U R'
+R' U' F F U U R R U
+R' F' R R F U' F
+R' F' U' F F R U'
+U' R' F' R U U R'
+R F' U U R' U' R'
+R' F' U U F R U'
+U R' U U F R' U'
+U U R' F' R U' R
+U' R' F U' F F U'
+U U R U' R U U F
+R U U F U F U'
+R' U U F' U U F F R
+R F' R R U R U
+R' F' U' R U R'
+U' R' F' R R U' R R
+U U R' U' F R U'
+U R U' F U' R
+U' R R U' R' U U R'
+U' R U U F' R' U'
+R' F' U' F' U U R R
+R' U U R' U U F U'
+U' R' U R R F' R R
+U' R' U' R U' F F
+U R U U F' U' R R
+U U R' F F U' F U'
+R' U U R R U' R R U U
+F' U' F R U' R
+R F' R U U F' R'
+U' R' F F U' F U'
+U R' U U F F U' R
+R' F U F' U' R
+U' R R F U F U'
+R U' R R U R R F'
+U R' U F F R R F
+R' U' F U R U U
+U' R' F R' U' F
+R' U' R U R' F'
+U R U' R' U R'
+F R R U' R' U' R'
+R' F R R U' R R U U
+U R' U' R R U U R'
+U' R F U' R' U'
+U U R U U R R U U R
+U F U R U' R'
+F U U R U' R' U U
+U U R' U' R U R R
+R' U' R R U' R R F
+R' F U' F' R R F
+U' R' F U F' U U
+U' R U R' F' R R
+R U' R' U' R' U'
+U U R U' R R U' F F
+R U U F R U U R'
+R' F U U F U' R R
+F' U U R U U R U U
+U' R' U' F R R U U
+U' R' U U F U' F'
+U' R' F R R U' R'
+R' F R R U' R' U
+U R F' U' R R F
+R' U R U U R U U
+R U U F U' F' R R
+R' U' R U' R' U U
+R' F U' R U U R
+R U U R R F U' R R
+R U' F' U' R R F
+R F' R R F U' R R
+R' U R U' R' U'
+U' R' F R' F U'
+F' R' U' R' U R'
+U R U U F' U' R R
+R U U R' F U' R
+R F U' F R R U U
+R' U F' U R U
+R U U R R F U U F F
+U' R' U' F U' F F
+R' U' F' R R F U U
+R' U' F' R U' R
+F R R U' R R U' F
+R' F R U' R' U U
+U U R' F' U' R R U'
+R R U' F' U' R' U'
+R' U R R F' U' R'
+U R' F R R U R'
+R' F U' R' U' F
+R U U R R U' F R R
+U' F' U U R F U U
+R R U' R R U' F F U U
+R F' U' R R F F U U
+R' U U F' R U' R
+R' U U R U' R U'
+R R U U R R U' F' R R
+R' F U U F' U' F'
+R' F R R U' F' U U
+R' F' U R' F U
+R U' F F R U U R'
+U U F' R' U' R' U U
+R' U' F U U R R F
+U' R' F' R R U' R'
+U R' F F U' R U'
+F U F U' R R U U
+R' F U F F R U U
+R' F R U U R R F
+R' F F U' F' R U
+U' R U' R R F U'
+R' F' R U U R' F
+U' F R R U' R R U'
+R' U F' U' F U U
+U R' F U' R F
+U' R U' R U' R R
+R R U' F U U F U U
+U' R' F' U' F F U U
+R' F R R F' U' R R
+R R U' F' U' R' U
+U R' F R R F' R'
+R F' R R U U F U'
+U' R R U U R R F U'
+U' R U' R' F' U'
+U R' U' R U R'
+R U' R R U' R R F'
+R' U F' U U R U
+U' R' F U' F F U
+R' U' F R U U R'
+U R' U U R' F U U
+R' U U R F' R R U U
+U U R' U F U U R R
+R' U' R U R' U
+R U R' U F U'
+U U R R F U' F R
+U U R R F U R R U'
+U R' U' F' U U F
+U' R' F R R U U R'
+R' U' R' F F U' R
+U U R' F R U' F
+R R U' F R U' R R
+R' F' U R U U R
+R' U F' U' R R U U
+U R U' R R U' R
+R R U' R R F F R U
+R U' F' R R F U U
+R U' F' R' U U R'
+R' F' R U' R' F
+U U R U' R' U' R'
+U' R U' R U' R R
+F U' R R U' R' U U
+R' U' F F U' R F
+R' F F U' F U U R R
+R U' R' U U R F'
+U' F R U U R F'
+R U R' U' R U
+R' U F R U' R
+U U R' F R' F U'
+R R U' R R U' F R
+R R F R U U R' U'
+R U' R' F' R R F
+R' U' R R F U' F
+U' R' U' R' U' F
+F' U' F' U' R R U U
+U R U U R U U F'
+U U R' F R' U U R R
+U' R F' U U F U'
+U' R' U F' U F'
+U' R U U R' U U R'
+R' F R R U U F R
+R' F U' F U U F
+U R' U R U R'
+R' U U F R R F' U U
+U F U R U' R
+R' F U' R U' R
+R' U' R R U' R R U'
+U' R U' R R F R R
+R R F' R' U U R' U U
+U U R U U F U U F
+R R F U' F U F
+R U U R' U R' U U
+R U R U' R' U U
+U U R' U F R F
+R U' R R F R R F
+U R' F' U R' U U
+U R' U F' U' R R
+U U R' F R R U U R'
+U U R U' R' U U R
+R' U U F U' R R F
+U R' U U R U U R'
+R U' R R F' U U F
+U' R' U' F R R U'
+U R F F U U F R

@@ -21,7 +21,6 @@ if __name__ == '__main__':
     batch_size = 128
     replay_size = 10000
     target_update_int = 10
-    reward_fn = lambda x: 0 # TODO: Fix the reward_fn
     nn_params = { 'layers_dim': [4096, 2048, 1024], 'activation': F.relu }
 
     save_int = 10000

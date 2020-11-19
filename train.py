@@ -11,19 +11,37 @@ import network.rewards
 from network.agent import Agent
 from network.exploration import ExplorationRate
 
+import argparse
+
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    # TODO: use argparse
-    gamma = 0.99
-    epsilon_scheduler = ExplorationRate(1, 0.1, 10000)
-    num_episodes = 5000000
-    num_steps = 20
-    batch_size = 128
-    replay_size = 10000
-    target_update_int = 10
-    nn_params = { 'layers_dim': [4096, 2048, 1024], 'activation': F.relu }
 
-    save_int = 10000
+    parser = argparse.ArgumentParser(description='run training loop')
+    parser.add_argument('--lr', help='learning rate', default=0.001)
+    parser.add_argument('--gamma', default=0.99)
+    parser.add_argument('--scheduler', help='epsilon scheduler to change exploration rate',
+                        type=tuple, default=(1, 0.1, 10000))
+    parser.add_argument('--episodes', help='number of episodes', default=5000000)
+    parser.add_argument('--steps', help='maximum number of moves the agent is allowed to make', default=20)
+    parser.add_argument('--batch', help='batch size', default=128)
+    parser.add_argument('--replay', help='replay size', default=10000)
+    parser.add_argument('--update', help='interval at which target network updates', default=10)
+    parser.add_argument('--save', help='interval at which .pt checkpoint files are saved', default=10000)
+    parser.add_argument('--layers', help='dimensions of the three fully-connected layers',
+                        type=tuple, default=(4096, 2048, 1024))
+
+    args = parser.parse_args()
+    lr = args.lr
+    gamma = args.gamma
+    epsilon_scheduler = ExplorationRate(args.scheduler)
+    num_episodes = args.episodes
+    num_steps = args.steps
+    batch_size = args.batch
+    replay_size = args.replay
+    target_update_int = args.update
+    nn_params = {'layers_dim': args.layers, 'activation': F.relu}
+
+    save_int = args.save
     torch.manual_seed(0)
 
     with open('./data/4moves.txt', 'r') as f:
@@ -35,15 +53,15 @@ if __name__ == '__main__':
     agent = Agent(replay_size, reward, device, nn_params)
     target_net = agent.target_net
     policy_net = agent.policy_net
-    optimizer = torch.optim.RMSprop(policy_net.parameters(),lr=0.001)
+    optimizer = torch.optim.RMSprop(policy_net.parameters(), lr=lr)
     criterion = torch.nn.SmoothL1Loss()
 
     scrambles = ['F', 'R', 'U', 'L', 'D', 'B']
     for i, scramble in enumerate(tqdm(itertools.islice(
             itertools.cycle(scrambles), num_episodes))):
         epsilon = epsilon_scheduler.get_rate(i)
-        losses = agent.play_episode(optimizer, criterion,
-                scramble, batch_size, gamma, epsilon, num_steps, device)
+        losses = agent.play_episode(optimizer, criterion, scramble, batch_size,
+                                    gamma, epsilon, num_steps, device)
         print(np.mean(losses))
 
         if i % target_update_int == 0:
@@ -51,5 +69,3 @@ if __name__ == '__main__':
 
         if i % save_int == 0:
             torch.save(target_net, f'checkpoints/{i}.pt')
-
-

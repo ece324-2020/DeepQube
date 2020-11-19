@@ -1,8 +1,8 @@
 class ExplorationRate:
-    def __init__(self, eps_start, eps_end, eps_steps):
-        self.eps_start = eps_start
-        self.eps_end = eps_end
-        self.eps_steps = eps_steps
+    def __init__(self, eps):
+        self.eps_start = eps[0]
+        self.eps_end = eps[1]
+        self.eps_steps = eps[2]
 
     def get_rate(self, episode_num):
         if episode_num > self.eps_steps:

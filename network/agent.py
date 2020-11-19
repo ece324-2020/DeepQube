@@ -69,6 +69,9 @@ class Agent:
         cube.load_scramble(scramble)
         state = cube.get_embedding(device).unsqueeze(0)
 
+        if cube.is_solved():
+            return [0.0]
+
         history = []
 
         randoms = torch.rand(num_steps)

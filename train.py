@@ -43,7 +43,6 @@ if __name__ == '__main__':
     nn_params = {'layers_dim': args.layers, 'activation': F.relu}
 
     save_int = args.save
-    torch.manual_seed(0)
 
     with open('./data/4moves.txt', 'r') as f:
         scrambles = list(map(lambda s: s.strip(), f.readlines()))

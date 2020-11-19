@@ -6,8 +6,13 @@ import network.models
 import network.replay
 
 class Agent:
-    def __init__(self, replay_size, reward_fn, device, nn_params):
-        self.memory = network.replay.ReplayMemory(replay_size)
+    def __init__(self, replay_size, reward_fn, device, nn_params,priority=True):
+        #self.priority = True means use priority experience replay
+        self.priority = priority
+        if self.priority == True:
+            self.memory = network.replay.PrioBuffer(replay_size)
+        else:
+            self.memory = network.replay.ReplayMemory(replay_size)
         self.reward_fn = reward_fn
 
         cube = cubesim.Cube2()
@@ -27,15 +32,16 @@ class Agent:
     def optimize_model(self, optimizer, criterion, batch_size, gamma):
         if len(self.memory) < batch_size:
             return 0
-
-        samples = self.memory.sample(batch_size) # this is in AoS format
+        if self.priority == True:
+            indices,weights,samples = self.memory.sample(batch_size)
+        else:
+            samples = self.memory.sample(batch_size) # this is in AoS format
         batch = network.replay.Transition(*zip(*samples)) # this is in SofA format
-
+        
         state_batch = torch.cat(batch.state)
         action_batch = torch.cat(batch.action)
         reward_batch = torch.cat(batch.reward)
         next_batch = torch.cat(batch.next_state)
-
         # Run the recorded next states through the model. This return the qvalues for
         # each action. We take the maximum qval from each state. We stop tracking
         # gradients since this ends up being manipulated into the target.
@@ -55,11 +61,15 @@ class Agent:
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-
+        
+        #Update Buffer Priorities
+        if self.priority == True:
+            delta = abs(target_actions_qvals - generated_actions_qvals.detach()).numpy()    
+            self.memory.update_priorities(delta, indices)  
         return float(loss)
 
         
-    def play_episode(self, optimizer, criterion, scramble, batch_size, gamma, epsilon, num_steps, device):
+    def play_episode(self, optimizer, criterion, scramble, batch_size, gamma, epsilon, num_steps, device,update_param=True):
         """The agent attempts to solve the scramble provided in `num_steps` moves.
         Returns:
             list: A list countaining the losses through `num_steps` moves.
@@ -82,7 +92,6 @@ class Agent:
 
             next_state = cube.get_embedding(device).unsqueeze(0)
             reward = self.reward_fn(next_state)
-
             self.memory.push(state, action, next_state, torch.tensor([reward], device=device))
             state = next_state
 
@@ -91,6 +100,9 @@ class Agent:
 
             if reward > 0:
                 break
+        #potentially don't want to update prio memory buffers every time
+        if (update_param == True) and self.priority == True:
+             self.memory.update_parameters()
 
         return history
 

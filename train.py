@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-
+#systemd-run --scope --user tmux
+#tmux attach-session
+#python train.py > losses
+#to detach: C-b d
 import itertools
 
 from tqdm import tqdm
@@ -56,7 +59,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.RMSprop(policy_net.parameters(), lr=lr)
     criterion = torch.nn.SmoothL1Loss()
 
-    scrambles = ['F', 'R', 'U', 'L', 'D', 'B']
+    #scrambles = ['F', 'R', 'U', 'L', 'D', 'B']
     for i, scramble in enumerate(tqdm(itertools.islice(
             itertools.cycle(scrambles), num_episodes))):
         epsilon = epsilon_scheduler.get_rate(i)

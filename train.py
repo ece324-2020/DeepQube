@@ -7,9 +7,10 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-import network.rewards
 from network.agent import Agent
 from network.exploration import ExplorationRate
+import network.rewards
+import validate
 
 import argparse
 
@@ -60,12 +61,17 @@ if __name__ == '__main__':
     for i, scramble in enumerate(tqdm(itertools.islice(
             itertools.cycle(scrambles), num_episodes))):
         epsilon = epsilon_scheduler.get_rate(i)
-        losses = agent.play_episode(optimizer, criterion, scramble, batch_size,
-                                    gamma, epsilon, num_steps, device)
-        print(np.mean(losses))
+
+        losses = agent.play_episode(optimizer, criterion,
+                scramble, batch_size, gamma, epsilon, num_steps, device)
 
         if i % target_update_int == 0:
             target_net.load_state_dict(policy_net.state_dict())
+
+        train_loss = np.mean(losses)
+        val_acc = validate.validate(target_net, scrambles, device)
+
+        print(f"{i}\t{train_loss}\t{val_acc}")
 
         if i % save_int == 0:
             torch.save(target_net, f'checkpoints/{i}.pt')

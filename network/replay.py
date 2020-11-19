@@ -67,7 +67,10 @@ class PrioBuffer(object):
         self.priorities_sum_alpha = 0
         self.priorities_max = 1
         self.weights_max = 1
-    
+        
+        self.current_batch = 0
+        self.numbatches = 30
+        self.weights = []
     def update_priorities(self, tds, indices):
         for td, index in zip(tds, indices):
             #N = min(self.experience_count, self.buffer_size)
@@ -83,19 +86,27 @@ class PrioBuffer(object):
             data = self.data(updated_priority, updated_probability, updated_weight, index) 
             self.memory_data[index] = data
 
-    def sample(self,batch_size):
+    def multisample(self,batch_size):
+        self.current_batch = 0
         values = list(self.memory_data.values())
         random_values = random.choices(self.memory_data, 
                                        [data.probability for data in values], 
-                                       k=batch_size)
-        experiences = []
-        weights = []
-        indices = []
+                                       k=self.numbatches*batch_size)
+        self.experiences = []
+        self.weights = []
+        self.indices = []
+        #print(sampled_batch)
         for data in random_values:
-            experiences.append(self.memory.get(data.index))
-            weights.append(data.weight)
-            indices.append(data.index)
-      
+            self.experiences.append(self.memory.get(data.index))
+            self.weights.append(data.weight)
+            self.indices.append(data.index)
+    def sample(self,batch_size):
+        if self.current_batch == self.numbatches or self.weights == []:
+            self.multisample(batch_size)
+        experiences = self.experiences[self.current_batch*batch_size:self.current_batch*batch_size+batch_size]
+        indices = self.indices[self.current_batch*batch_size:self.current_batch*batch_size+batch_size]
+        weights = self.weights[self.current_batch*batch_size:self.current_batch*batch_size+batch_size]
+        self.current_batch += 1
         return (indices,weights,experiences)
 
     def update_parameters(self):

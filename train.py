@@ -1,21 +1,21 @@
 #!/usr/bin/env python
-#systemd-run --scope --user tmux
-#tmux attach-session
-#python train.py > losses
-#to detach: C-b d
+
+
+import argparse
 import itertools
+import math
+import sys
 
 from tqdm import tqdm
 import numpy as np
 import torch
 import torch.nn.functional as F
 
+from data.gen_scrambles import gen_scrambles
 from network.agent import Agent
 from network.exploration import ExplorationRate
 import network.rewards
 import validate
-
-import argparse
 
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -47,10 +47,6 @@ if __name__ == '__main__':
 
     save_int = args.save
 
-    with open('./data/4moves.txt', 'r') as f:
-        scrambles = list(map(lambda s: s.strip(), f.readlines()))
-
-    print(f'loaded {len(scrambles)} scrambles')
     reward = network.rewards.Naive(device=device)
 
     agent = Agent(replay_size, reward, device, nn_params)
@@ -59,21 +55,37 @@ if __name__ == '__main__':
     optimizer = torch.optim.RMSprop(policy_net.parameters(), lr=lr)
     criterion = torch.nn.SmoothL1Loss()
 
-    #scrambles = ['F', 'R', 'U', 'L', 'D', 'B']
-    for i, scramble in enumerate(tqdm(itertools.islice(
-            itertools.cycle(scrambles), num_episodes))):
-        epsilon = epsilon_scheduler.get_rate(i)
+    pbar = tqdm(total=num_episodes)
 
-        losses = agent.play_episode(optimizer, criterion,
-                scramble, batch_size, gamma, epsilon, num_steps, device)
+    episode = 0
+    current_depth = 2
+    while True:
+        recent_solves = np.zeros(25, dtype=np.bool)
+        print(f'training against all {current_depth} move scrambles', file=sys.stderr)
+        for scramble in itertools.cycle(gen_scrambles(current_depth)):
+            epsilon = epsilon_scheduler.get_rate(episode)
 
-        if i % target_update_int == 0:
-            target_net.load_state_dict(policy_net.state_dict())
+            losses = agent.play_episode(optimizer, criterion,
+                    scramble, batch_size, gamma, epsilon, num_steps, device)
 
-        train_loss = np.mean(losses)
-        val_acc = validate.validate(target_net, scrambles, device)
+            if episode % save_int == 0:
+                torch.save(target_net, f'checkpoints/{episode}.pt')
 
-        print(f"{i}\t{train_loss}\t{val_acc}")
+            train_loss = np.mean(losses)
+            if episode % target_update_int == 0:
+                target_net.load_state_dict(policy_net.state_dict())
+                val_acc = validate.validate(target_net, gen_scrambles(current_depth), device)
+                print(f"{episode}\t{train_loss}\t{val_acc}")
+                recent_solves = np.roll(recent_solves, -1)
+                recent_solves[-1] = math.isclose(val_acc, 1.0)
 
-        if i % save_int == 0:
-            torch.save(target_net, f'checkpoints/{i}.pt')
+                if np.sum(recent_solves) > 20:
+                    current_depth += 1
+                    break
+
+            episode += 1
+            pbar.update(1)
+
+        torch.save(target_net, f'checkpoints/{episode}.pt')
+
+    del pbar

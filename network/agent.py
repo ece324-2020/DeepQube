@@ -23,6 +23,8 @@ class Agent:
 
         self.target_net.load_state_dict(self.policy_net.state_dict())
         self.target_net.eval()
+        
+        self.priocount = 0
 
     def select_action(self, state):
         with torch.no_grad():
@@ -30,6 +32,7 @@ class Agent:
         return qvals.argmax()
 
     def optimize_model(self, optimizer, criterion, batch_size, gamma):
+        self.priocount += 1
         if len(self.memory) < batch_size:
             return 0
         if self.priority == True:
@@ -37,7 +40,6 @@ class Agent:
         else:
             samples = self.memory.sample(batch_size) # this is in AoS format
         batch = network.replay.Transition(*zip(*samples)) # this is in SofA format
-        
         state_batch = torch.cat(batch.state)
         action_batch = torch.cat(batch.action)
         reward_batch = torch.cat(batch.reward)
@@ -63,8 +65,8 @@ class Agent:
         optimizer.step()
         
         #Update Buffer Priorities
-        if self.priority == True:
-            delta = abs(target_actions_qvals - generated_actions_qvals.detach()).numpy()    
+        if self.priority == True and (self.priocount % 100 == 0):
+            delta = abs(target_actions_qvals - generated_actions_qvals) 
             self.memory.update_priorities(delta, indices)  
         return float(loss)
 
@@ -80,7 +82,7 @@ class Agent:
         state = cube.get_embedding(device).unsqueeze(0)
 
         history = []
-
+        
         randoms = torch.rand(num_steps)
         for i in range(num_steps):
             if randoms[i] < epsilon:
@@ -94,7 +96,6 @@ class Agent:
             reward = self.reward_fn(next_state)
             self.memory.push(state, action, next_state, torch.tensor([reward], device=device))
             state = next_state
-
             loss = self.optimize_model(optimizer, criterion, batch_size, gamma)
             history.append(loss)
 
@@ -103,6 +104,5 @@ class Agent:
         #potentially don't want to update prio memory buffers every time
         if (update_param == True) and self.priority == True:
              self.memory.update_parameters()
-
         return history
 

@@ -42,12 +42,15 @@ class Cube2:
         self.reset()
         self.history = []
         self.embedding_dim = (24, 6)
-        self.moves = [
-            self.front, self.front_p,self.back,self.back_p,
-            self.left,self.left_p, self.right, self.right_p,
-            self.up, self.up_p, self.down, self.down_p
-        ]
-
+        # the order of this list matters
+        self.moves = (
+            self.front, self.front_p,
+            self.right, self.right_p,
+            self.up, self.up_p,
+            self.left, self.left_p,
+            self.back, self.back_p,
+            self.down, self.down_p,
+        )
 
     def get_embedding(self, device='cpu'):
         """The embedding is based on the sticker representation.

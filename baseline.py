@@ -6,14 +6,6 @@ from cubesim.visualizer import print_cube
 
 # implements a hard-coded naive baseline model
 
-parser = argparse.ArgumentParser()
-parser.add_argument("animate", help="\'y\' or \'n\'")
-parser.add_argument("scramble")
-args = parser.parse_args()
-
-c = cubesim.Cube2()
-sleep_time = 0 if args.animate == 'n' else 1
-
 oll_algorithms = {
     'h': 'R R U U R U U R R',
     'pi': 'R U U R R U\' R R U\' R R U U R',
@@ -42,6 +34,8 @@ sledge = {
     'br': 'R B\' R\' B',
     'bl': 'L\' B L B\''
 }
+
+sleep_time = 0
 
 
 def solve_layer1(cube):
@@ -386,9 +380,11 @@ def post_process_string(s):
     return s
 
 
-def baseline_solver():
-    c.load_scramble(args.scramble)
-    print_cube(c.state)
+def baseline_solver(scramble: str):
+    c = cubesim.Cube2()
+    c.load_scramble(scramble)
+    if sleep_time == 1:
+        print_cube(c.state)
 
     while bottom_is_solved(c) is False:
         solve_layer1(c)
@@ -399,17 +395,26 @@ def baseline_solver():
     while is_solved(c) is False:
         pll_layer2(c)
 
-    scramble = args.scramble.split(' ')
+    temp1 = scramble.split(' ')
+    temp2 = c.history[len(temp1):]
+    solution = post_process_string(' '.join(temp2))
+    solution_length = len(solution.split())
 
-    soln1 = c.history[len(scramble):]
-    soln2 = post_process_string(' '.join(soln1))
-    soln3 = soln2.split()
+    if sleep_time == 1:
+        print_cube(c.state)
+        print('\33[37m' + 'scramble:',
+              post_process_string(scramble) + '\33[37m')
+        print('\33[37m' + f'solution ({solution_length}): ',
+              ''.join(solution) + '\33[37m')
 
-    print('\33[37m' + 'scramble:',
-          post_process_string(args.scramble) + '\33[37m')
-    print('\33[37m' + f'solution ({len(soln3)}): ', ''.join(soln2) + '\33[37m')
-
-    print_cube(c.state)
+    return solution_length
 
 
-baseline_solver()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("scramble")
+    parser.add_argument("--animate", help="\'y\' or \'n\'", default='n')
+    args = parser.parse_args()
+    sleep_time = 0 if args.animate == 'n' else 1
+
+    baseline_solver(args.scramble)

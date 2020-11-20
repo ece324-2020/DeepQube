@@ -369,18 +369,20 @@ def top_is_solved(cube):
     return solved
 
 
-def post_process_string(s):
+def post_process_string(s, mode: str):
     s = s.replace('U U U', 'U\'')
-    s = s.replace('U U', 'U2')
-    s = s.replace('R R', 'R2')
-    s = s.replace('F F', 'F2')
-    s = s.replace('L L', 'L2')
-    s = s.replace('B B', 'B2')
-    s = s.replace('D D', 'D2')
+    if mode == 'htm':
+        s = s.replace('U U', 'U2')
+        s = s.replace('R R', 'R2')
+        s = s.replace('F F', 'F2')
+        s = s.replace('L L', 'L2')
+        s = s.replace('B B', 'B2')
+        s = s.replace('D D', 'D2')
+
     return s
 
 
-def baseline_solver(scramble: str):
+def baseline_solver(scramble: str, mode: str):
     c = cubesim.Cube2()
     c.load_scramble(scramble)
     if sleep_time == 1:
@@ -397,13 +399,13 @@ def baseline_solver(scramble: str):
 
     temp1 = scramble.split(' ')
     temp2 = c.history[len(temp1):]
-    solution = post_process_string(' '.join(temp2))
+    solution = post_process_string(' '.join(temp2), mode)
     solution_length = len(solution.split())
 
     if sleep_time == 1:
         print_cube(c.state)
         print('\33[37m' + 'scramble:',
-              post_process_string(scramble) + '\33[37m')
+              post_process_string(scramble, 'htm') + '\33[37m')
         print('\33[37m' + f'solution ({solution_length}): ',
               ''.join(solution) + '\33[37m')
 
@@ -414,7 +416,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("scramble")
     parser.add_argument("--animate", help="\'y\' or \'n\'", default='n')
+    parser.add_argument("--metric", help="Options: qtm, htm", default='htm')
     args = parser.parse_args()
     sleep_time = 0 if args.animate == 'n' else 1
 
-    baseline_solver(args.scramble)
+    baseline_solver(args.scramble, args.metric)

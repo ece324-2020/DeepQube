@@ -42,7 +42,7 @@ def validate(network, scrambles, max_moves, device, mode='validation', filename=
     if mode == 'comparison':
         baseline_lengths = []
         for scramble in scrambles:
-            baseline_lengths.append(baseline_solver(scramble))
+            baseline_lengths.append(baseline_solver(scramble, 'qtm'))
 
         rows = zip(lengths, baseline_lengths)
 

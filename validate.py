@@ -17,7 +17,7 @@ def _attempt_solve(network, scramble, max_moves, device):
         move_count = 0
         while not cube.is_solved():
             if move_count > max_moves:
-                return max_moves
+                return 9999
 
             move = network(cube.get_embedding(device)).argmax()
             cube.moves[move]()

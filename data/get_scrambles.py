@@ -5,19 +5,19 @@ from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("scramble_length", help="options: 4, 6, 8, 10")
-    parser.add_argument("filename", help="output txt file")
+    parser.add_argument("filename", help="Output txt file.")
+    parser.add_argument("--length", help="Options: 4, 6, 8, 10. Do not include argument for full length scrambles.")
     args = parser.parse_args()
 
-    scramble_length = int(args.scramble_length)
+    scramble_length = int(args.length) if args.length else 11
 
-    if scramble_length not in [4, 6, 8, 10]:
+    if scramble_length not in [4, 6, 8, 10, 11]:
         print('EXIT: invalid scramble length')
         return -1
 
     filename = args.filename.replace('.txt', '')
 
-    path = 'raw/' + args.scramble_length + '/'
+    path = 'raw/' + ('full' if scramble_length == 11 else str(scramble_length)) + '/'
 
     paths = Path(path).glob('**/*.json')
 

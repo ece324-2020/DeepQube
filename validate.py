@@ -62,7 +62,7 @@ if __name__ == '__main__':
     parser.add_argument('network', help='Path to network .pt file.')
     parser.add_argument('scramble', help='Path to scramble .txt file.')
     parser.add_argument('moves', help='Maximum number of moves.', type=int)
-    parser.add_argument('--filename', help='Specify a filename to enter comparison mode against baseline solver. Outputs results to CSV file.')
+    parser.add_argument('--filename', help='Specify a filename to enter comparison mode against baseline solver. Outputs results to CSV file.', default='')
     args = parser.parse_args()
 
     network_file = args.network
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     network = torch.load(network_file, map_location=device)
 
-    accuracy = validate(network, scrambles, device,
+    accuracy = validate(network, scrambles, max_moves, device,
                         mode='comparison' if args.filename else 'validation',
-                        filename=args.filename or '')
+                        filename=args.filename)
     print(accuracy)

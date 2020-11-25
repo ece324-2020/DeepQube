@@ -24,7 +24,7 @@ class Agent:
             qvals = self.policy_net(state)
         return qvals.argmax()
 
-    def optimize_model(self, optimizer, criterion, batch_size, gamma):
+    def optimize_model(self, optimizer, criterion, batch_size, gamma,printq):
         if len(self.memory) < batch_size:
             return 0
 
@@ -42,7 +42,8 @@ class Agent:
         with torch.no_grad():
             next_state_qvals = self.target_net(next_batch).max(1)[0]
             target_actions_qvals = (next_state_qvals * gamma) + reward_batch
-
+            if printq == True:
+                print(torch.max(next_state_qvals))
         self.policy_net.train()
         # Run the recorded states through the model. This returns the qvalues for
         # each action. We use `gather` to select the qvalues of the previously chosen
@@ -54,6 +55,7 @@ class Agent:
 
         optimizer.zero_grad()
         loss.backward()
+        #torch.nn.utils.clip_grad_norm_(self.policy_net.parameters(),20)
         optimizer.step()
 
         return float(loss)
@@ -84,12 +86,15 @@ class Agent:
                 cube.moves[action]()
 
             next_state = cube.get_embedding(device).unsqueeze(0)
-            reward = self.reward_fn(next_state)
+            reward = self.reward_fn(next_state,state)
+            #reward = self.reward_fn(next_state)
 
             self.memory.push(state, action, next_state, torch.tensor([reward], device=device))
             state = next_state
-
-            loss = self.optimize_model(optimizer, criterion, batch_size, gamma)
+            if i == 0:
+                loss = self.optimize_model(optimizer, criterion, batch_size, gamma,True)
+            else:
+                loss = self.optimize_model(optimizer, criterion, batch_size, gamma,False)
             history.append(loss)
 
             if reward > 0:

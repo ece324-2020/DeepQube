@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import cubesim
 from cubesim.visualizer import print_cube
 

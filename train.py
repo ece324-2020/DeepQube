@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='run training loop')
     parser.add_argument('--lr', help='learning rate', default=0.001)
-    parser.add_argument('--gamma', default=0.99)
+    parser.add_argument('--gamma', default=0.95)
     parser.add_argument('--scheduler', help='epsilon scheduler to change exploration rate',
                         type=tuple, default=(1, 0.1, 10000))
     parser.add_argument('--episodes', help='number of episodes', default=5000000)
@@ -50,6 +50,7 @@ if __name__ == '__main__':
     random.seed(0)
 
     reward = network.rewards.Naive(device=device)
+    #cosine = network.rewards.Cosine(device=device)
 
     agent = Agent(replay_size, reward, device, nn_params)
     target_net = agent.target_net
@@ -66,6 +67,9 @@ if __name__ == '__main__':
     while True:
         recent_solves = np.zeros(20, dtype=np.bool)
         print(f'training against all {current_depth} move scrambles', file=sys.stderr)
+        if current_depth == 2:
+            print(f'Finished {current_depth} move scrambles')
+            break
         for scramble in itertools.cycle(gen_scrambles(current_depth)):
             epsilon = epsilon_scheduler.get_rate(episode)
 

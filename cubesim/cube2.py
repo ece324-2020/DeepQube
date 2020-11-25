@@ -1,7 +1,6 @@
 import numpy as np
 import torch
 
-
 SOLVED = np.array([np.tile(i, (2, 2)) for i in range(6)])
 
 
@@ -69,6 +68,30 @@ class Cube2:
         """Loads the scramble contained in the string `s`"""
         for move in s.split(' '):
             self.moves[self.move_mappping[move]]()
+
+    def layer_solved(self):
+        solved = 0
+        if (self.state[5][0][0] == 5
+                and self.state[0][1][1] == 0
+                and self.state[1][1][0] == 1):
+            solved += 1
+
+        if (self.state[5][0][1] == 5
+                and self.state[1][1][1] == 1
+                and self.state[2][1][0] == 2):
+            solved += 1
+
+        if (self.state[5][1][0] == 5
+                and self.state[0][1][0] == 0
+                and self.state[3][1][1] == 3):
+            solved += 1
+
+        if (self.state[5][1][1] == 5
+                and self.state[2][1][1] == 2
+                and self.state[3][1][0] == 3):
+            solved += 1
+
+        return True if solved >= 2 else False
 
     def is_solved(self):
         return np.array_equal(self.state, SOLVED)

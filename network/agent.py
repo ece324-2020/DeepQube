@@ -5,6 +5,7 @@ import cubesim.visualizer
 import network.models
 import network.replay
 
+
 class Agent:
     def __init__(self, replay_size, reward_fn, device, nn_params):
         self.memory = network.replay.ReplayMemory(replay_size)
@@ -12,9 +13,9 @@ class Agent:
 
         cube = cubesim.Cube2()
         self.target_net = network.models.DQN(cube.embedding_dim[0] * cube.embedding_dim[1],
-                len(cube.moves), **nn_params).to(device)
+                                             len(cube.moves), **nn_params).to(device)
         self.policy_net = network.models.DQN(cube.embedding_dim[0] * cube.embedding_dim[1],
-                len(cube.moves), **nn_params).to(device)
+                                             len(cube.moves), **nn_params).to(device)
 
         self.target_net.load_state_dict(self.policy_net.state_dict())
         self.target_net.eval()
@@ -28,8 +29,8 @@ class Agent:
         if len(self.memory) < batch_size:
             return 0
 
-        samples = self.memory.sample(batch_size) # this is in AoS format
-        batch = network.replay.Transition(*zip(*samples)) # this is in SofA format
+        samples = self.memory.sample(batch_size)  # this is in AoS format
+        batch = network.replay.Transition(*zip(*samples))  # this is in SofA format
 
         state_batch = torch.cat(batch.state)
         action_batch = torch.cat(batch.action)
@@ -58,8 +59,7 @@ class Agent:
 
         return float(loss)
 
-        
-    def play_episode(self, optimizer, criterion, scramble, batch_size, gamma, epsilon, num_steps, device):
+    def play_episode(self, optimizer, criterion, scramble, batch_size, gamma, epsilon, num_steps, device, layer_mode=False):
         """The agent attempts to solve the scramble provided in `num_steps` moves.
         Returns:
             list: A list countaining the losses through `num_steps` moves.
@@ -69,7 +69,10 @@ class Agent:
         cube.load_scramble(scramble)
         state = cube.get_embedding(device).unsqueeze(0)
 
-        if cube.is_solved():
+        if (layer_mode and cube.layer_solved()):
+            return [0.0]
+
+        if (not layer_mode and cube.is_solved()):
             return [0.0]
 
         history = []
@@ -96,4 +99,3 @@ class Agent:
                 break
 
         return history
-

@@ -14,4 +14,3 @@ if __name__ == '__main__':
     plt.subplot(2, 1, 2)
     plt.plot(episode, acc)
     plt.show()
-

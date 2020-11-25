@@ -3,9 +3,7 @@
 import cubesim
 from cubesim.visualizer import print_cube
 
-
 c = cubesim.Cube2()
-
 print_cube(c.state)
 
 while True:

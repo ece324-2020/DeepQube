@@ -7,7 +7,7 @@ import cubesim
 from baseline import baseline_solver
 
 
-def _attempt_solve(network, scramble, max_moves, device):
+def _attempt_solve(network, scramble, max_moves, device, layer_mode):
     cube = cubesim.Cube2()
     network.eval()
     with torch.no_grad():
@@ -15,7 +15,7 @@ def _attempt_solve(network, scramble, max_moves, device):
         cube.load_scramble(scramble)
 
         move_count = 0
-        while not cube.is_solved():
+        while not (cube.layer_solved() if layer_mode else cube.is_solved()):
             if move_count > max_moves:
                 return 9999
 
@@ -26,8 +26,8 @@ def _attempt_solve(network, scramble, max_moves, device):
         return move_count
 
 
-def validate(network, scrambles, max_moves, device, mode='validation', filename=''):
-    def solve(scramble): return _attempt_solve(network, scramble, max_moves, device)
+def validate(network, scrambles, max_moves, device, mode='validation', filename='', layer_mode=False):
+    def solve(scramble): return _attempt_solve(network, scramble, max_moves, device, layer_mode=layer_mode)
     solutions = map(solve, scrambles)
     lengths = []
 

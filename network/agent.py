@@ -43,8 +43,8 @@ class Agent:
             next_state_qvals = self.target_net(next_batch).max(1)[0]
             target_actions_qvals = (next_state_qvals * gamma) + reward_batch
             if printq == True:
-                #print(torch.max(next_state_qvals))
-                pass
+                print(torch.max(next_state_qvals))
+                #pass
         self.policy_net.train()
         # Run the recorded states through the model. This returns the qvalues for
         # each action. We use `gather` to select the qvalues of the previously chosen

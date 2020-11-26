@@ -41,5 +41,5 @@ class Naive(object):
         elif terminate == True:
             return (-1*final_rew)
         else:
-            return 1.0
+            return 0.0
             #return neg_rew

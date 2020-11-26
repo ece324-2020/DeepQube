@@ -79,6 +79,10 @@ def inverse_alg(alg):
 
 f = open("1layer.txt", "w")
 
+f.write('U\n')
+f.write('U\'\n')
+f.write('U U\n')
+
 for case in cases:
     alg = inverse_alg(case)
     for i in pre_moves:

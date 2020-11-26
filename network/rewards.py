@@ -32,10 +32,13 @@ class Naive(object):
         cube = cubesim.Cube2()
         self.target = cube.get_embedding(device)
 
-    def __call__(self, embedding,prevembed):
+    def __call__(self, embedding,prevembed,terminate):
+        
         prev = prevembed.squeeze()
         current = embedding.squeeze()
         if torch.equal(current, self.target):
             return final_rew
+        elif terminate == True:
+            return (-1*final_rew)
         else:
             return neg_rew

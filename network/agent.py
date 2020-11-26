@@ -43,7 +43,8 @@ class Agent:
             next_state_qvals = self.target_net(next_batch).max(1)[0]
             target_actions_qvals = (next_state_qvals * gamma) + reward_batch
             if printq == True:
-                print(torch.max(next_state_qvals))
+                #print(torch.max(next_state_qvals))
+                pass
         self.policy_net.train()
         # Run the recorded states through the model. This returns the qvalues for
         # each action. We use `gather` to select the qvalues of the previously chosen
@@ -99,7 +100,7 @@ class Agent:
             if action != solution.pop():
                 terminate = True
             next_state = cube.get_embedding(device).unsqueeze(0)
-            reward = self.reward_fn(next_state,state)
+            reward = self.reward_fn(next_state,state,terminate)
             #reward = self.reward_fn(next_state)
 
             self.memory.push(state, action, next_state, torch.tensor([reward], device=device))
@@ -110,7 +111,7 @@ class Agent:
                 loss = self.optimize_model(optimizer, criterion, batch_size, gamma,False)
             history.append(loss)
 
-            if reward > 0:
+            if reward > 0 or (terminate == True):
                 break
 
         return history

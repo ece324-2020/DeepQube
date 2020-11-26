@@ -67,8 +67,19 @@ class Agent:
             list: A list countaining the losses through `num_steps` moves.
         """
 
-        cube = cubesim.Cube2()
+        cube = cubesim.Cube2()       
         cube.load_scramble(scramble)
+        
+        solution = []
+        for move in scramble.split(' '):
+            #self.moves[self.move_mapping[move]]()
+            move_map = cube.move_mapping[move]
+            if move_map % 2 == 0: 
+                solution.append(move_map + 1)
+            else:
+                solution.append(move_map - 1)
+        
+                
         state = cube.get_embedding(device).unsqueeze(0)
 
         if cube.is_solved():
@@ -78,13 +89,15 @@ class Agent:
 
         randoms = torch.rand(num_steps)
         for i in range(num_steps):
+            terminate = False
             if randoms[i] < epsilon:
                 action = torch.randint(12, (1,), device=device)
                 cube.moves[action]()
             else:
                 action = self.select_action(state).view(1)
                 cube.moves[action]()
-
+            if action != solution.pop():
+                terminate = True
             next_state = cube.get_embedding(device).unsqueeze(0)
             reward = self.reward_fn(next_state,state)
             #reward = self.reward_fn(next_state)

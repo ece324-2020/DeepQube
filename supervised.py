@@ -44,9 +44,9 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='finish the network with a supervised training')
     parser.add_argument('--lr', help='learning rate', type=float, default=0.001)
-    parser.add_argument('--epochs', help='number of epochs', type=int, default=1000)
+    parser.add_argument('--epochs', help='number of epochs', type=int, default=100000)
     parser.add_argument('--batch', help='batch size', type=int, default=128)
-    parser.add_argument('--save', help='interval at which .pt checkpoint files are saved', default=10000)
+    parser.add_argument('--save', help='interval at which .pt checkpoint files are saved', default=1000)
     parser.add_argument('--layers', help='dimensions of the three fully-connected layers',
                         type=tuple, default=(4096, 2048, 1024))
     parser.add_argument('solutions', type=str, help='solutions data file')
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     model.train()
     for i in trange(epochs):
         avg_loss = 0.0
-        avg_acc = 0.0
+        solved = 0
         iters = 0
         for states, moves in dataloader:
             pred = model(states)
@@ -84,12 +84,12 @@ if __name__ == '__main__':
             optimizer.step()
 
             avg_loss += float(loss)
-            avg_acc += float((pred.argmax(dim=1) == moves).sum())
+            solved += int((pred.argmax(dim=1) == moves).sum())
             iters += 1
         
         avg_loss /= iters
-        avg_acc /= iters
-        print(f'{i}\t{avg_loss}\t{avg_acc}')
+        acc = solved / len(dataset)
+        print(f'{i}\t{avg_loss}\t{acc}')
 
         if i % save_int:
             torch.save(model, f'supervised_checkpoints/{i}.pt')

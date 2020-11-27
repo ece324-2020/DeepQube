@@ -70,6 +70,9 @@ class Cube2:
         for move in s.split(' '):
             self.moves[self.move_mappping[move]]()
 
+    def load_state(self, s):
+        self.state = np.array(list(map(int, s.split(' ')))).reshape(6, 2, 2)
+
     def is_solved(self):
         return np.array_equal(self.state, SOLVED)
 

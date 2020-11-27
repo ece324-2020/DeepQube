@@ -32,9 +32,9 @@ if __name__ == '__main__':
 
             states[state] = move
 
-    output = '\n'.join(map(lambda item: f'{item[0]}\t{item[1]}', states.items()))
+    output = map(lambda item: f'{item[0]}\t{item[1]}\n', states.items())
 
     with open('./supervised_data.tsv', 'w') as f:
-        f.writelines(map(lambda l: f'{l}\n', output))
+        f.writelines(output)
 
 

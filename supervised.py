@@ -44,14 +44,12 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='finish the network with a supervised training')
     parser.add_argument('--lr', help='learning rate', type=float, default=0.001)
-    parser.add_argument('--epochs', help='number of epochs', type=int, default=100000)
+    parser.add_argument('--epochs', help='number of epochs', type=int, default=10000)
     parser.add_argument('--batch', help='batch size', type=int, default=128)
     parser.add_argument('--save', help='interval at which .pt checkpoint files are saved', default=1000)
-    parser.add_argument('--layers', help='dimensions of the three fully-connected layers',
-                        type=tuple, default=(4096, 2048, 1024))
+    parser.add_argument('--hidden', help='dimensions of the hidden layer', type=int, default=16)
     parser.add_argument('solutions', type=str, help='solutions data file')
     parser.add_argument('checkpoint', type=str, nargs='?', help='checkpoint file to start with', default=None)
-
 
     args = parser.parse_args()
     lr = args.lr
@@ -63,7 +61,7 @@ if __name__ == '__main__':
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch)
 
     if args.checkpoint == None:
-        model = network.models.DQN(144, 12, args.layers).to(device)
+        model = network.models.Minimal(144, args.hidden, 12).to(device)
     else:
         model = torch.load(args.checkpoint, map_location=device)
 
@@ -76,15 +74,17 @@ if __name__ == '__main__':
         solved = 0
         iters = 0
         for states, moves in dataloader:
+            optimizer.zero_grad()
+
             pred = model(states)
             loss = criterion(pred, moves)
 
-            optimizer.zero_grad()
             loss.backward()
             optimizer.step()
 
-            avg_loss += float(loss)
-            solved += int((pred.argmax(dim=1) == moves).sum())
+            with torch.no_grad():
+                avg_loss += float(loss)
+                solved += int((pred.argmax(dim=1) == moves).sum())
             iters += 1
         
         avg_loss /= iters

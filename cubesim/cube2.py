@@ -94,7 +94,7 @@ class Cube2:
                 and self.state[3][1][0] == 3):
             solved += 1
 
-        return True if solved >= 2 else False
+        return True if solved == 4 else False
 
     def is_solved(self):
         return np.array_equal(self.state, SOLVED)

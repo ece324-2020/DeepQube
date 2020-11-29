@@ -30,6 +30,7 @@ if __name__ == '__main__':
             else:
                 move = cube.move_mappping[move + "'"]
 
+            cube.moves[move]()
             states[state] = move
 
     output = map(lambda item: f'{item[0]}\t{item[1]}\n', states.items())

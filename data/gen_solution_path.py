@@ -1,8 +1,8 @@
-import cubesim
 import sys
 
 sys.path.insert(0, '../')  # Hack to get cubesim import working
 
+import cubesim
 
 def serialize_state(cube):
     return ' '.join(map(str, cube.state.reshape(-1).tolist()))

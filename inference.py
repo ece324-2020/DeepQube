@@ -13,6 +13,7 @@ import cubesim
 top_solves = 0
 bot_solves = 0
 
+
 def solve(model1, model2, scramble, max_moves):
     global top_solves
     global bot_solves
@@ -45,6 +46,7 @@ def solve(model1, model2, scramble, max_moves):
     else:
         return False, solution
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='generate the solution to a cube')
     parser.add_argument('--max', type=int, help='max moves', default=40)
@@ -52,7 +54,7 @@ if __name__ == '__main__':
     parser.add_argument('model2', type=str, help='path to the supervised learning model')
     parser.add_argument('scrambles', type=str, help='path to file with scrambles to test')
     parser.add_argument('output', type=str, help='path to output csv')
-    
+
     args = parser.parse_args()
     model1 = torch.load(args.model1, map_location='cpu')
     model2 = torch.load(args.model2, map_location='cpu')
@@ -73,4 +75,3 @@ if __name__ == '__main__':
         writer.writerows(rows)
 
     print("model1: ", top_solves, "model2: ", bot_solves)
-

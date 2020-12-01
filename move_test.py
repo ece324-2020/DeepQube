@@ -8,5 +8,5 @@ print_cube(c.state)
 
 while True:
     move = input('\33[37m' + 'Move:' + '\33[37m')
-    c.moves[c.move_mappping[move]]()
+    c.moves[c.move_mapping[move]]()
     print_cube(c.state)

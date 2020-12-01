@@ -260,7 +260,7 @@ def piece_solved(cube, piece):
 
 def do_algorithm(cube, alg):
     for move in alg.split(' '):
-        cube.moves[cube.move_mappping[move]]()
+        cube.moves[cube.move_mapping[move]]()
         time.sleep(sleep_time)
         if sleep_time == 1:
             print('\33[37m' + move + '\33[37m')
@@ -268,7 +268,7 @@ def do_algorithm(cube, alg):
 
 
 def turn_p(cube):
-    cube.moves[cube.move_mappping['U\'']]()
+    cube.moves[cube.move_mapping['U\'']]()
     time.sleep(sleep_time)
     if sleep_time == 1:
         print('\33[37m' + 'U\'' + '\33[37m')
@@ -276,7 +276,7 @@ def turn_p(cube):
 
 
 def turn(cube):
-    cube.moves[cube.move_mappping['U']]()
+    cube.moves[cube.move_mapping['U']]()
     time.sleep(sleep_time)
     if sleep_time == 1:
         print('\33[37m' + 'U' + '\33[37m')

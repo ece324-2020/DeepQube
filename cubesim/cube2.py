@@ -31,7 +31,7 @@ class Cube2:
     }
 
     """ This dictionary maps a move to an index into the `moves` list"""
-    move_mappping = {
+    move_mapping = {
         'F': 0, 'F\'': 1,
         'R': 2, 'R\'': 3,
         'U': 4, 'U\'': 5,
@@ -67,7 +67,7 @@ class Cube2:
     def load_scramble(self, s):
         """Loads the scramble contained in the string `s`"""
         for move in s.split(' '):
-            self.moves[self.move_mappping[move]]()
+            self.moves[self.move_mapping[move]]()
 
     def load_state(self, s):
         self.state = np.array(list(map(int, s.split(' ')))).reshape(6, 2, 2)

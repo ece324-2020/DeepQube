@@ -31,8 +31,11 @@ solution_length_filtered.insert(2, "GodsNumber", gods_number_data, True)
 
 plt.figure(1, figsize=(16, 9))
 plot1 = sns.histplot(data=solution_length_filtered, binwidth=1, legend=False)
-plt.legend(('Optimal Solver', 'Baseline', 'DeepQube'))
-plot1.set(xlabel='Solution move count (quarter turn metric)')
+plt.xticks(fontsize='x-large')
+plt.yticks(fontsize='x-large')
+plt.legend(('Optimal Solver', 'Baseline', 'DeepQube'), fontsize='xx-large')
+plt.xlabel('Solution move count (quarter turn metric)', fontsize='xx-large')
+plt.ylabel('Count', fontsize='xx-large')
 plt.ylim(bottom=0)
 
 plt.savefig('histogram.png', dpi=300)

@@ -15,16 +15,23 @@ success = pd.read_csv(args.csv)
 success['DeepQube'] = success['DeepQube'].apply(
     lambda x: 'Solved' if x != 9999 else 'Fail')
 
-gods_number_moves = np.arange(4, 15)
-gods_number_range = np.linspace(4, 15, 100)
-gods_number_frequency = 0.01*np.array([0.015, 0.061, 0.24, 0.90, 3.11, 9.81, 25.33, 36.77, 21.3, 2.46, 0.0075])
-z = np.polyfit(gods_number_moves, 5000*gods_number_frequency, 2)
-p = np.poly1d(z)
+num_samples = len(solution_length_filtered['DeepQube'])
+
+gods_number_data = []
+gods_number_frequency = num_samples*0.01*np.array([0.015, 0.061, 0.24, 0.90,
+                                                   3.11, 9.81, 25.33, 36.77,
+                                                   21.3, 2.46, 0.0075])
+
+for i in range(4, 15):
+    for _ in range(round(gods_number_frequency[i-4])):
+        if len(gods_number_data) < num_samples:
+            gods_number_data.append(i)
+
+solution_length_filtered.insert(2, "GodsNumber", gods_number_data, True)
 
 plt.figure(1, figsize=(16, 9))
-plt.plot(gods_number_range, p(gods_number_range), 'r--')
 plot1 = sns.histplot(data=solution_length_filtered, binwidth=1, legend=False)
-plt.legend(('Probabilistic distribution \n of optimal solutions', 'Baseline', 'DeepQube'))
+plt.legend(('Optimal Solver', 'Baseline', 'DeepQube'))
 plot1.set(xlabel='Solution move count (quarter turn metric)')
 plt.ylim(bottom=0)
 
